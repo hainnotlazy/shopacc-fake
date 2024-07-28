@@ -1,0 +1,834 @@
+[
+  {
+    "name": "Aatrox",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/cc/AatroxSquare.png"
+  },
+  {
+    "name": "Ahri",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/18/AhriSquare.png"
+  },
+  {
+    "name": "Akali",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a5/AkaliSquare.png"
+  },
+  {
+    "name": "Akshan",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3b/AkshanSquare.png"
+  },
+  {
+    "name": "Alistar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/34/AlistarSquare.png"
+  },
+  {
+    "name": "Amumu",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/26/AmumuSquare.png"
+  },
+  {
+    "name": "Anivia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/01/AniviaSquare.png"
+  },
+  {
+    "name": "Annie",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6f/AnnieSquare.png"
+  },
+  {
+    "name": "Aphelios",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/13/ApheliosSquare.png"
+  },
+  {
+    "name": "Ashe",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4a/AsheSquare.png"
+  },
+  {
+    "name": "Aurelion Sol",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c3/Aurelion_SolSquare.png"
+  },
+  {
+    "name": "Azir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f7/AzirSquare.png"
+  },
+  {
+    "name": "Bard",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/69/BardSquare.png"
+  },
+  {
+    "name": "Bel'Veth",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6c/Bel%27VethSquare.png"
+  },
+  {
+    "name": "Blitzcrank",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5b/BlitzcrankSquare.png"
+  },
+  {
+    "name": "Brand",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ab/BrandSquare.png"
+  },
+  {
+    "name": "Braum",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b6/BraumSquare.png"
+  },
+  {
+    "name": "Caitlyn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e6/CaitlynSquare.png"
+  },
+  {
+    "name": "Camille",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/13/CamilleSquare.png"
+  },
+  {
+    "name": "Cassiopeia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/ca/CassiopeiaSquare.png"
+  },
+  {
+    "name": "Cho'Gath",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ae/Cho%27GathSquare.png"
+  },
+  {
+    "name": "Corki",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3d/CorkiSquare.png"
+  },
+  {
+    "name": "Darius",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/54/DariusSquare.png"
+  },
+  {
+    "name": "Diana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/90/DianaSquare.png"
+  },
+  {
+    "name": "DJSona",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/48/DJSonaSquare.png"
+  },
+  {
+    "name": "Dr. Mundo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/35/Dr._MundoSquare.png"
+  },
+  {
+    "name": "Draven",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d7/DravenSquare.png"
+  },
+  {
+    "name": "Ekko",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ef/EkkoSquare.png"
+  },
+  {
+    "name": "Elise",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/91/EliseSquare.png"
+  },
+  {
+    "name": "Evelynn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5b/EvelynnSquare.png"
+  },
+  {
+    "name": "Ezreal",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c3/EzrealSquare.png"
+  },
+  {
+    "name": "Fiddlesticks",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/95/FiddlesticksSquare_Unreleased.png"
+  },
+  {
+    "name": "Fiddlesticks",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7c/FiddlesticksSquare.png"
+  },
+  {
+    "name": "Fiora",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d2/FioraSquare.png"
+  },
+  {
+    "name": "Fizz",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/db/FizzSquare.png"
+  },
+  {
+    "name": "Galio",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/85/GalioSquare_Unreleased.png"
+  },
+  {
+    "name": "Galio",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/40/GalioSquare.png"
+  },
+  {
+    "name": "Gangplank",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fe/GangplankSquare.png"
+  },
+  {
+    "name": "Garen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ea/GarenSquare.png"
+  },
+  {
+    "name": "Gnar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6b/GnarSquare.png"
+  },
+  {
+    "name": "Gragas",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/67/GragasSquare.png"
+  },
+  {
+    "name": "Graves",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/26/GravesSquare.png"
+  },
+  {
+    "name": "Gwen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/df/GwenSquare.png"
+  },
+  {
+    "name": "Hecarim",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4c/HecarimSquare.png"
+  },
+  {
+    "name": "Heimerdinger",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/55/HeimerdingerSquare_Unreleased.png"
+  },
+  {
+    "name": "Heimerdinger",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/58/HeimerdingerSquare.png"
+  },
+  {
+    "name": "Illaoi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a7/IllaoiSquare.png"
+  },
+  {
+    "name": "Irelia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/72/IreliaSquare.png"
+  },
+  {
+    "name": "Ivern",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9d/IvernSquare.png"
+  },
+  {
+    "name": "Janna",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3f/JannaSquare.png"
+  },
+  {
+    "name": "Jarvan IV",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6c/Jarvan_IVSquare.png"
+  },
+  {
+    "name": "Jax",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0f/JaxSquare.png"
+  },
+  {
+    "name": "Jayce",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/aa/JayceSquare.png"
+  },
+  {
+    "name": "Jhin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8b/JhinSquare.png"
+  },
+  {
+    "name": "Jinx",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e2/JinxSquare.png"
+  },
+  {
+    "name": "K'Sante",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/58/K%27SanteSquare.png"
+  },
+  {
+    "name": "Kai'Sa",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/49/Kai%27SaSquare.png"
+  },
+  {
+    "name": "Kalista",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/aa/KalistaSquare.png"
+  },
+  {
+    "name": "Karma",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/27/KarmaSquare_Unreleased.png"
+  },
+  {
+    "name": "Karma",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4f/KarmaSquare.png"
+  },
+  {
+    "name": "Karthus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e1/KarthusSquare.png"
+  },
+  {
+    "name": "Kassadin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/57/KassadinSquare.png"
+  },
+  {
+    "name": "Katarina",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2d/KatarinaSquare_Unreleased.png"
+  },
+  {
+    "name": "Katarina",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ae/KatarinaSquare.png"
+  },
+  {
+    "name": "Kayle",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/05/KayleSquare_Unreleased.png"
+  },
+  {
+    "name": "Kayle",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bd/KayleSquare.png"
+  },
+  {
+    "name": "Kayn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/37/KaynSquare.png"
+  },
+  {
+    "name": "Kennen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/69/KennenSquare.png"
+  },
+  {
+    "name": "Kha'Zix",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/14/Kha%27ZixSquare.png"
+  },
+  {
+    "name": "Kindred",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6e/KindredSquare.png"
+  },
+  {
+    "name": "Kled Skaarl",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ae/Kled_SkaarlSquare.png"
+  },
+  {
+    "name": "Kled",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ef/KledSquare.png"
+  },
+  {
+    "name": "Kog'Maw",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/45/Kog%27MawSquare.png"
+  },
+  {
+    "name": "LeBlanc",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f1/LeBlancSquare.png"
+  },
+  {
+    "name": "Lee Sin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f9/Lee_SinSquare_Unreleased.png"
+  },
+  {
+    "name": "Lee Sin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4f/Lee_SinSquare.png"
+  },
+  {
+    "name": "Leona",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/54/LeonaSquare.png"
+  },
+  {
+    "name": "Lillia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/49/LilliaSquare.png"
+  },
+  {
+    "name": "Lissandra",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/36/LissandraSquare.png"
+  },
+  {
+    "name": "Lucian",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1e/LucianSquare.png"
+  },
+  {
+    "name": "Lulu",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/91/LuluSquare.png"
+  },
+  {
+    "name": "Lux",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/cc/LuxSquare_Unreleased.png"
+  },
+  {
+    "name": "Lux",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/01/LuxSquare.png"
+  },
+  {
+    "name": "Malphite",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6f/MalphiteSquare.png"
+  },
+  {
+    "name": "Malzahar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a7/MalzaharSquare.png"
+  },
+  {
+    "name": "Maokai",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/64/MaokaiSquare.png"
+  },
+  {
+    "name": "Master Yi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b2/Master_YiSquare.png"
+  },
+  {
+    "name": "Mega Gnar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a2/Mega_GnarSquare.png"
+  },
+  {
+    "name": "MissFortune",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9d/MissFortuneSquare.png"
+  },
+  {
+    "name": "Mordekaiser",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4d/MordekaiserSquare.png"
+  },
+  {
+    "name": "Morgana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b5/MorganaSquare_Unreleased.png"
+  },
+  {
+    "name": "Morgana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d8/MorganaSquare.png"
+  },
+  {
+    "name": "Nami",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2f/NamiSquare_Unreleased.png"
+  },
+  {
+    "name": "Nami",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d2/NamiSquare.png"
+  },
+  {
+    "name": "Nasus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/96/NasusSquare_Unreleased.png"
+  },
+  {
+    "name": "Nasus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/58/NasusSquare.png"
+  },
+  {
+    "name": "Nautilus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b5/NautilusSquare.png"
+  },
+  {
+    "name": "Neeko",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/88/NeekoSquare.png"
+  },
+  {
+    "name": "Nidalee",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7c/NidaleeSquare.png"
+  },
+  {
+    "name": "Nilah",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/02/NilahSquare.png"
+  },
+  {
+    "name": "Nocturne",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/65/NocturneSquare.png"
+  },
+  {
+    "name": "Nunu & Willump",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/be/Nunu_%26_WillumpSquare.png"
+  },
+  {
+    "name": "NunuBot",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/40/NunuBotSquare.png"
+  },
+  {
+    "name": "Olaf",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2b/OlafSquare.png"
+  },
+  {
+    "name": "Orianna",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b0/OriannaSquare.png"
+  },
+  {
+    "name": "Ornn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/31/OrnnSquare.png"
+  },
+  {
+    "name": "Pantheon",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9b/PantheonSquare.png"
+  },
+  {
+    "name": "Poppy",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e3/PoppySquare.png"
+  },
+  {
+    "name": "PulsefireEzreal",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e8/PulsefireEzrealSquare.png"
+  },
+  {
+    "name": "Pyke",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/83/PykeSquare.png"
+  },
+  {
+    "name": "Qiyana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/ca/QiyanaSquare.png"
+  },
+  {
+    "name": "Quinn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7c/QuinnSquare.png"
+  },
+  {
+    "name": "Rakan",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8b/RakanSquare.png"
+  },
+  {
+    "name": "Rammus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7c/RammusSquare.png"
+  },
+  {
+    "name": "Rek'Sai",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3e/Rek%27SaiSquare.png"
+  },
+  {
+    "name": "Renata Glasc",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c2/Renata_GlascSquare.png"
+  },
+  {
+    "name": "Renekton",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fc/RenektonSquare.png"
+  },
+  {
+    "name": "Rengar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d7/RengarSquare_Unreleased.png"
+  },
+  {
+    "name": "Rengar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f1/RengarSquare.png"
+  },
+  {
+    "name": "Rhaast",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2e/RhaastSquare.png"
+  },
+  {
+    "name": "Riven",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bc/RivenSquare_Unreleased.png"
+  },
+  {
+    "name": "Riven",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/46/RivenSquare.png"
+  },
+  {
+    "name": "Rumble",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/13/RumbleSquare.png"
+  },
+  {
+    "name": "Ryze",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/00/RyzeSquare_Unreleased.png"
+  },
+  {
+    "name": "Ryze",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/28/RyzeSquare.png"
+  },
+  {
+    "name": "SAKayn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f9/SAKaynSquare.png"
+  },
+  {
+    "name": "Sejuani",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/93/SejuaniSquare.png"
+  },
+  {
+    "name": "Senna",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/21/SennaSquare.png"
+  },
+  {
+    "name": "Sett",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/19/SettSquare.png"
+  },
+  {
+    "name": "Shaco",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/93/ShacoSquare.png"
+  },
+  {
+    "name": "Shadow Kayn Rhaast",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4b/Shadow_Kayn_RhaastSquare.png"
+  },
+  {
+    "name": "Shen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d3/ShenSquare.png"
+  },
+  {
+    "name": "Shyvana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f6/ShyvanaSquare.png"
+  },
+  {
+    "name": "Singed",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/96/SingedSquare.png"
+  },
+  {
+    "name": "Sion",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/61/SionSquare.png"
+  },
+  {
+    "name": "Sivir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e1/SivirSquare.png"
+  },
+  {
+    "name": "Skaarl",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a6/SkaarlSquare.png"
+  },
+  {
+    "name": "Skarner",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/80/SkarnerSquare.png"
+  },
+  {
+    "name": "Skin Circle Arcade Kai'Sa.png",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/59/Skin_Circle_Arcade_Kai%27Sa.png"
+  },
+  {
+    "name": "Skin Circle Birdio.png",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/01/Skin_Circle_Birdio.png"
+  },
+  {
+    "name": "Skin Circle Commando Galio.png",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/24/Skin_Circle_Commando_Galio.png"
+  },
+  {
+    "name": "Skin Circle Debonair Galio.png",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/29/Skin_Circle_Debonair_Galio.png"
+  },
+  {
+    "name": "Skin Circle Demon Vi.png",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/24/Skin_Circle_Demon_Vi.png"
+  },
+  {
+    "name": "Skin Circle Enchanted Galio.png",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/03/Skin_Circle_Enchanted_Galio.png"
+  },
+  {
+    "name": "Skin Circle Gatekeeper Galio.png",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5a/Skin_Circle_Gatekeeper_Galio.png"
+  },
+  {
+    "name": "Skin Circle Heartbreaker Vi.png",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9c/Skin_Circle_Heartbreaker_Vi.png"
+  },
+  {
+    "name": "Skin Circle Hextech Galio.png",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/43/Skin_Circle_Hextech_Galio.png"
+  },
+  {
+    "name": "Skin Circle Hired Gun Lucian.png",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/38/Skin_Circle_Hired_Gun_Lucian.png"
+  },
+  {
+    "name": "Skin Circle iG Kai'Sa.png",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/54/Skin_Circle_iG_Kai%27Sa.png"
+  },
+  {
+    "name": "Skin Circle Infernal Galio.png",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/44/Skin_Circle_Infernal_Galio.png"
+  },
+  {
+    "name": "Skin Circle KDA Kai'Sa Prestige Edition.png",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/03/Skin_Circle_KDA_Kai%27Sa_Prestige_Edition.png"
+  },
+  {
+    "name": "Skin Circle Neon Strike Vi.png",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f0/Skin_Circle_Neon_Strike_Vi.png"
+  },
+  {
+    "name": "Skin Circle Officer Vi.png",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fe/Skin_Circle_Officer_Vi.png"
+  },
+  {
+    "name": "Skin Circle Order of the Lotus Irelia.png",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2e/Skin_Circle_Order_of_the_Lotus_Irelia.png"
+  },
+  {
+    "name": "Skin Circle Warring Kingdoms Vi.png",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0d/Skin_Circle_Warring_Kingdoms_Vi.png"
+  },
+  {
+    "name": "Sona",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/56/SonaSquare.png"
+  },
+  {
+    "name": "Soraka",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8d/SorakaSquare.png"
+  },
+  {
+    "name": "SpiritGuardUdyr",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f2/SpiritGuardUdyrSquare.png"
+  },
+  {
+    "name": "Swain",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8c/SwainSquare.png"
+  },
+  {
+    "name": "Sylas",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/eb/SylasSquare.png"
+  },
+  {
+    "name": "Syndra",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/65/SyndraSquare.png"
+  },
+  {
+    "name": "Tahm Kench",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/03/Tahm_KenchSquare.png"
+  },
+  {
+    "name": "Taliyah",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2d/TaliyahSquare.png"
+  },
+  {
+    "name": "Talon",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f9/TalonSquare.png"
+  },
+  {
+    "name": "Taric",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c4/TaricSquare.png"
+  },
+  {
+    "name": "Teemo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/04/TeemoSquare.png"
+  },
+  {
+    "name": "Thresh",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7b/ThreshSquare.png"
+  },
+  {
+    "name": "Tristana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5b/TristanaSquare_Unreleased.png"
+  },
+  {
+    "name": "Tristana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/06/TristanaSquare.png"
+  },
+  {
+    "name": "Trundle",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c4/TrundleSquare.png"
+  },
+  {
+    "name": "Tryndamere",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5f/TryndamereSquare.png"
+  },
+  {
+    "name": "Twisted Fate",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fb/Twisted_FateSquare.png"
+  },
+  {
+    "name": "Twitch",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/79/TwitchSquare.png"
+  },
+  {
+    "name": "Udyr",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d1/UdyrSquare.png"
+  },
+  {
+    "name": "Urf",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/53/UrfSquare.png"
+  },
+  {
+    "name": "Urgot",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/88/UrgotSquare.png"
+  },
+  {
+    "name": "Valor",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/58/ValorSquare.png"
+  },
+  {
+    "name": "Varus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c2/VarusSquare.png"
+  },
+  {
+    "name": "Vayne",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/95/VayneSquare.png"
+  },
+  {
+    "name": "Veigar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8f/VeigarSquare.png"
+  },
+  {
+    "name": "Vel'Koz",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/05/Vel%27KozSquare.png"
+  },
+  {
+    "name": "Vex",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ef/VexSquare.png"
+  },
+  {
+    "name": "Viego",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3d/ViegoSquare.png"
+  },
+  {
+    "name": "Viktor",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a3/ViktorSquare.png"
+  },
+  {
+    "name": "Vi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c0/ViSquare.png"
+  },
+  {
+    "name": "Vladimir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/75/VladimirSquare.png"
+  },
+  {
+    "name": "Volibear",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f9/VolibearSquare.png"
+  },
+  {
+    "name": "WarwickSquare Unreleased 1st.png",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d2/WarwickSquare_Unreleased_1st.png"
+  },
+  {
+    "name": "WarwickSquare Unreleased 2nd.png",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/90/WarwickSquare_Unreleased_2nd.png"
+  },
+  {
+    "name": "Warwick",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/42/WarwickSquare.png"
+  },
+  {
+    "name": "Willump",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ef/WillumpSquare.png"
+  },
+  {
+    "name": "Wukong",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0c/WukongSquare_Unreleased.png"
+  },
+  {
+    "name": "Wukong",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6d/WukongSquare.png"
+  },
+  {
+    "name": "Xayah",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b5/XayahSquare.png"
+  },
+  {
+    "name": "Xerath",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7a/XerathSquare.png"
+  },
+  {
+    "name": "Xin Zhao",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ae/Xin_ZhaoSquare_Unreleased.png"
+  },
+  {
+    "name": "Xin Zhao",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/63/Xin_ZhaoSquare.png"
+  },
+  {
+    "name": "Yasuo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a9/YasuoSquare_Unreleased.png"
+  },
+  {
+    "name": "Yasuo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c0/YasuoSquare.png"
+  },
+  {
+    "name": "Yorick",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d8/YorickSquare.png"
+  },
+  {
+    "name": "Yuumi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/70/YuumiSquare.png"
+  },
+  {
+    "name": "Zac",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/81/ZacSquare.png"
+  },
+  {
+    "name": "Zed",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bb/ZedSquare.png"
+  },
+  {
+    "name": "Zeri",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/85/ZeriSquare.png"
+  },
+  {
+    "name": "Ziggs",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/55/ZiggsSquare.png"
+  },
+  {
+    "name": "Zilean",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ac/ZileanSquare.png"
+  },
+  {
+    "name": "Zoe",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b8/ZoeSquare.png"
+  },
+  {
+    "name": "Zyra",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1a/ZyraSquare.png"
+  }
+]

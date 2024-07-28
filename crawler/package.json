@@ -1,0 +1,20 @@
+{
+	"name": "Data Crawler",
+	"version": "1.0.0",
+	"main": "index.ts",
+	"scripts": {
+		"crawl-champions": "ts-node champions.ts",
+		"crawl-skins": "ts-node skins.ts"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"puppeteer": "^22.14.0"
+	},
+	"devDependencies": {
+		"ts-node": "^10.9.2",
+		"typescript": "^5.5.4"
+	}
+}

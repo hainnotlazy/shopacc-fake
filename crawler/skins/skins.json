@@ -1,0 +1,4474 @@
+[
+  {
+    "name": "Abyssal Nautilus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/32/Skin_Loading_Screen_Abyssal_Nautilus.jpg"
+  },
+  {
+    "name": "Academy Ahri",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f1/Skin_Loading_Screen_Academy_Ahri.jpg"
+  },
+  {
+    "name": "Academy Darius",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f9/Skin_Loading_Screen_Academy_Darius.jpg"
+  },
+  {
+    "name": "Academy Ekko",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8a/Skin_Loading_Screen_Academy_Ekko.jpg"
+  },
+  {
+    "name": "Academy Vladimir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c2/Skin_Loading_Screen_Academy_Vladimir.jpg"
+  },
+  {
+    "name": "Ace of Spades Ezreal",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8d/Skin_Loading_Screen_Ace_of_Spades_Ezreal.jpg"
+  },
+  {
+    "name": "Acolyte Lee Sin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/ba/Skin_Loading_Screen_Acolyte_Lee_Sin.jpg"
+  },
+  {
+    "name": "Aether Wing Kayle",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4f/Skin_Loading_Screen_Aether_Wing_Kayle.jpg"
+  },
+  {
+    "name": "Alien Invader Heimerdinger",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/63/Skin_Loading_Screen_Alien_Invader_Heimerdinger.jpg"
+  },
+  {
+    "name": "All-star Akali",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8b/Skin_Loading_Screen_All-star_Akali.jpg"
+  },
+  {
+    "name": "Almost-Prom King Amumu",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e5/Skin_Loading_Screen_Almost-Prom_King_Amumu.jpg"
+  },
+  {
+    "name": "Ambitious Elf Jinx",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0b/Skin_Loading_Screen_Ambitious_Elf_Jinx.jpg"
+  },
+  {
+    "name": "Amethyst Ashe",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bc/Skin_Loading_Screen_Amethyst_Ashe.jpg"
+  },
+  {
+    "name": "Angler Jax",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/53/Skin_Loading_Screen_Angler_Jax.jpg"
+  },
+  {
+    "name": "Annie in Wonderland",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/cc/Skin_Loading_Screen_Annie_in_Wonderland.jpg"
+  },
+  {
+    "name": "Annie-Versary",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ee/Skin_Loading_Screen_Annie-Versary.jpg"
+  },
+  {
+    "name": "Apocalyptic Brand",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a6/Skin_Loading_Screen_Apocalyptic_Brand.jpg"
+  },
+  {
+    "name": "Arcade Ahri",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/50/Skin_Loading_Screen_Arcade_Ahri.jpg"
+  },
+  {
+    "name": "Arcade Caitlyn Prestige Edition",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f4/Skin_Loading_Screen_Arcade_Caitlyn_Prestige_Edition.jpg"
+  },
+  {
+    "name": "Arcade Caitlyn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bd/Skin_Loading_Screen_Arcade_Caitlyn.jpg"
+  },
+  {
+    "name": "Arcade Corki",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/79/Skin_Loading_Screen_Arcade_Corki.jpg"
+  },
+  {
+    "name": "Arcade Ezreal",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bb/Skin_Loading_Screen_Arcade_Ezreal.jpg"
+  },
+  {
+    "name": "Arcade Hecarim",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c3/Skin_Loading_Screen_Arcade_Hecarim.jpg"
+  },
+  {
+    "name": "Arcade Kai'Sa",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8a/Skin_Loading_Screen_Arcade_Kai%27Sa.jpg"
+  },
+  {
+    "name": "Arcade Miss Fortune",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/18/Skin_Loading_Screen_Arcade_Miss_Fortune.jpg"
+  },
+  {
+    "name": "Arcade Riven",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fc/Skin_Loading_Screen_Arcade_Riven.jpg"
+  },
+  {
+    "name": "Arcade Sona",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/57/Skin_Loading_Screen_Arcade_Sona.jpg"
+  },
+  {
+    "name": "Arcanist Kog'Maw",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/60/Skin_Loading_Screen_Arcanist_Kog%27Maw.jpg"
+  },
+  {
+    "name": "Arcanist Shaco",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bf/Skin_Loading_Screen_Arcanist_Shaco.jpg"
+  },
+  {
+    "name": "Arcanist Zoe Prestige Edition",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/dd/Skin_Loading_Screen_Arcanist_Zoe_Prestige_Edition.jpg"
+  },
+  {
+    "name": "Arcanist Zoe",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2d/Skin_Loading_Screen_Arcanist_Zoe.jpg"
+  },
+  {
+    "name": "Archduke Nasus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/25/Skin_Loading_Screen_Archduke_Nasus.jpg"
+  },
+  {
+    "name": "Arclight Brand",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a6/Skin_Loading_Screen_Arclight_Brand.jpg"
+  },
+  {
+    "name": "Arclight Varus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1a/Skin_Loading_Screen_Arclight_Varus.jpg"
+  },
+  {
+    "name": "Arclight Vayne",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b1/Skin_Loading_Screen_Arclight_Vayne.jpg"
+  },
+  {
+    "name": "Arclight Vel'Koz",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/95/Skin_Loading_Screen_Arclight_Vel%27Koz.jpg"
+  },
+  {
+    "name": "Arclight Yorick",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ec/Skin_Loading_Screen_Arclight_Yorick.jpg"
+  },
+  {
+    "name": "Arctic Ops Gragas",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/96/Skin_Loading_Screen_Arctic_Ops_Gragas.jpg"
+  },
+  {
+    "name": "Arctic Ops Kennen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fe/Skin_Loading_Screen_Arctic_Ops_Kennen.jpg"
+  },
+  {
+    "name": "Arctic Ops Varus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/36/Skin_Loading_Screen_Arctic_Ops_Varus.jpg"
+  },
+  {
+    "name": "Arctic Warfare Caitlyn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8c/Skin_Loading_Screen_Arctic_Warfare_Caitlyn.jpg"
+  },
+  {
+    "name": "Aristocrat Vayne",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d2/Skin_Loading_Screen_Aristocrat_Vayne.jpg"
+  },
+  {
+    "name": "Armor of the Fifth Age Taric",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5e/Skin_Loading_Screen_Armor_of_the_Fifth_Age_Taric.jpg"
+  },
+  {
+    "name": "Ashen Lord Aurelion Sol",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8b/Skin_Loading_Screen_Ashen_Lord_Aurelion_Sol.jpg"
+  },
+  {
+    "name": "Assassin Master Yi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bd/Skin_Loading_Screen_Assassin_Master_Yi.jpg"
+  },
+  {
+    "name": "Astronaut Bard",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c9/Skin_Loading_Screen_Astronaut_Bard.jpg"
+  },
+  {
+    "name": "Astronaut Gnar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5b/Skin_Loading_Screen_Astronaut_Gnar.jpg"
+  },
+  {
+    "name": "Astronaut Poppy",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/54/Skin_Loading_Screen_Astronaut_Poppy.jpg"
+  },
+  {
+    "name": "Astronaut Teemo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/74/Skin_Loading_Screen_Astronaut_Teemo.jpg"
+  },
+  {
+    "name": "AstroNautilus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/76/Skin_Loading_Screen_AstroNautilus.jpg"
+  },
+  {
+    "name": "Asylum Shaco",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5b/Skin_Loading_Screen_Asylum_Shaco.jpg"
+  },
+  {
+    "name": "Atlantean Fizz",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2e/Skin_Loading_Screen_Atlantean_Fizz.jpg"
+  },
+  {
+    "name": "Atlantean Syndra",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a6/Skin_Loading_Screen_Atlantean_Syndra.jpg"
+  },
+  {
+    "name": "Augmented Singed",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/99/Skin_Loading_Screen_Augmented_Singed.jpg"
+  },
+  {
+    "name": "Aviator Irelia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c0/Skin_Loading_Screen_Aviator_Irelia.jpg"
+  },
+  {
+    "name": "Bad Santa Veigar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/07/Skin_Loading_Screen_Bad_Santa_Veigar.jpg"
+  },
+  {
+    "name": "Badger Teemo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c4/Skin_Loading_Screen_Badger_Teemo.jpg"
+  },
+  {
+    "name": "Badlands Baron Rumble",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/24/Skin_Loading_Screen_Badlands_Baron_Rumble.jpg"
+  },
+  {
+    "name": "Baker Pantheon",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6c/Skin_Loading_Screen_Baker_Pantheon.jpg"
+  },
+  {
+    "name": "Bandit Sivir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/ba/Skin_Loading_Screen_Bandit_Sivir.jpg"
+  },
+  {
+    "name": "Bandito Fiddlesticks",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2a/Skin_Loading_Screen_Bandito_Fiddlesticks.jpg"
+  },
+  {
+    "name": "Barbarian Sion",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e7/Skin_Loading_Screen_Barbarian_Sion.jpg"
+  },
+  {
+    "name": "Barbecue Leona",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a5/Skin_Loading_Screen_Barbecue_Leona.jpg"
+  },
+  {
+    "name": "Bard Bard",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ac/Skin_Loading_Screen_Bard_Bard.jpg"
+  },
+  {
+    "name": "Baron Von Veigar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f8/Skin_Loading_Screen_Baron_Von_Veigar.jpg"
+  },
+  {
+    "name": "Battle Academia Ezreal",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6a/Skin_Loading_Screen_Battle_Academia_Ezreal.jpg"
+  },
+  {
+    "name": "Battle Academia Jayce",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/11/Skin_Loading_Screen_Battle_Academia_Jayce.jpg"
+  },
+  {
+    "name": "Battle Academia Katarina",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/51/Skin_Loading_Screen_Battle_Academia_Katarina.jpg"
+  },
+  {
+    "name": "Battle Academia Lux Prestige Edition",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/06/Skin_Loading_Screen_Battle_Academia_Lux_Prestige_Edition.jpg"
+  },
+  {
+    "name": "Battle Academia Lux",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3f/Skin_Loading_Screen_Battle_Academia_Lux.jpg"
+  },
+  {
+    "name": "Battle Boss Blitzcrank",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a1/Skin_Loading_Screen_Battle_Boss_Blitzcrank.jpg"
+  },
+  {
+    "name": "Battle Boss Brand",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/07/Skin_Loading_Screen_Battle_Boss_Brand.jpg"
+  },
+  {
+    "name": "Battle Boss Malzahar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8e/Skin_Loading_Screen_Battle_Boss_Malzahar.jpg"
+  },
+  {
+    "name": "Battle Boss Qiyana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9c/Skin_Loading_Screen_Battle_Boss_Qiyana.jpg"
+  },
+  {
+    "name": "Battle Boss Yasuo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/dd/Skin_Loading_Screen_Battle_Boss_Yasuo.jpg"
+  },
+  {
+    "name": "Battle Boss Ziggs",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a5/Skin_Loading_Screen_Battle_Boss_Ziggs.jpg"
+  },
+  {
+    "name": "Battle Bunny Riven",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c1/Skin_Loading_Screen_Battle_Bunny_Riven.jpg"
+  },
+  {
+    "name": "Battle Principal Yuumi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/83/Skin_Loading_Screen_Battle_Principal_Yuumi.jpg"
+  },
+  {
+    "name": "Battle Professor Graves",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9a/Skin_Loading_Screen_Battle_Professor_Graves.jpg"
+  },
+  {
+    "name": "Battle Queen Diana Prestige Edition",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/12/Skin_Loading_Screen_Battle_Queen_Diana_Prestige_Edition.jpg"
+  },
+  {
+    "name": "Battle Queen Diana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c3/Skin_Loading_Screen_Battle_Queen_Diana.jpg"
+  },
+  {
+    "name": "Battle Queen Janna",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/05/Skin_Loading_Screen_Battle_Queen_Janna.jpg"
+  },
+  {
+    "name": "Battle Queen Katarina",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3a/Skin_Loading_Screen_Battle_Queen_Katarina.jpg"
+  },
+  {
+    "name": "Battle Queen Qiyana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/49/Skin_Loading_Screen_Battle_Queen_Qiyana.jpg"
+  },
+  {
+    "name": "Battle Queen Rell",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/83/Skin_Loading_Screen_Battle_Queen_Rell.jpg"
+  },
+  {
+    "name": "Battle Regalia Poppy",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/eb/Skin_Loading_Screen_Battle_Regalia_Poppy.jpg"
+  },
+  {
+    "name": "Battleborn Kayle",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2c/Skin_Loading_Screen_Battleborn_Kayle.jpg"
+  },
+  {
+    "name": "Battlecast Alpha Skarner",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fa/Skin_Loading_Screen_Battlecast_Alpha_Skarner.jpg"
+  },
+  {
+    "name": "Battlecast Kog'Maw",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/23/Skin_Loading_Screen_Battlecast_Kog%27Maw.jpg"
+  },
+  {
+    "name": "Battlecast Nasus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4e/Skin_Loading_Screen_Battlecast_Nasus.jpg"
+  },
+  {
+    "name": "Battlecast Prime Cho'Gath",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/86/Skin_Loading_Screen_Battlecast_Prime_Cho%27Gath.jpg"
+  },
+  {
+    "name": "Battlecast Urgot",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e9/Skin_Loading_Screen_Battlecast_Urgot.jpg"
+  },
+  {
+    "name": "Battlecast Vel'Koz",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b6/Skin_Loading_Screen_Battlecast_Vel%27Koz.jpg"
+  },
+  {
+    "name": "Battlecast Xerath",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f5/Skin_Loading_Screen_Battlecast_Xerath.jpg"
+  },
+  {
+    "name": "Battlecast Zac",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b3/Skin_Loading_Screen_Battlecast_Zac.jpg"
+  },
+  {
+    "name": "Bear Cavalry Sejuani",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3d/Skin_Loading_Screen_Bear_Cavalry_Sejuani.jpg"
+  },
+  {
+    "name": "Beast Hunter Draven",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/38/Skin_Loading_Screen_Beast_Hunter_Draven.jpg"
+  },
+  {
+    "name": "Beast Hunter Sejuani",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a9/Skin_Loading_Screen_Beast_Hunter_Sejuani.jpg"
+  },
+  {
+    "name": "Beast Hunter Tryndamere",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7a/Skin_Loading_Screen_Beast_Hunter_Tryndamere.jpg"
+  },
+  {
+    "name": "Beekeeper Singed",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0e/Skin_Loading_Screen_Beekeeper_Singed.jpg"
+  },
+  {
+    "name": "Beemo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3e/Skin_Loading_Screen_Beemo.jpg"
+  },
+  {
+    "name": "Bewitching Elise",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e2/Skin_Loading_Screen_Bewitching_Elise.jpg"
+  },
+  {
+    "name": "Bewitching Janna",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/15/Skin_Loading_Screen_Bewitching_Janna.jpg"
+  },
+  {
+    "name": "Bewitching Miss Fortune Prestige Edition",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1f/Skin_Loading_Screen_Bewitching_Miss_Fortune_Prestige_Edition.jpg"
+  },
+  {
+    "name": "Bewitching Miss Fortune",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/54/Skin_Loading_Screen_Bewitching_Miss_Fortune.jpg"
+  },
+  {
+    "name": "Bewitching Morgana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/73/Skin_Loading_Screen_Bewitching_Morgana.jpg"
+  },
+  {
+    "name": "Bewitching Nidalee",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/82/Skin_Loading_Screen_Bewitching_Nidalee.jpg"
+  },
+  {
+    "name": "Bewitching Tristana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/00/Skin_Loading_Screen_Bewitching_Tristana.jpg"
+  },
+  {
+    "name": "Big Bad Warwick",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0e/Skin_Loading_Screen_Big_Bad_Warwick.jpg"
+  },
+  {
+    "name": "Bilgerat Rumble",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/04/Skin_Loading_Screen_Bilgerat_Rumble.jpg"
+  },
+  {
+    "name": "Bilgewater Katarina",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5d/Skin_Loading_Screen_Bilgewater_Katarina.jpg"
+  },
+  {
+    "name": "Bilgewater Swain",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/da/Skin_Loading_Screen_Bilgewater_Swain.jpg"
+  },
+  {
+    "name": "Bioforge Darius",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/11/Skin_Loading_Screen_Bioforge_Darius.jpg"
+  },
+  {
+    "name": "Bird of Prey Anivia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d6/Skin_Loading_Screen_Bird_of_Prey_Anivia.jpg"
+  },
+  {
+    "name": "Birdio",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/03/Skin_Loading_Screen_Birdio.jpg"
+  },
+  {
+    "name": "Bittersweet Lulu",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/88/Skin_Loading_Screen_Bittersweet_Lulu.jpg"
+  },
+  {
+    "name": "Black Alistar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d5/Skin_Loading_Screen_Black_Alistar.jpg"
+  },
+  {
+    "name": "Black Belt Udyr",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/40/Skin_Loading_Screen_Black_Belt_Udyr.jpg"
+  },
+  {
+    "name": "Black Scourge Singed",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7b/Skin_Loading_Screen_Black_Scourge_Singed.jpg"
+  },
+  {
+    "name": "Blackfrost Alistar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/05/Skin_Loading_Screen_Blackfrost_Alistar.jpg"
+  },
+  {
+    "name": "Blackfrost Anivia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1c/Skin_Loading_Screen_Blackfrost_Anivia.jpg"
+  },
+  {
+    "name": "Blackfrost Rek'Sai",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2e/Skin_Loading_Screen_Blackfrost_Rek%27Sai.jpg"
+  },
+  {
+    "name": "Blackfrost Renekton",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8d/Skin_Loading_Screen_Blackfrost_Renekton.jpg"
+  },
+  {
+    "name": "Blacksmith Poppy",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/23/Skin_Loading_Screen_Blacksmith_Poppy.jpg"
+  },
+  {
+    "name": "Blackthorn Morgana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1b/Skin_Loading_Screen_Blackthorn_Morgana.jpg"
+  },
+  {
+    "name": "Blade Mistress Morgana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b2/Skin_Loading_Screen_Blade_Mistress_Morgana.jpg"
+  },
+  {
+    "name": "Blade Queen Lissandra",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c6/Skin_Loading_Screen_Blade_Queen_Lissandra.jpg"
+  },
+  {
+    "name": "Bladecraft Orianna",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/61/Skin_Loading_Screen_Bladecraft_Orianna.jpg"
+  },
+  {
+    "name": "Blast Zone Heimerdinger",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e8/Skin_Loading_Screen_Blast_Zone_Heimerdinger.jpg"
+  },
+  {
+    "name": "Blight Crystal Varus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c7/Skin_Loading_Screen_Blight_Crystal_Varus.jpg"
+  },
+  {
+    "name": "Blood Knight Hecarim",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/94/Skin_Loading_Screen_Blood_Knight_Hecarim.jpg"
+  },
+  {
+    "name": "Blood Lord Vladimir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d3/Skin_Loading_Screen_Blood_Lord_Vladimir.jpg"
+  },
+  {
+    "name": "Blood Moon Aatrox Prestige Edition",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a5/Skin_Loading_Screen_Blood_Moon_Aatrox_Prestige_Edition.jpg"
+  },
+  {
+    "name": "Blood Moon Aatrox",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/ca/Skin_Loading_Screen_Blood_Moon_Aatrox.jpg"
+  },
+  {
+    "name": "Blood Moon Akali",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f9/Skin_Loading_Screen_Blood_Moon_Akali.jpg"
+  },
+  {
+    "name": "Blood Moon Diana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/81/Skin_Loading_Screen_Blood_Moon_Diana.jpg"
+  },
+  {
+    "name": "Blood Moon Elise",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bd/Skin_Loading_Screen_Blood_Moon_Elise.jpg"
+  },
+  {
+    "name": "Blood Moon Evelynn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/68/Skin_Loading_Screen_Blood_Moon_Evelynn.jpg"
+  },
+  {
+    "name": "Blood Moon Jhin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8a/Skin_Loading_Screen_Blood_Moon_Jhin.jpg"
+  },
+  {
+    "name": "Blood Moon Kalista",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/14/Skin_Loading_Screen_Blood_Moon_Kalista.jpg"
+  },
+  {
+    "name": "Blood Moon Katarina",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6b/Skin_Loading_Screen_Blood_Moon_Katarina.jpg"
+  },
+  {
+    "name": "Blood Moon Kennen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/98/Skin_Loading_Screen_Blood_Moon_Kennen.jpg"
+  },
+  {
+    "name": "Blood Moon Master Yi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/19/Skin_Loading_Screen_Blood_Moon_Master_Yi.jpg"
+  },
+  {
+    "name": "Blood Moon Pyke",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5e/Skin_Loading_Screen_Blood_Moon_Pyke.jpg"
+  },
+  {
+    "name": "Blood Moon Shen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/93/Skin_Loading_Screen_Blood_Moon_Shen.jpg"
+  },
+  {
+    "name": "Blood Moon Sivir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9e/Skin_Loading_Screen_Blood_Moon_Sivir.jpg"
+  },
+  {
+    "name": "Blood Moon Talon",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2f/Skin_Loading_Screen_Blood_Moon_Talon.jpg"
+  },
+  {
+    "name": "Blood Moon Thresh",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a9/Skin_Loading_Screen_Blood_Moon_Thresh.jpg"
+  },
+  {
+    "name": "Blood Moon Tryndamere",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c9/Skin_Loading_Screen_Blood_Moon_Tryndamere.jpg"
+  },
+  {
+    "name": "Blood Moon Twisted Fate",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/77/Skin_Loading_Screen_Blood_Moon_Twisted_Fate.jpg"
+  },
+  {
+    "name": "Blood Moon Yasuo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/50/Skin_Loading_Screen_Blood_Moon_Yasuo.jpg"
+  },
+  {
+    "name": "Blood Moon Zilean",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e1/Skin_Loading_Screen_Blood_Moon_Zilean.jpg"
+  },
+  {
+    "name": "Bloodfury Renekton",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5f/Skin_Loading_Screen_Bloodfury_Renekton.jpg"
+  },
+  {
+    "name": "Bloodstone Lissandra",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/89/Skin_Loading_Screen_Bloodstone_Lissandra.jpg"
+  },
+  {
+    "name": "Bloodstone Taric",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ac/Skin_Loading_Screen_Bloodstone_Taric.jpg"
+  },
+  {
+    "name": "Boneclaw Shyvana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3d/Skin_Loading_Screen_Boneclaw_Shyvana.jpg"
+  },
+  {
+    "name": "Boom Boom Blitzcrank",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7f/Skin_Loading_Screen_Boom_Boom_Blitzcrank.jpg"
+  },
+  {
+    "name": "Braum Lionheart",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/63/Skin_Loading_Screen_Braum_Lionheart.jpg"
+  },
+  {
+    "name": "Brolaf",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b4/Skin_Loading_Screen_Brolaf.jpg"
+  },
+  {
+    "name": "Buccaneer Tristana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c6/Skin_Loading_Screen_Buccaneer_Tristana.jpg"
+  },
+  {
+    "name": "Bullet Angel Kai'Sa",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/67/Skin_Loading_Screen_Bullet_Angel_Kai%27Sa.jpg"
+  },
+  {
+    "name": "Butcher Olaf",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/31/Skin_Loading_Screen_Butcher_Olaf.jpg"
+  },
+  {
+    "name": "Butcher Urgot",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b1/Skin_Loading_Screen_Butcher_Urgot.jpg"
+  },
+  {
+    "name": "Candy Cane Miss Fortune",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7c/Skin_Loading_Screen_Candy_Cane_Miss_Fortune.jpg"
+  },
+  {
+    "name": "Candy King Ivern",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3b/Skin_Loading_Screen_Candy_King_Ivern.jpg"
+  },
+  {
+    "name": "Captain Fortune",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/03/Skin_Loading_Screen_Captain_Fortune.jpg"
+  },
+  {
+    "name": "Captain Gangplank",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/89/Skin_Loading_Screen_Captain_Gangplank.jpg"
+  },
+  {
+    "name": "Captain Volibear",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fb/Skin_Loading_Screen_Captain_Volibear.jpg"
+  },
+  {
+    "name": "Caterpillar Kog'Maw",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f8/Skin_Loading_Screen_Caterpillar_Kog%27Maw.jpg"
+  },
+  {
+    "name": "Celestine Soraka",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8f/Skin_Loading_Screen_Celestine_Soraka.jpg"
+  },
+  {
+    "name": "Challenger Ahri",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ae/Skin_Loading_Screen_Challenger_Ahri.jpg"
+  },
+  {
+    "name": "Challenger Nidalee",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/00/Skin_Loading_Screen_Challenger_Nidalee.jpg"
+  },
+  {
+    "name": "Championship Ashe",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d5/Skin_Loading_Screen_Championship_Ashe.jpg"
+  },
+  {
+    "name": "Championship Kalista",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/aa/Skin_Loading_Screen_Championship_Kalista.jpg"
+  },
+  {
+    "name": "Championship Kha'Zix",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d8/Skin_Loading_Screen_Championship_Kha%27Zix.jpg"
+  },
+  {
+    "name": "Championship LeBlanc",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/ca/Skin_Loading_Screen_Championship_LeBlanc.jpg"
+  },
+  {
+    "name": "Championship Riven 2016",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/89/Skin_Loading_Screen_Championship_Riven_2016.jpg"
+  },
+  {
+    "name": "Championship Riven",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9b/Skin_Loading_Screen_Championship_Riven.jpg"
+  },
+  {
+    "name": "Championship Ryze",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/92/Skin_Loading_Screen_Championship_Ryze.jpg"
+  },
+  {
+    "name": "Championship Shyvana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d8/Skin_Loading_Screen_Championship_Shyvana.jpg"
+  },
+  {
+    "name": "Championship Thresh",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d1/Skin_Loading_Screen_Championship_Thresh.jpg"
+  },
+  {
+    "name": "Championship Zed",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0c/Skin_Loading_Screen_Championship_Zed.jpg"
+  },
+  {
+    "name": "Charred Maokai",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a3/Skin_Loading_Screen_Charred_Maokai.jpg"
+  },
+  {
+    "name": "Chemtech Tryndamere",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a3/Skin_Loading_Screen_Chemtech_Tryndamere.jpg"
+  },
+  {
+    "name": "Chosen Master Yi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3e/Skin_Loading_Screen_Chosen_Master_Yi.jpg"
+  },
+  {
+    "name": "Chrome Rammus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/76/Skin_Loading_Screen_Chrome_Rammus.jpg"
+  },
+  {
+    "name": "Classic Aatrox",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/ce/Skin_Loading_Screen_Classic_Aatrox.jpg"
+  },
+  {
+    "name": "Classic Ahri",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/18/Skin_Loading_Screen_Classic_Ahri.jpg"
+  },
+  {
+    "name": "Classic Akali",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8a/Skin_Loading_Screen_Classic_Akali.jpg"
+  },
+  {
+    "name": "Classic Akshan",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3d/Skin_Loading_Screen_Classic_Akshan.jpg"
+  },
+  {
+    "name": "Classic Alistar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f3/Skin_Loading_Screen_Classic_Alistar.jpg"
+  },
+  {
+    "name": "Classic Amumu",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3c/Skin_Loading_Screen_Classic_Amumu.jpg"
+  },
+  {
+    "name": "Classic Anivia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fc/Skin_Loading_Screen_Classic_Anivia.jpg"
+  },
+  {
+    "name": "Classic Annie",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/51/Skin_Loading_Screen_Classic_Annie.jpg"
+  },
+  {
+    "name": "Classic Aphelios",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/43/Skin_Loading_Screen_Classic_Aphelios.jpg"
+  },
+  {
+    "name": "Classic Ashe",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/03/Skin_Loading_Screen_Classic_Ashe.jpg"
+  },
+  {
+    "name": "Classic Aurelion Sol",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ec/Skin_Loading_Screen_Classic_Aurelion_Sol.jpg"
+  },
+  {
+    "name": "Classic Azir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3c/Skin_Loading_Screen_Classic_Azir.jpg"
+  },
+  {
+    "name": "Classic Bard",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/23/Skin_Loading_Screen_Classic_Bard.jpg"
+  },
+  {
+    "name": "Classic Blitzcrank",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9c/Skin_Loading_Screen_Classic_Blitzcrank.jpg"
+  },
+  {
+    "name": "Classic Brand",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/88/Skin_Loading_Screen_Classic_Brand.jpg"
+  },
+  {
+    "name": "Classic Braum",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/01/Skin_Loading_Screen_Classic_Braum.jpg"
+  },
+  {
+    "name": "Classic Caitlyn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1d/Skin_Loading_Screen_Classic_Caitlyn.jpg"
+  },
+  {
+    "name": "Classic Camille",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9f/Skin_Loading_Screen_Classic_Camille.jpg"
+  },
+  {
+    "name": "Classic Cassiopeia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/88/Skin_Loading_Screen_Classic_Cassiopeia.jpg"
+  },
+  {
+    "name": "Classic Cho'Gath",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/19/Skin_Loading_Screen_Classic_Cho%27Gath.jpg"
+  },
+  {
+    "name": "Classic Corki",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/32/Skin_Loading_Screen_Classic_Corki.jpg"
+  },
+  {
+    "name": "Classic Darius",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d3/Skin_Loading_Screen_Classic_Darius.jpg"
+  },
+  {
+    "name": "Classic Diana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/80/Skin_Loading_Screen_Classic_Diana.jpg"
+  },
+  {
+    "name": "Classic Dr. Mundo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/25/Skin_Loading_Screen_Classic_Dr._Mundo.jpg"
+  },
+  {
+    "name": "Classic Draven",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/26/Skin_Loading_Screen_Classic_Draven.jpg"
+  },
+  {
+    "name": "Classic Ekko",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f6/Skin_Loading_Screen_Classic_Ekko.jpg"
+  },
+  {
+    "name": "Classic Elise",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d5/Skin_Loading_Screen_Classic_Elise.jpg"
+  },
+  {
+    "name": "Classic Evelynn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/15/Skin_Loading_Screen_Classic_Evelynn.jpg"
+  },
+  {
+    "name": "Classic Ezreal",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/37/Skin_Loading_Screen_Classic_Ezreal.jpg"
+  },
+  {
+    "name": "Classic Fiddlesticks",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/91/Skin_Loading_Screen_Classic_Fiddlesticks.jpg"
+  },
+  {
+    "name": "Classic Fiora",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3b/Skin_Loading_Screen_Classic_Fiora.jpg"
+  },
+  {
+    "name": "Classic Fizz",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/47/Skin_Loading_Screen_Classic_Fizz.jpg"
+  },
+  {
+    "name": "Classic Galio",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/42/Skin_Loading_Screen_Classic_Galio.jpg"
+  },
+  {
+    "name": "Classic Gangplank",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c6/Skin_Loading_Screen_Classic_Gangplank.jpg"
+  },
+  {
+    "name": "Classic Garen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f9/Skin_Loading_Screen_Classic_Garen.jpg"
+  },
+  {
+    "name": "Classic Gnar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2c/Skin_Loading_Screen_Classic_Gnar.jpg"
+  },
+  {
+    "name": "Classic Gragas",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/77/Skin_Loading_Screen_Classic_Gragas.jpg"
+  },
+  {
+    "name": "Classic Graves",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/88/Skin_Loading_Screen_Classic_Graves.jpg"
+  },
+  {
+    "name": "Classic Gwen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/28/Skin_Loading_Screen_Classic_Gwen.jpg"
+  },
+  {
+    "name": "Classic Hecarim",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b8/Skin_Loading_Screen_Classic_Hecarim.jpg"
+  },
+  {
+    "name": "Classic Heimerdinger",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a9/Skin_Loading_Screen_Classic_Heimerdinger.jpg"
+  },
+  {
+    "name": "Classic Illaoi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d8/Skin_Loading_Screen_Classic_Illaoi.jpg"
+  },
+  {
+    "name": "Classic Irelia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2f/Skin_Loading_Screen_Classic_Irelia.jpg"
+  },
+  {
+    "name": "Classic Ivern",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/02/Skin_Loading_Screen_Classic_Ivern.jpg"
+  },
+  {
+    "name": "Classic Janna",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c8/Skin_Loading_Screen_Classic_Janna.jpg"
+  },
+  {
+    "name": "Classic Jarvan IV",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8a/Skin_Loading_Screen_Classic_Jarvan_IV.jpg"
+  },
+  {
+    "name": "Classic Jax",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2e/Skin_Loading_Screen_Classic_Jax.jpg"
+  },
+  {
+    "name": "Classic Jayce",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4e/Skin_Loading_Screen_Classic_Jayce.jpg"
+  },
+  {
+    "name": "Classic Jhin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e4/Skin_Loading_Screen_Classic_Jhin.jpg"
+  },
+  {
+    "name": "Classic Jinx",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/18/Skin_Loading_Screen_Classic_Jinx.jpg"
+  },
+  {
+    "name": "Classic Kai'Sa",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/99/Skin_Loading_Screen_Classic_Kai%27Sa.jpg"
+  },
+  {
+    "name": "Classic Kalista",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fb/Skin_Loading_Screen_Classic_Kalista.jpg"
+  },
+  {
+    "name": "Classic Karma",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/eb/Skin_Loading_Screen_Classic_Karma.jpg"
+  },
+  {
+    "name": "Classic Karthus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/54/Skin_Loading_Screen_Classic_Karthus.jpg"
+  },
+  {
+    "name": "Classic Kassadin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fb/Skin_Loading_Screen_Classic_Kassadin.jpg"
+  },
+  {
+    "name": "Classic Katarina",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f2/Skin_Loading_Screen_Classic_Katarina.jpg"
+  },
+  {
+    "name": "Classic Kayle",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d1/Skin_Loading_Screen_Classic_Kayle.jpg"
+  },
+  {
+    "name": "Classic Kayn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5e/Skin_Loading_Screen_Classic_Kayn.jpg"
+  },
+  {
+    "name": "Classic Kennen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/ca/Skin_Loading_Screen_Classic_Kennen.jpg"
+  },
+  {
+    "name": "Classic Kha'Zix",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/20/Skin_Loading_Screen_Classic_Kha%27Zix.jpg"
+  },
+  {
+    "name": "Classic Kindred",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ac/Skin_Loading_Screen_Classic_Kindred.jpg"
+  },
+  {
+    "name": "Classic Kled",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/82/Skin_Loading_Screen_Classic_Kled.jpg"
+  },
+  {
+    "name": "Classic Kog'Maw",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/56/Skin_Loading_Screen_Classic_Kog%27Maw.jpg"
+  },
+  {
+    "name": "Classic LeBlanc",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a8/Skin_Loading_Screen_Classic_LeBlanc.jpg"
+  },
+  {
+    "name": "Classic Lee Sin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/95/Skin_Loading_Screen_Classic_Lee_Sin.jpg"
+  },
+  {
+    "name": "Classic Leona",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/79/Skin_Loading_Screen_Classic_Leona.jpg"
+  },
+  {
+    "name": "Classic Lillia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/21/Skin_Loading_Screen_Classic_Lillia.jpg"
+  },
+  {
+    "name": "Classic Lissandra",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a8/Skin_Loading_Screen_Classic_Lissandra.jpg"
+  },
+  {
+    "name": "Classic Lucian",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1e/Skin_Loading_Screen_Classic_Lucian.jpg"
+  },
+  {
+    "name": "Classic Lulu",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/cd/Skin_Loading_Screen_Classic_Lulu.jpg"
+  },
+  {
+    "name": "Classic Lux",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7e/Skin_Loading_Screen_Classic_Lux.jpg"
+  },
+  {
+    "name": "Classic Malphite",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/40/Skin_Loading_Screen_Classic_Malphite.jpg"
+  },
+  {
+    "name": "Classic Malzahar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/81/Skin_Loading_Screen_Classic_Malzahar.jpg"
+  },
+  {
+    "name": "Classic Maokai",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/38/Skin_Loading_Screen_Classic_Maokai.jpg"
+  },
+  {
+    "name": "Classic Master Yi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/96/Skin_Loading_Screen_Classic_Master_Yi.jpg"
+  },
+  {
+    "name": "Classic Miss Fortune",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b2/Skin_Loading_Screen_Classic_Miss_Fortune.jpg"
+  },
+  {
+    "name": "Classic Mordekaiser",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a7/Skin_Loading_Screen_Classic_Mordekaiser.jpg"
+  },
+  {
+    "name": "Classic Morgana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f0/Skin_Loading_Screen_Classic_Morgana.jpg"
+  },
+  {
+    "name": "Classic Nami",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/58/Skin_Loading_Screen_Classic_Nami.jpg"
+  },
+  {
+    "name": "Classic Nasus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/68/Skin_Loading_Screen_Classic_Nasus.jpg"
+  },
+  {
+    "name": "Classic Nautilus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8f/Skin_Loading_Screen_Classic_Nautilus.jpg"
+  },
+  {
+    "name": "Classic Neeko",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/82/Skin_Loading_Screen_Classic_Neeko.jpg"
+  },
+  {
+    "name": "Classic Nidalee",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e7/Skin_Loading_Screen_Classic_Nidalee.jpg"
+  },
+  {
+    "name": "Classic Nocturne",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7b/Skin_Loading_Screen_Classic_Nocturne.jpg"
+  },
+  {
+    "name": "Classic Nunu & Willump",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/cd/Skin_Loading_Screen_Classic_Nunu_%26_Willump.jpg"
+  },
+  {
+    "name": "Classic Olaf",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2f/Skin_Loading_Screen_Classic_Olaf.jpg"
+  },
+  {
+    "name": "Classic Orianna",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9a/Skin_Loading_Screen_Classic_Orianna.jpg"
+  },
+  {
+    "name": "Classic Ornn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a2/Skin_Loading_Screen_Classic_Ornn.jpg"
+  },
+  {
+    "name": "Classic Pantheon",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1d/Skin_Loading_Screen_Classic_Pantheon.jpg"
+  },
+  {
+    "name": "Classic Poppy",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ed/Skin_Loading_Screen_Classic_Poppy.jpg"
+  },
+  {
+    "name": "Classic Pyke",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/21/Skin_Loading_Screen_Classic_Pyke.jpg"
+  },
+  {
+    "name": "Classic Qiyana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e6/Skin_Loading_Screen_Classic_Qiyana.jpg"
+  },
+  {
+    "name": "Classic Quinn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/10/Skin_Loading_Screen_Classic_Quinn.jpg"
+  },
+  {
+    "name": "Classic Rakan",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/da/Skin_Loading_Screen_Classic_Rakan.jpg"
+  },
+  {
+    "name": "Classic Rammus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/97/Skin_Loading_Screen_Classic_Rammus.jpg"
+  },
+  {
+    "name": "Classic Rek'Sai",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d0/Skin_Loading_Screen_Classic_Rek%27Sai.jpg"
+  },
+  {
+    "name": "Classic Rell",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a9/Skin_Loading_Screen_Classic_Rell.jpg"
+  },
+  {
+    "name": "Classic Renekton",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f5/Skin_Loading_Screen_Classic_Renekton.jpg"
+  },
+  {
+    "name": "Classic Rengar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/af/Skin_Loading_Screen_Classic_Rengar.jpg"
+  },
+  {
+    "name": "Classic Riven",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/93/Skin_Loading_Screen_Classic_Riven.jpg"
+  },
+  {
+    "name": "Classic Rumble",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d5/Skin_Loading_Screen_Classic_Rumble.jpg"
+  },
+  {
+    "name": "Classic Ryze",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a0/Skin_Loading_Screen_Classic_Ryze.jpg"
+  },
+  {
+    "name": "Classic Samira",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e3/Skin_Loading_Screen_Classic_Samira.jpg"
+  },
+  {
+    "name": "Classic Sejuani",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/72/Skin_Loading_Screen_Classic_Sejuani.jpg"
+  },
+  {
+    "name": "Classic Senna",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8a/Skin_Loading_Screen_Classic_Senna.jpg"
+  },
+  {
+    "name": "Classic Seraphine",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6c/Skin_Loading_Screen_Classic_Seraphine.jpg"
+  },
+  {
+    "name": "Classic Sett",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/01/Skin_Loading_Screen_Classic_Sett.jpg"
+  },
+  {
+    "name": "Classic Shaco",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f6/Skin_Loading_Screen_Classic_Shaco.jpg"
+  },
+  {
+    "name": "Classic Shen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9d/Skin_Loading_Screen_Classic_Shen.jpg"
+  },
+  {
+    "name": "Classic Shyvana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/af/Skin_Loading_Screen_Classic_Shyvana.jpg"
+  },
+  {
+    "name": "Classic Singed",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/83/Skin_Loading_Screen_Classic_Singed.jpg"
+  },
+  {
+    "name": "Classic Sion",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a8/Skin_Loading_Screen_Classic_Sion.jpg"
+  },
+  {
+    "name": "Classic Sivir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/15/Skin_Loading_Screen_Classic_Sivir.jpg"
+  },
+  {
+    "name": "Classic Skarner",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/29/Skin_Loading_Screen_Classic_Skarner.jpg"
+  },
+  {
+    "name": "Classic Sona",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8c/Skin_Loading_Screen_Classic_Sona.jpg"
+  },
+  {
+    "name": "Classic Soraka",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/23/Skin_Loading_Screen_Classic_Soraka.jpg"
+  },
+  {
+    "name": "Classic Swain",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/08/Skin_Loading_Screen_Classic_Swain.jpg"
+  },
+  {
+    "name": "Classic Sylas",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/41/Skin_Loading_Screen_Classic_Sylas.jpg"
+  },
+  {
+    "name": "Classic Syndra",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/01/Skin_Loading_Screen_Classic_Syndra.jpg"
+  },
+  {
+    "name": "Classic Tahm Kench 2",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/23/Skin_Loading_Screen_Classic_Tahm_Kench_2.jpg"
+  },
+  {
+    "name": "Classic Taliyah",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/61/Skin_Loading_Screen_Classic_Taliyah.jpg"
+  },
+  {
+    "name": "Classic Talon",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c6/Skin_Loading_Screen_Classic_Talon.jpg"
+  },
+  {
+    "name": "Classic Taric",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c6/Skin_Loading_Screen_Classic_Taric.jpg"
+  },
+  {
+    "name": "Classic Teemo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8f/Skin_Loading_Screen_Classic_Teemo.jpg"
+  },
+  {
+    "name": "Classic Thresh",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5e/Skin_Loading_Screen_Classic_Thresh.jpg"
+  },
+  {
+    "name": "Classic Tristana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4d/Skin_Loading_Screen_Classic_Tristana.jpg"
+  },
+  {
+    "name": "Classic Trundle",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e1/Skin_Loading_Screen_Classic_Trundle.jpg"
+  },
+  {
+    "name": "Classic Tryndamere",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f2/Skin_Loading_Screen_Classic_Tryndamere.jpg"
+  },
+  {
+    "name": "Classic Twisted Fate",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1c/Skin_Loading_Screen_Classic_Twisted_Fate.jpg"
+  },
+  {
+    "name": "Classic Twitch",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2d/Skin_Loading_Screen_Classic_Twitch.jpg"
+  },
+  {
+    "name": "Classic Udyr",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d2/Skin_Loading_Screen_Classic_Udyr.jpg"
+  },
+  {
+    "name": "Classic Urgot",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f9/Skin_Loading_Screen_Classic_Urgot.jpg"
+  },
+  {
+    "name": "Classic Varus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f4/Skin_Loading_Screen_Classic_Varus.jpg"
+  },
+  {
+    "name": "Classic Vayne",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8c/Skin_Loading_Screen_Classic_Vayne.jpg"
+  },
+  {
+    "name": "Classic Veigar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1b/Skin_Loading_Screen_Classic_Veigar.jpg"
+  },
+  {
+    "name": "Classic Vel'Koz",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/33/Skin_Loading_Screen_Classic_Vel%27Koz.jpg"
+  },
+  {
+    "name": "Classic Vi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bb/Skin_Loading_Screen_Classic_Vi.jpg"
+  },
+  {
+    "name": "Classic Viego",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/60/Skin_Loading_Screen_Classic_Viego.jpg"
+  },
+  {
+    "name": "Classic Viktor",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/48/Skin_Loading_Screen_Classic_Viktor.jpg"
+  },
+  {
+    "name": "Classic Vladimir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d6/Skin_Loading_Screen_Classic_Vladimir.jpg"
+  },
+  {
+    "name": "Classic Volibear",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a9/Skin_Loading_Screen_Classic_Volibear.jpg"
+  },
+  {
+    "name": "Classic Warwick",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/15/Skin_Loading_Screen_Classic_Warwick.jpg"
+  },
+  {
+    "name": "Classic Wukong",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/06/Skin_Loading_Screen_Classic_Wukong.jpg"
+  },
+  {
+    "name": "Classic Xayah",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d3/Skin_Loading_Screen_Classic_Xayah.jpg"
+  },
+  {
+    "name": "Classic Xerath",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/53/Skin_Loading_Screen_Classic_Xerath.jpg"
+  },
+  {
+    "name": "Classic Xin Zhao",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7b/Skin_Loading_Screen_Classic_Xin_Zhao.jpg"
+  },
+  {
+    "name": "Classic Yasuo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b2/Skin_Loading_Screen_Classic_Yasuo.jpg"
+  },
+  {
+    "name": "Classic Yone",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ee/Skin_Loading_Screen_Classic_Yone.jpg"
+  },
+  {
+    "name": "Classic Yorick",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0e/Skin_Loading_Screen_Classic_Yorick.jpg"
+  },
+  {
+    "name": "Classic Yuumi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2d/Skin_Loading_Screen_Classic_Yuumi.jpg"
+  },
+  {
+    "name": "Classic Zac",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/43/Skin_Loading_Screen_Classic_Zac.jpg"
+  },
+  {
+    "name": "Classic Zed",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bf/Skin_Loading_Screen_Classic_Zed.jpg"
+  },
+  {
+    "name": "Classic Ziggs",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c9/Skin_Loading_Screen_Classic_Ziggs.jpg"
+  },
+  {
+    "name": "Classic Zilean",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bd/Skin_Loading_Screen_Classic_Zilean.jpg"
+  },
+  {
+    "name": "Classic Zoe",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/30/Skin_Loading_Screen_Classic_Zoe.jpg"
+  },
+  {
+    "name": "Classic Zyra",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/cd/Skin_Loading_Screen_Classic_Zyra.jpg"
+  },
+  {
+    "name": "Coin Emperor Tahm Kench",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/21/Skin_Loading_Screen_Coin_Emperor_Tahm_Kench.jpg"
+  },
+  {
+    "name": "Commando Galio",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3a/Skin_Loading_Screen_Commando_Galio.jpg"
+  },
+  {
+    "name": "Commando Garen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a9/Skin_Loading_Screen_Commando_Garen.jpg"
+  },
+  {
+    "name": "Commando Jarvan IV",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/32/Skin_Loading_Screen_Commando_Jarvan_IV.jpg"
+  },
+  {
+    "name": "Commando Lux",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/44/Skin_Loading_Screen_Commando_Lux.jpg"
+  },
+  {
+    "name": "Commando Xin Zhao",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4c/Skin_Loading_Screen_Commando_Xin_Zhao.jpg"
+  },
+  {
+    "name": "Conqueror Alistar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/94/Skin_Loading_Screen_Conqueror_Alistar.jpg"
+  },
+  {
+    "name": "Conqueror Karma",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f0/Skin_Loading_Screen_Conqueror_Karma.jpg"
+  },
+  {
+    "name": "Conqueror Nautilus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e8/Skin_Loading_Screen_Conqueror_Nautilus.jpg"
+  },
+  {
+    "name": "Conqueror Varus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/01/Skin_Loading_Screen_Conqueror_Varus.jpg"
+  },
+  {
+    "name": "Constable Trundle",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ed/Skin_Loading_Screen_Constable_Trundle.jpg"
+  },
+  {
+    "name": "Coral Reef Malphite",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/20/Skin_Loading_Screen_Coral_Reef_Malphite.jpg"
+  },
+  {
+    "name": "Corgi Corki",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/aa/Skin_Loading_Screen_Corgi_Corki.jpg"
+  },
+  {
+    "name": "Corporate Mundo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a2/Skin_Loading_Screen_Corporate_Mundo.jpg"
+  },
+  {
+    "name": "Corsair Quinn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fd/Skin_Loading_Screen_Corsair_Quinn.jpg"
+  },
+  {
+    "name": "Cosmic Blade Master Yi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/38/Skin_Loading_Screen_Cosmic_Blade_Master_Yi.jpg"
+  },
+  {
+    "name": "Cosmic Charger Hecarim",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/40/Skin_Loading_Screen_Cosmic_Charger_Hecarim.jpg"
+  },
+  {
+    "name": "Cosmic Dawn Rakan",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9f/Skin_Loading_Screen_Cosmic_Dawn_Rakan.jpg"
+  },
+  {
+    "name": "Cosmic Defender Xin Zhao",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/81/Skin_Loading_Screen_Cosmic_Defender_Xin_Zhao.jpg"
+  },
+  {
+    "name": "Cosmic Destiny Nami",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fe/Skin_Loading_Screen_Cosmic_Destiny_Nami.jpg"
+  },
+  {
+    "name": "Cosmic Devourer Vladimir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/15/Skin_Loading_Screen_Cosmic_Devourer_Vladimir.jpg"
+  },
+  {
+    "name": "Cosmic Dusk Xayah",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2c/Skin_Loading_Screen_Cosmic_Dusk_Xayah.jpg"
+  },
+  {
+    "name": "Cosmic Enchantress Lulu",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/49/Skin_Loading_Screen_Cosmic_Enchantress_Lulu.jpg"
+  },
+  {
+    "name": "Cosmic Flight Anivia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fd/Skin_Loading_Screen_Cosmic_Flight_Anivia.jpg"
+  },
+  {
+    "name": "Cosmic Hunter Varus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c7/Skin_Loading_Screen_Cosmic_Hunter_Varus.jpg"
+  },
+  {
+    "name": "Cosmic Huntress Nidalee",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/97/Skin_Loading_Screen_Cosmic_Huntress_Nidalee.jpg"
+  },
+  {
+    "name": "Cosmic Invoker Illaoi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d1/Skin_Loading_Screen_Cosmic_Invoker_Illaoi.jpg"
+  },
+  {
+    "name": "Cosmic Lux",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7e/Skin_Loading_Screen_Cosmic_Lux.jpg"
+  },
+  {
+    "name": "Cosmic Queen Ashe",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0e/Skin_Loading_Screen_Cosmic_Queen_Ashe.jpg"
+  },
+  {
+    "name": "Cosmic Reaver Kassadin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/11/Skin_Loading_Screen_Cosmic_Reaver_Kassadin.jpg"
+  },
+  {
+    "name": "Cosmic Sting Skarner",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/77/Skin_Loading_Screen_Cosmic_Sting_Skarner.jpg"
+  },
+  {
+    "name": "Cottontail Fizz",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/67/Skin_Loading_Screen_Cottontail_Fizz.jpg"
+  },
+  {
+    "name": "Cottontail Teemo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/48/Skin_Loading_Screen_Cottontail_Teemo.jpg"
+  },
+  {
+    "name": "Count Kassadin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6a/Skin_Loading_Screen_Count_Kassadin.jpg"
+  },
+  {
+    "name": "Count Kledula",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ac/Skin_Loading_Screen_Count_Kledula.jpg"
+  },
+  {
+    "name": "Count Vladimir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e3/Skin_Loading_Screen_Count_Vladimir.jpg"
+  },
+  {
+    "name": "Coven Camille",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/30/Skin_Loading_Screen_Coven_Camille.jpg"
+  },
+  {
+    "name": "Coven LeBlanc",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ae/Skin_Loading_Screen_Coven_LeBlanc.jpg"
+  },
+  {
+    "name": "Coven Lissandra",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/37/Skin_Loading_Screen_Coven_Lissandra.jpg"
+  },
+  {
+    "name": "Coven Morgana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/15/Skin_Loading_Screen_Coven_Morgana.jpg"
+  },
+  {
+    "name": "Coven Zyra Prestige Edition",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/34/Skin_Loading_Screen_Coven_Zyra_Prestige_Edition.jpg"
+  },
+  {
+    "name": "Coven Zyra",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/69/Skin_Loading_Screen_Coven_Zyra.jpg"
+  },
+  {
+    "name": "Cowgirl Miss Fortune",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/93/Skin_Loading_Screen_Cowgirl_Miss_Fortune.jpg"
+  },
+  {
+    "name": "Creator Viktor",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a0/Skin_Loading_Screen_Creator_Viktor.jpg"
+  },
+  {
+    "name": "Crime City Braum",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/36/Skin_Loading_Screen_Crime_City_Braum.jpg"
+  },
+  {
+    "name": "Crime City Graves",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a2/Skin_Loading_Screen_Crime_City_Graves.jpg"
+  },
+  {
+    "name": "Crime City Jinx",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/91/Skin_Loading_Screen_Crime_City_Jinx.jpg"
+  },
+  {
+    "name": "Crime City Miss Fortune",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7e/Skin_Loading_Screen_Crime_City_Miss_Fortune.jpg"
+  },
+  {
+    "name": "Crime City Twitch",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d4/Skin_Loading_Screen_Crime_City_Twitch.jpg"
+  },
+  {
+    "name": "Crimson Elite Riven",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7c/Skin_Loading_Screen_Crimson_Elite_Riven.jpg"
+  },
+  {
+    "name": "Crimson Elite Talon",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/84/Skin_Loading_Screen_Crimson_Elite_Talon.jpg"
+  },
+  {
+    "name": "Cryocore Brand",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3a/Skin_Loading_Screen_Cryocore_Brand.jpg"
+  },
+  {
+    "name": "Curling Veigar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/30/Skin_Loading_Screen_Curling_Veigar.jpg"
+  },
+  {
+    "name": "Cursed Revenant Nocturne",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/39/Skin_Loading_Screen_Cursed_Revenant_Nocturne.jpg"
+  },
+  {
+    "name": "Cutpurse Twisted Fate",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0c/Skin_Loading_Screen_Cutpurse_Twisted_Fate.jpg"
+  },
+  {
+    "name": "Cutthroat Graves",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d1/Skin_Loading_Screen_Cutthroat_Graves.jpg"
+  },
+  {
+    "name": "Cyber Pop Zoe",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/50/Skin_Loading_Screen_Cyber_Pop_Zoe.jpg"
+  },
+  {
+    "name": "Dark Candy Fiddlesticks",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/09/Skin_Loading_Screen_Dark_Candy_Fiddlesticks.jpg"
+  },
+  {
+    "name": "Dark Cosmic Jhin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/21/Skin_Loading_Screen_Dark_Cosmic_Jhin.jpg"
+  },
+  {
+    "name": "Dark Cosmic Lissandra",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/58/Skin_Loading_Screen_Dark_Cosmic_Lissandra.jpg"
+  },
+  {
+    "name": "Dark Cosmic Lux",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fb/Skin_Loading_Screen_Dark_Cosmic_Lux.jpg"
+  },
+  {
+    "name": "Dark Crystal Ryze",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bc/Skin_Loading_Screen_Dark_Crystal_Ryze.jpg"
+  },
+  {
+    "name": "Dark Star Cho'Gath",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1a/Skin_Loading_Screen_Dark_Star_Cho%27Gath.jpg"
+  },
+  {
+    "name": "Dark Star Jarvan IV",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/28/Skin_Loading_Screen_Dark_Star_Jarvan_IV.jpg"
+  },
+  {
+    "name": "Dark Star Karma",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e5/Skin_Loading_Screen_Dark_Star_Karma.jpg"
+  },
+  {
+    "name": "Dark Star Kha'Zix",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/da/Skin_Loading_Screen_Dark_Star_Kha%27Zix.jpg"
+  },
+  {
+    "name": "Dark Star Malphite Prestige Edition",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/65/Skin_Loading_Screen_Dark_Star_Malphite_Prestige_Edition.jpg"
+  },
+  {
+    "name": "Dark Star Malphite",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/df/Skin_Loading_Screen_Dark_Star_Malphite.jpg"
+  },
+  {
+    "name": "Dark Star Mordekaiser",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d4/Skin_Loading_Screen_Dark_Star_Mordekaiser.jpg"
+  },
+  {
+    "name": "Dark Star Orianna",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2f/Skin_Loading_Screen_Dark_Star_Orianna.jpg"
+  },
+  {
+    "name": "Dark Star Shaco",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3c/Skin_Loading_Screen_Dark_Star_Shaco.jpg"
+  },
+  {
+    "name": "Dark Star Thresh",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/86/Skin_Loading_Screen_Dark_Star_Thresh.jpg"
+  },
+  {
+    "name": "Dark Star Varus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/68/Skin_Loading_Screen_Dark_Star_Varus.jpg"
+  },
+  {
+    "name": "Dark Star Xerath",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/48/Skin_Loading_Screen_Dark_Star_Xerath.jpg"
+  },
+  {
+    "name": "Dark Valkyrie Diana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fa/Skin_Loading_Screen_Dark_Valkyrie_Diana.jpg"
+  },
+  {
+    "name": "Dark Waters Diana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1e/Skin_Loading_Screen_Dark_Waters_Diana.jpg"
+  },
+  {
+    "name": "Dark Waters Vladimir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/83/Skin_Loading_Screen_Dark_Waters_Vladimir.jpg"
+  },
+  {
+    "name": "Darkflame Shyvana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/30/Skin_Loading_Screen_Darkflame_Shyvana.jpg"
+  },
+  {
+    "name": "Darkforge Jarvan IV",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c8/Skin_Loading_Screen_Darkforge_Jarvan_IV.jpg"
+  },
+  {
+    "name": "Darkrider Sejuani",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e8/Skin_Loading_Screen_Darkrider_Sejuani.jpg"
+  },
+  {
+    "name": "Dawnbringer Karma",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9b/Skin_Loading_Screen_Dawnbringer_Karma.jpg"
+  },
+  {
+    "name": "Dawnbringer Nidalee",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a6/Skin_Loading_Screen_Dawnbringer_Nidalee.jpg"
+  },
+  {
+    "name": "Dawnbringer Riven",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/91/Skin_Loading_Screen_Dawnbringer_Riven.jpg"
+  },
+  {
+    "name": "Dawnbringer Soraka",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b1/Skin_Loading_Screen_Dawnbringer_Soraka.jpg"
+  },
+  {
+    "name": "Deadly Kennen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7c/Skin_Loading_Screen_Deadly_Kennen.jpg"
+  },
+  {
+    "name": "Death Blossom Elise",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bc/Skin_Loading_Screen_Death_Blossom_Elise.jpg"
+  },
+  {
+    "name": "Death Blossom Kha'Zix",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a1/Skin_Loading_Screen_Death_Blossom_Kha%27Zix.jpg"
+  },
+  {
+    "name": "Death Sworn Katarina",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1b/Skin_Loading_Screen_Death_Sworn_Katarina.jpg"
+  },
+  {
+    "name": "Death Sworn Viktor",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/85/Skin_Loading_Screen_Death_Sworn_Viktor.jpg"
+  },
+  {
+    "name": "Death Sworn Zed",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c0/Skin_Loading_Screen_Death_Sworn_Zed.jpg"
+  },
+  {
+    "name": "Debonair Ezreal",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6a/Skin_Loading_Screen_Debonair_Ezreal.jpg"
+  },
+  {
+    "name": "Debonair Galio",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0b/Skin_Loading_Screen_Debonair_Galio.jpg"
+  },
+  {
+    "name": "Debonair Jayce",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/96/Skin_Loading_Screen_Debonair_Jayce.jpg"
+  },
+  {
+    "name": "Debonair Vi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a3/Skin_Loading_Screen_Debonair_Vi.jpg"
+  },
+  {
+    "name": "Deep One Kassadin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/dd/Skin_Loading_Screen_Deep_One_Kassadin.jpg"
+  },
+  {
+    "name": "Deep Sea Kog'Maw",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/74/Skin_Loading_Screen_Deep_Sea_Kog%27Maw.jpg"
+  },
+  {
+    "name": "Deep Sea Nami",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e2/Skin_Loading_Screen_Deep_Sea_Nami.jpg"
+  },
+  {
+    "name": "Deep Terror Thresh",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/80/Skin_Loading_Screen_Deep_Terror_Thresh.jpg"
+  },
+  {
+    "name": "Defender Leona",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/87/Skin_Loading_Screen_Defender_Leona.jpg"
+  },
+  {
+    "name": "Definitely Not Blitzcrank",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/94/Skin_Loading_Screen_Definitely_Not_Blitzcrank.jpg"
+  },
+  {
+    "name": "Definitely Not Udyr",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4c/Skin_Loading_Screen_Definitely_Not_Udyr.jpg"
+  },
+  {
+    "name": "Definitely Not Vel'Koz",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/cd/Skin_Loading_Screen_Definitely_Not_Vel%27Koz.jpg"
+  },
+  {
+    "name": "Demacia Vice Garen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/cd/Skin_Loading_Screen_Demacia_Vice_Garen.jpg"
+  },
+  {
+    "name": "Demacia Vice Lucian",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e0/Skin_Loading_Screen_Demacia_Vice_Lucian.jpg"
+  },
+  {
+    "name": "Demolisher Nunu & Willump",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6c/Skin_Loading_Screen_Demolisher_Nunu_%26_Willump.jpg"
+  },
+  {
+    "name": "Demon Vi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a8/Skin_Loading_Screen_Demon_Vi.jpg"
+  },
+  {
+    "name": "Demonblade Tryndamere",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9a/Skin_Loading_Screen_Demonblade_Tryndamere.jpg"
+  },
+  {
+    "name": "Desert Trooper Garen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/40/Skin_Loading_Screen_Desert_Trooper_Garen.jpg"
+  },
+  {
+    "name": "Desperada Cassiopeia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/54/Skin_Loading_Screen_Desperada_Cassiopeia.jpg"
+  },
+  {
+    "name": "Dino Gnar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/21/Skin_Loading_Screen_Dino_Gnar.jpg"
+  },
+  {
+    "name": "Divine Soraka",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/38/Skin_Loading_Screen_Divine_Soraka.jpg"
+  },
+  {
+    "name": "Divine Sword Irelia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/67/Skin_Loading_Screen_Divine_Sword_Irelia.jpg"
+  },
+  {
+    "name": "DJ Sona",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/58/Skin_Loading_Screen_DJ_Sona.jpg"
+  },
+  {
+    "name": "Djinn Malzahar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6b/Skin_Loading_Screen_Djinn_Malzahar.jpg"
+  },
+  {
+    "name": "Dragon Fist Lee Sin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fa/Skin_Loading_Screen_Dragon_Fist_Lee_Sin.jpg"
+  },
+  {
+    "name": "Dragon Knight Mordekaiser",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8e/Skin_Loading_Screen_Dragon_Knight_Mordekaiser.jpg"
+  },
+  {
+    "name": "Dragon Master Swain",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7f/Skin_Loading_Screen_Dragon_Master_Swain.jpg"
+  },
+  {
+    "name": "Dragon Oracle Udyr",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/80/Skin_Loading_Screen_Dragon_Oracle_Udyr.jpg"
+  },
+  {
+    "name": "Dragon Sorceress Zyra",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7f/Skin_Loading_Screen_Dragon_Sorceress_Zyra.jpg"
+  },
+  {
+    "name": "Dragon Trainer Heimerdinger",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/39/Skin_Loading_Screen_Dragon_Trainer_Heimerdinger.jpg"
+  },
+  {
+    "name": "Dragon Trainer Lulu",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/dd/Skin_Loading_Screen_Dragon_Trainer_Lulu.jpg"
+  },
+  {
+    "name": "Dragon Trainer Tristana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8d/Skin_Loading_Screen_Dragon_Trainer_Tristana.jpg"
+  },
+  {
+    "name": "Dragonblade Riven",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fe/Skin_Loading_Screen_Dragonblade_Riven.jpg"
+  },
+  {
+    "name": "Dragonblade Talon",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d8/Skin_Loading_Screen_Dragonblade_Talon.jpg"
+  },
+  {
+    "name": "Dragonslayer Braum",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ee/Skin_Loading_Screen_Dragonslayer_Braum.jpg"
+  },
+  {
+    "name": "Dragonslayer Diana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c9/Skin_Loading_Screen_Dragonslayer_Diana.jpg"
+  },
+  {
+    "name": "Dragonslayer Jarvan IV",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7a/Skin_Loading_Screen_Dragonslayer_Jarvan_IV.jpg"
+  },
+  {
+    "name": "Dragonslayer Olaf",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/57/Skin_Loading_Screen_Dragonslayer_Olaf.jpg"
+  },
+  {
+    "name": "Dragonslayer Pantheon",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f7/Skin_Loading_Screen_Dragonslayer_Pantheon.jpg"
+  },
+  {
+    "name": "Dragonslayer Trundle",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5c/Skin_Loading_Screen_Dragonslayer_Trundle.jpg"
+  },
+  {
+    "name": "Dragonslayer Vayne",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/31/Skin_Loading_Screen_Dragonslayer_Vayne.jpg"
+  },
+  {
+    "name": "Dragonslayer Xin Zhao",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d9/Skin_Loading_Screen_Dragonslayer_Xin_Zhao.jpg"
+  },
+  {
+    "name": "Dragonwing Corki",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/82/Skin_Loading_Screen_Dragonwing_Corki.jpg"
+  },
+  {
+    "name": "Draven Draven",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f2/Skin_Loading_Screen_Draven_Draven.jpg"
+  },
+  {
+    "name": "Dreadknight Garen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e7/Skin_Loading_Screen_Dreadknight_Garen.jpg"
+  },
+  {
+    "name": "Dreadknight Nasus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e9/Skin_Loading_Screen_Dreadknight_Nasus.jpg"
+  },
+  {
+    "name": "Dreadnova Darius",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9f/Skin_Loading_Screen_Dreadnova_Darius.jpg"
+  },
+  {
+    "name": "Dreadnova Gangplank",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d2/Skin_Loading_Screen_Dreadnova_Gangplank.jpg"
+  },
+  {
+    "name": "Dryad Soraka",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e1/Skin_Loading_Screen_Dryad_Soraka.jpg"
+  },
+  {
+    "name": "Dunkmaster Darius",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7d/Skin_Loading_Screen_Dunkmaster_Darius.jpg"
+  },
+  {
+    "name": "Dunkmaster Ivern",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ac/Skin_Loading_Screen_Dunkmaster_Ivern.jpg"
+  },
+  {
+    "name": "Dynasty Ahri",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bc/Skin_Loading_Screen_Dynasty_Ahri.jpg"
+  },
+  {
+    "name": "Earnest Elf Tristana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/10/Skin_Loading_Screen_Earnest_Elf_Tristana.jpg"
+  },
+  {
+    "name": "Earthrune Skarner",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/da/Skin_Loading_Screen_Earthrune_Skarner.jpg"
+  },
+  {
+    "name": "El León Gnar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a6/Skin_Loading_Screen_El_Le%C3%B3n_Gnar.jpg"
+  },
+  {
+    "name": "El Macho Mundo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a3/Skin_Loading_Screen_El_Macho_Mundo.jpg"
+  },
+  {
+    "name": "El Rayo Volibear",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/32/Skin_Loading_Screen_El_Rayo_Volibear.jpg"
+  },
+  {
+    "name": "El Tigre Braum",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b1/Skin_Loading_Screen_El_Tigre_Braum.jpg"
+  },
+  {
+    "name": "Elderwood Ahri",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b3/Skin_Loading_Screen_Elderwood_Ahri.jpg"
+  },
+  {
+    "name": "Elderwood Azir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ea/Skin_Loading_Screen_Elderwood_Azir.jpg"
+  },
+  {
+    "name": "Elderwood Bard",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ee/Skin_Loading_Screen_Elderwood_Bard.jpg"
+  },
+  {
+    "name": "Elderwood Hecarim",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9b/Skin_Loading_Screen_Elderwood_Hecarim.jpg"
+  },
+  {
+    "name": "Elderwood Ivern",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0a/Skin_Loading_Screen_Elderwood_Ivern.jpg"
+  },
+  {
+    "name": "Elderwood LeBlanc",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/98/Skin_Loading_Screen_Elderwood_LeBlanc.jpg"
+  },
+  {
+    "name": "Elderwood Nocturne",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/23/Skin_Loading_Screen_Elderwood_Nocturne.jpg"
+  },
+  {
+    "name": "Elderwood Ornn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/86/Skin_Loading_Screen_Elderwood_Ornn.jpg"
+  },
+  {
+    "name": "Elderwood Rakan",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7e/Skin_Loading_Screen_Elderwood_Rakan.jpg"
+  },
+  {
+    "name": "Elderwood Veigar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6a/Skin_Loading_Screen_Elderwood_Veigar.jpg"
+  },
+  {
+    "name": "Elderwood Xayah",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/97/Skin_Loading_Screen_Elderwood_Xayah.jpg"
+  },
+  {
+    "name": "Elementalist Lux",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1f/Skin_Loading_Screen_Elementalist_Lux.jpg"
+  },
+  {
+    "name": "Emerald Taric",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/da/Skin_Loading_Screen_Emerald_Taric.jpg"
+  },
+  {
+    "name": "Emumu",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/91/Skin_Loading_Screen_Emumu.jpg"
+  },
+  {
+    "name": "Enchanted Galio",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4b/Skin_Loading_Screen_Enchanted_Galio.jpg"
+  },
+  {
+    "name": "Enduring Sword Talon",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6e/Skin_Loading_Screen_Enduring_Sword_Talon.jpg"
+  },
+  {
+    "name": "Eternal Dragon Brand",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a2/Skin_Loading_Screen_Eternal_Dragon_Brand.jpg"
+  },
+  {
+    "name": "Eternal Sword Yi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/33/Skin_Loading_Screen_Eternal_Sword_Yi.jpg"
+  },
+  {
+    "name": "Eternum Cassiopeia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/77/Skin_Loading_Screen_Eternum_Cassiopeia.jpg"
+  },
+  {
+    "name": "Eternum Nocturne",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/ff/Skin_Loading_Screen_Eternum_Nocturne.jpg"
+  },
+  {
+    "name": "Eternum Rek'Sai",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/85/Skin_Loading_Screen_Eternum_Rek%27Sai.jpg"
+  },
+  {
+    "name": "Executioner Mundo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/39/Skin_Loading_Screen_Executioner_Mundo.jpg"
+  },
+  {
+    "name": "Exiled Morgana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a7/Skin_Loading_Screen_Exiled_Morgana.jpg"
+  },
+  {
+    "name": "Explorer Ezreal",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/39/Skin_Loading_Screen_Explorer_Ezreal.jpg"
+  },
+  {
+    "name": "Fae Dragon Ashe",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0c/Skin_Loading_Screen_Fae_Dragon_Ashe.jpg"
+  },
+  {
+    "name": "Feral Warwick",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bb/Skin_Loading_Screen_Feral_Warwick.jpg"
+  },
+  {
+    "name": "Festival Kassadin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1a/Skin_Loading_Screen_Festival_Kassadin.jpg"
+  },
+  {
+    "name": "Festival Queen Anivia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f2/Skin_Loading_Screen_Festival_Queen_Anivia.jpg"
+  },
+  {
+    "name": "Festive Maokai",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/07/Skin_Loading_Screen_Festive_Maokai.jpg"
+  },
+  {
+    "name": "Fiddle Me Timbers",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c2/Skin_Loading_Screen_Fiddle_Me_Timbers.jpg"
+  },
+  {
+    "name": "Final Boss Veigar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b4/Skin_Loading_Screen_Final_Boss_Veigar.jpg"
+  },
+  {
+    "name": "Firecracker Jinx",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/04/Skin_Loading_Screen_Firecracker_Jinx.jpg"
+  },
+  {
+    "name": "Firecracker Sejuani",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/85/Skin_Loading_Screen_Firecracker_Sejuani.jpg"
+  },
+  {
+    "name": "Firecracker Vayne Prestige Edition",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/98/Skin_Loading_Screen_Firecracker_Vayne_Prestige_Edition.jpg"
+  },
+  {
+    "name": "Firecracker Vayne",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5d/Skin_Loading_Screen_Firecracker_Vayne.jpg"
+  },
+  {
+    "name": "Firefang Warwick",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e2/Skin_Loading_Screen_Firefang_Warwick.jpg"
+  },
+  {
+    "name": "Firefighter Tristana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/54/Skin_Loading_Screen_Firefighter_Tristana.jpg"
+  },
+  {
+    "name": "Fisherman Fizz",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9a/Skin_Loading_Screen_Fisherman_Fizz.jpg"
+  },
+  {
+    "name": "Fnatic Corki",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0f/Skin_Loading_Screen_Fnatic_Corki.jpg"
+  },
+  {
+    "name": "Fnatic Gragas",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2a/Skin_Loading_Screen_Fnatic_Gragas.jpg"
+  },
+  {
+    "name": "Fnatic Janna",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e3/Skin_Loading_Screen_Fnatic_Janna.jpg"
+  },
+  {
+    "name": "Fnatic Jarvan IV",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/33/Skin_Loading_Screen_Fnatic_Jarvan_IV.jpg"
+  },
+  {
+    "name": "Fnatic Karthus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/50/Skin_Loading_Screen_Fnatic_Karthus.jpg"
+  },
+  {
+    "name": "Forecast Janna",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f4/Skin_Loading_Screen_Forecast_Janna.jpg"
+  },
+  {
+    "name": "Forsaken Jayce",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e8/Skin_Loading_Screen_Forsaken_Jayce.jpg"
+  },
+  {
+    "name": "Forsaken Olaf",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/33/Skin_Loading_Screen_Forsaken_Olaf.jpg"
+  },
+  {
+    "name": "Foxfire Ahri",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a6/Skin_Loading_Screen_Foxfire_Ahri.jpg"
+  },
+  {
+    "name": "FPX Gangplank",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d7/Skin_Loading_Screen_FPX_Gangplank.jpg"
+  },
+  {
+    "name": "FPX Lee Sin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/97/Skin_Loading_Screen_FPX_Lee_Sin.jpg"
+  },
+  {
+    "name": "FPX Malphite",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b7/Skin_Loading_Screen_FPX_Malphite.jpg"
+  },
+  {
+    "name": "FPX Thresh",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/57/Skin_Loading_Screen_FPX_Thresh.jpg"
+  },
+  {
+    "name": "FPX Vayne",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/be/Skin_Loading_Screen_FPX_Vayne.jpg"
+  },
+  {
+    "name": "FrankenTibbers Annie",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a8/Skin_Loading_Screen_FrankenTibbers_Annie.jpg"
+  },
+  {
+    "name": "Freljord Ashe",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/30/Skin_Loading_Screen_Freljord_Ashe.jpg"
+  },
+  {
+    "name": "Freljord Rammus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f4/Skin_Loading_Screen_Freljord_Rammus.jpg"
+  },
+  {
+    "name": "Freljord Sylas",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ea/Skin_Loading_Screen_Freljord_Sylas.jpg"
+  },
+  {
+    "name": "Freljord Taliyah",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/20/Skin_Loading_Screen_Freljord_Taliyah.jpg"
+  },
+  {
+    "name": "French Maid Nidalee",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/75/Skin_Loading_Screen_French_Maid_Nidalee.jpg"
+  },
+  {
+    "name": "Frost Queen Janna",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/13/Skin_Loading_Screen_Frost_Queen_Janna.jpg"
+  },
+  {
+    "name": "Frostblade Irelia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/13/Skin_Loading_Screen_Frostblade_Irelia.jpg"
+  },
+  {
+    "name": "Frosted Ezreal",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fc/Skin_Loading_Screen_Frosted_Ezreal.jpg"
+  },
+  {
+    "name": "Frostfire Annie",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/51/Skin_Loading_Screen_Frostfire_Annie.jpg"
+  },
+  {
+    "name": "Frozen Prince Mundo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8b/Skin_Loading_Screen_Frozen_Prince_Mundo.jpg"
+  },
+  {
+    "name": "Frozen Shen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7e/Skin_Loading_Screen_Frozen_Shen.jpg"
+  },
+  {
+    "name": "Frozen Terror Nocturne",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2d/Skin_Loading_Screen_Frozen_Terror_Nocturne.jpg"
+  },
+  {
+    "name": "Full Machine Viktor",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e1/Skin_Loading_Screen_Full_Machine_Viktor.jpg"
+  },
+  {
+    "name": "Full Metal Jayce",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ac/Skin_Loading_Screen_Full_Metal_Jayce.jpg"
+  },
+  {
+    "name": "Full Metal Pantheon",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f6/Skin_Loading_Screen_Full_Metal_Pantheon.jpg"
+  },
+  {
+    "name": "Full Metal Rammus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ef/Skin_Loading_Screen_Full_Metal_Rammus.jpg"
+  },
+  {
+    "name": "Furyhorn Cosplay Veigar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/dc/Skin_Loading_Screen_Furyhorn_Cosplay_Veigar.jpg"
+  },
+  {
+    "name": "Fuzz Fizz Prestige Edition",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/96/Skin_Loading_Screen_Fuzz_Fizz_Prestige_Edition.jpg"
+  },
+  {
+    "name": "Fuzz Fizz",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2e/Skin_Loading_Screen_Fuzz_Fizz.jpg"
+  },
+  {
+    "name": "Galactic Azir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8e/Skin_Loading_Screen_Galactic_Azir.jpg"
+  },
+  {
+    "name": "Galactic Nasus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a4/Skin_Loading_Screen_Galactic_Nasus.jpg"
+  },
+  {
+    "name": "Galactic Renekton",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8e/Skin_Loading_Screen_Galactic_Renekton.jpg"
+  },
+  {
+    "name": "Galaxy Slayer Zed",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/71/Skin_Loading_Screen_Galaxy_Slayer_Zed.jpg"
+  },
+  {
+    "name": "Gatekeeper Galio",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/91/Skin_Loading_Screen_Gatekeeper_Galio.jpg"
+  },
+  {
+    "name": "General Wukong",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e4/Skin_Loading_Screen_General_Wukong.jpg"
+  },
+  {
+    "name": "Gentleman Cho'Gath",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5c/Skin_Loading_Screen_Gentleman_Cho%27Gath.jpg"
+  },
+  {
+    "name": "Gentleman Gnar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c8/Skin_Loading_Screen_Gentleman_Gnar.jpg"
+  },
+  {
+    "name": "Ghost Bride Morgana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5d/Skin_Loading_Screen_Ghost_Bride_Morgana.jpg"
+  },
+  {
+    "name": "Giant Enemy Crabgot",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/19/Skin_Loading_Screen_Giant_Enemy_Crabgot.jpg"
+  },
+  {
+    "name": "Glacial Malphite",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/dc/Skin_Loading_Screen_Glacial_Malphite.jpg"
+  },
+  {
+    "name": "Glacial Olaf",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/df/Skin_Loading_Screen_Glacial_Olaf.jpg"
+  },
+  {
+    "name": "Gladiator Draven",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c7/Skin_Loading_Screen_Gladiator_Draven.jpg"
+  },
+  {
+    "name": "Glaive Warrior Pantheon",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c8/Skin_Loading_Screen_Glaive_Warrior_Pantheon.jpg"
+  },
+  {
+    "name": "Goalkeeper Blitzcrank",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7d/Skin_Loading_Screen_Goalkeeper_Blitzcrank.jpg"
+  },
+  {
+    "name": "Goalkeeper Maokai",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/85/Skin_Loading_Screen_Goalkeeper_Maokai.jpg"
+  },
+  {
+    "name": "God Fist Lee Sin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/eb/Skin_Loading_Screen_God_Fist_Lee_Sin.jpg"
+  },
+  {
+    "name": "God Staff Jax",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/46/Skin_Loading_Screen_God_Staff_Jax.jpg"
+  },
+  {
+    "name": "God-King Darius",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9d/Skin_Loading_Screen_God-King_Darius.jpg"
+  },
+  {
+    "name": "God-King Garen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/80/Skin_Loading_Screen_God-King_Garen.jpg"
+  },
+  {
+    "name": "Golden Alistar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/af/Skin_Loading_Screen_Golden_Alistar.jpg"
+  },
+  {
+    "name": "Goth Annie",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b3/Skin_Loading_Screen_Goth_Annie.jpg"
+  },
+  {
+    "name": "Gothic Orianna",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ef/Skin_Loading_Screen_Gothic_Orianna.jpg"
+  },
+  {
+    "name": "Gragas Caskbreaker",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/22/Skin_Loading_Screen_Gragas_Caskbreaker.jpg"
+  },
+  {
+    "name": "Gragas, Esq.",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fb/Skin_Loading_Screen_Gragas%2C_Esq..jpg"
+  },
+  {
+    "name": "Gravelord Azir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/68/Skin_Loading_Screen_Gravelord_Azir.jpg"
+  },
+  {
+    "name": "Grey Warwick",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ae/Skin_Loading_Screen_Grey_Warwick.jpg"
+  },
+  {
+    "name": "Grim Reaper Karthus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/56/Skin_Loading_Screen_Grim_Reaper_Karthus.jpg"
+  },
+  {
+    "name": "Groovy Zilean",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ef/Skin_Loading_Screen_Groovy_Zilean.jpg"
+  },
+  {
+    "name": "Grungy Nunu & Willump",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d6/Skin_Loading_Screen_Grungy_Nunu_%26_Willump.jpg"
+  },
+  {
+    "name": "Guardian of the Sands Janna",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/cc/Skin_Loading_Screen_Guardian_of_the_Sands_Janna.jpg"
+  },
+  {
+    "name": "Guardian of the Sands Kha'Zix",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2c/Skin_Loading_Screen_Guardian_of_the_Sands_Kha%27Zix.jpg"
+  },
+  {
+    "name": "Guardian of the Sands Rammus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/01/Skin_Loading_Screen_Guardian_of_the_Sands_Rammus.jpg"
+  },
+  {
+    "name": "Guardian of the Sands Rengar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b0/Skin_Loading_Screen_Guardian_of_the_Sands_Rengar.jpg"
+  },
+  {
+    "name": "Guardian of the Sands Ryze",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/71/Skin_Loading_Screen_Guardian_of_the_Sands_Ryze.jpg"
+  },
+  {
+    "name": "Guardian of the Sands Skarner",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/31/Skin_Loading_Screen_Guardian_of_the_Sands_Skarner.jpg"
+  },
+  {
+    "name": "Guardian of the Sands Xerath",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/91/Skin_Loading_Screen_Guardian_of_the_Sands_Xerath.jpg"
+  },
+  {
+    "name": "Guerilla Tristana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e0/Skin_Loading_Screen_Guerilla_Tristana.jpg"
+  },
+  {
+    "name": "Gun Goddess Miss Fortune",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fa/Skin_Loading_Screen_Gun_Goddess_Miss_Fortune.jpg"
+  },
+  {
+    "name": "Guqin Sona",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a9/Skin_Loading_Screen_Guqin_Sona.jpg"
+  },
+  {
+    "name": "Happy Elf Teemo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/38/Skin_Loading_Screen_Happy_Elf_Teemo.jpg"
+  },
+  {
+    "name": "Harbinger Kassadin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e9/Skin_Loading_Screen_Harbinger_Kassadin.jpg"
+  },
+  {
+    "name": "Haunted Maokai",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/44/Skin_Loading_Screen_Haunted_Maokai.jpg"
+  },
+  {
+    "name": "Haunted Zyra",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/40/Skin_Loading_Screen_Haunted_Zyra.jpg"
+  },
+  {
+    "name": "Haunting Nocturne",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7f/Skin_Loading_Screen_Haunting_Nocturne.jpg"
+  },
+  {
+    "name": "Hazmat Heimerdinger",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8a/Skin_Loading_Screen_Hazmat_Heimerdinger.jpg"
+  },
+  {
+    "name": "Headhunter Akali",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/02/Skin_Loading_Screen_Headhunter_Akali.jpg"
+  },
+  {
+    "name": "Headhunter Caitlyn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/09/Skin_Loading_Screen_Headhunter_Caitlyn.jpg"
+  },
+  {
+    "name": "Headhunter Master Yi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2c/Skin_Loading_Screen_Headhunter_Master_Yi.jpg"
+  },
+  {
+    "name": "Headhunter Nidalee",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1d/Skin_Loading_Screen_Headhunter_Nidalee.jpg"
+  },
+  {
+    "name": "Headhunter Rengar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9c/Skin_Loading_Screen_Headhunter_Rengar.jpg"
+  },
+  {
+    "name": "Headless Hecarim",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4c/Skin_Loading_Screen_Headless_Hecarim.jpg"
+  },
+  {
+    "name": "Headmistress Fiora",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/17/Skin_Loading_Screen_Headmistress_Fiora.jpg"
+  },
+  {
+    "name": "Heartbreaker Vi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3a/Skin_Loading_Screen_Heartbreaker_Vi.jpg"
+  },
+  {
+    "name": "Heartpiercer Fiora",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4d/Skin_Loading_Screen_Heartpiercer_Fiora.jpg"
+  },
+  {
+    "name": "Heartseeker Ashe",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5d/Skin_Loading_Screen_Heartseeker_Ashe.jpg"
+  },
+  {
+    "name": "Heartseeker Jinx",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0a/Skin_Loading_Screen_Heartseeker_Jinx.jpg"
+  },
+  {
+    "name": "Heartseeker Lucian",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2c/Skin_Loading_Screen_Heartseeker_Lucian.jpg"
+  },
+  {
+    "name": "Heartseeker Orianna",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/31/Skin_Loading_Screen_Heartseeker_Orianna.jpg"
+  },
+  {
+    "name": "Heartseeker Quinn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7e/Skin_Loading_Screen_Heartseeker_Quinn.jpg"
+  },
+  {
+    "name": "Heartseeker Varus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/24/Skin_Loading_Screen_Heartseeker_Varus.jpg"
+  },
+  {
+    "name": "Heartseeker Vayne",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8b/Skin_Loading_Screen_Heartseeker_Vayne.jpg"
+  },
+  {
+    "name": "Heartseeker Yuumi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b1/Skin_Loading_Screen_Heartseeker_Yuumi.jpg"
+  },
+  {
+    "name": "Hextech Alistar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a6/Skin_Loading_Screen_Hextech_Alistar.jpg"
+  },
+  {
+    "name": "Hextech Amumu",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/41/Skin_Loading_Screen_Hextech_Amumu.jpg"
+  },
+  {
+    "name": "Hextech Anivia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/23/Skin_Loading_Screen_Hextech_Anivia.jpg"
+  },
+  {
+    "name": "Hextech Annie",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a3/Skin_Loading_Screen_Hextech_Annie.jpg"
+  },
+  {
+    "name": "Hextech Galio",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/62/Skin_Loading_Screen_Hextech_Galio.jpg"
+  },
+  {
+    "name": "Hextech Janna",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/cf/Skin_Loading_Screen_Hextech_Janna.jpg"
+  },
+  {
+    "name": "Hextech Jarvan IV",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5d/Skin_Loading_Screen_Hextech_Jarvan_IV.jpg"
+  },
+  {
+    "name": "Hextech Kassadin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/75/Skin_Loading_Screen_Hextech_Kassadin.jpg"
+  },
+  {
+    "name": "Hextech Kog'Maw",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d8/Skin_Loading_Screen_Hextech_Kog%27Maw.jpg"
+  },
+  {
+    "name": "Hextech Malzahar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5b/Skin_Loading_Screen_Hextech_Malzahar.jpg"
+  },
+  {
+    "name": "Hextech Nocturne",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d1/Skin_Loading_Screen_Hextech_Nocturne.jpg"
+  },
+  {
+    "name": "Hextech Poppy",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7a/Skin_Loading_Screen_Hextech_Poppy.jpg"
+  },
+  {
+    "name": "Hextech Rammus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/17/Skin_Loading_Screen_Hextech_Rammus.jpg"
+  },
+  {
+    "name": "Hextech Renekton",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/21/Skin_Loading_Screen_Hextech_Renekton.jpg"
+  },
+  {
+    "name": "Hextech Sejuani",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/48/Skin_Loading_Screen_Hextech_Sejuani.jpg"
+  },
+  {
+    "name": "Hextech Singed",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1c/Skin_Loading_Screen_Hextech_Singed.jpg"
+  },
+  {
+    "name": "Hextech Sion",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d9/Skin_Loading_Screen_Hextech_Sion.jpg"
+  },
+  {
+    "name": "Hextech Swain",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/46/Skin_Loading_Screen_Hextech_Swain.jpg"
+  },
+  {
+    "name": "Hextech Ziggs",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3d/Skin_Loading_Screen_Hextech_Ziggs.jpg"
+  },
+  {
+    "name": "High Command Katarina",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/cf/Skin_Loading_Screen_High_Command_Katarina.jpg"
+  },
+  {
+    "name": "High Noon Ashe",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/72/Skin_Loading_Screen_High_Noon_Ashe.jpg"
+  },
+  {
+    "name": "High Noon Darius",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3d/Skin_Loading_Screen_High_Noon_Darius.jpg"
+  },
+  {
+    "name": "High Noon Hecarim",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/30/Skin_Loading_Screen_High_Noon_Hecarim.jpg"
+  },
+  {
+    "name": "High Noon Irelia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/75/Skin_Loading_Screen_High_Noon_Irelia.jpg"
+  },
+  {
+    "name": "High Noon Jhin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5b/Skin_Loading_Screen_High_Noon_Jhin.jpg"
+  },
+  {
+    "name": "High Noon Lucian",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d2/Skin_Loading_Screen_High_Noon_Lucian.jpg"
+  },
+  {
+    "name": "High Noon Thresh",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3a/Skin_Loading_Screen_High_Noon_Thresh.jpg"
+  },
+  {
+    "name": "High Noon Twisted Fate",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2d/Skin_Loading_Screen_High_Noon_Twisted_Fate.jpg"
+  },
+  {
+    "name": "High Noon Urgot",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/41/Skin_Loading_Screen_High_Noon_Urgot.jpg"
+  },
+  {
+    "name": "High Noon Yasuo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e8/Skin_Loading_Screen_High_Noon_Yasuo.jpg"
+  },
+  {
+    "name": "Highland Tryndamere",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6c/Skin_Loading_Screen_Highland_Tryndamere.jpg"
+  },
+  {
+    "name": "Hillbilly Gragas",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5c/Skin_Loading_Screen_Hillbilly_Gragas.jpg"
+  },
+  {
+    "name": "Hired Gun Graves",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7b/Skin_Loading_Screen_Hired_Gun_Graves.jpg"
+  },
+  {
+    "name": "Hired Gun Lucian",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4a/Skin_Loading_Screen_Hired_Gun_Lucian.jpg"
+  },
+  {
+    "name": "Hot Rod Corki",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9f/Skin_Loading_Screen_Hot_Rod_Corki.jpg"
+  },
+  {
+    "name": "Huntress Sivir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ac/Skin_Loading_Screen_Huntress_Sivir.jpg"
+  },
+  {
+    "name": "Hyena Warwick",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d8/Skin_Loading_Screen_Hyena_Warwick.jpg"
+  },
+  {
+    "name": "iBlitzcrank",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/83/Skin_Loading_Screen_iBlitzcrank.jpg"
+  },
+  {
+    "name": "Ice Drake Shyvana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/23/Skin_Loading_Screen_Ice_Drake_Shyvana.jpg"
+  },
+  {
+    "name": "Ice King Twitch",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b7/Skin_Loading_Screen_Ice_King_Twitch.jpg"
+  },
+  {
+    "name": "Ice Toboggan Corki",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f9/Skin_Loading_Screen_Ice_Toboggan_Corki.jpg"
+  },
+  {
+    "name": "iG Camille",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ae/Skin_Loading_Screen_iG_Camille.jpg"
+  },
+  {
+    "name": "iG Fiora",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/13/Skin_Loading_Screen_iG_Fiora.jpg"
+  },
+  {
+    "name": "iG Irelia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f9/Skin_Loading_Screen_iG_Irelia.jpg"
+  },
+  {
+    "name": "iG Kai'Sa",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fa/Skin_Loading_Screen_iG_Kai%27Sa.jpg"
+  },
+  {
+    "name": "iG LeBlanc",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/72/Skin_Loading_Screen_iG_LeBlanc.jpg"
+  },
+  {
+    "name": "iG Rakan",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7b/Skin_Loading_Screen_iG_Rakan.jpg"
+  },
+  {
+    "name": "Imperial Lux",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/06/Skin_Loading_Screen_Imperial_Lux.jpg"
+  },
+  {
+    "name": "Imperial Xin Zhao",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/88/Skin_Loading_Screen_Imperial_Xin_Zhao.jpg"
+  },
+  {
+    "name": "Infernal Akali",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3a/Skin_Loading_Screen_Infernal_Akali.jpg"
+  },
+  {
+    "name": "Infernal Alistar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/23/Skin_Loading_Screen_Infernal_Alistar.jpg"
+  },
+  {
+    "name": "Infernal Amumu",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/51/Skin_Loading_Screen_Infernal_Amumu.jpg"
+  },
+  {
+    "name": "Infernal Diana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d4/Skin_Loading_Screen_Infernal_Diana.jpg"
+  },
+  {
+    "name": "Infernal Galio",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/68/Skin_Loading_Screen_Infernal_Galio.jpg"
+  },
+  {
+    "name": "Infernal Karthus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f6/Skin_Loading_Screen_Infernal_Karthus.jpg"
+  },
+  {
+    "name": "Infernal Kennen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/73/Skin_Loading_Screen_Infernal_Kennen.jpg"
+  },
+  {
+    "name": "Infernal Mordekaiser",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fe/Skin_Loading_Screen_Infernal_Mordekaiser.jpg"
+  },
+  {
+    "name": "Infernal Nasus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/82/Skin_Loading_Screen_Infernal_Nasus.jpg"
+  },
+  {
+    "name": "Infernal Shen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7b/Skin_Loading_Screen_Infernal_Shen.jpg"
+  },
+  {
+    "name": "Infernal Varus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/22/Skin_Loading_Screen_Infernal_Varus.jpg"
+  },
+  {
+    "name": "Infernal Vel'Koz",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/53/Skin_Loading_Screen_Infernal_Vel%27Koz.jpg"
+  },
+  {
+    "name": "Infiltrator Irelia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d2/Skin_Loading_Screen_Infiltrator_Irelia.jpg"
+  },
+  {
+    "name": "Ionia Master Yi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6f/Skin_Loading_Screen_Ionia_Master_Yi.jpg"
+  },
+  {
+    "name": "Iron Inquisitor Kayle",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f8/Skin_Loading_Screen_Iron_Inquisitor_Kayle.jpg"
+  },
+  {
+    "name": "Iron Solari Leona",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/91/Skin_Loading_Screen_Iron_Solari_Leona.jpg"
+  },
+  {
+    "name": "Ironscale Shyvana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1e/Skin_Loading_Screen_Ironscale_Shyvana.jpg"
+  },
+  {
+    "name": "Ironside Malphite",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/15/Skin_Loading_Screen_Ironside_Malphite.jpg"
+  },
+  {
+    "name": "Jack of Hearts Twisted Fate",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/60/Skin_Loading_Screen_Jack_of_Hearts_Twisted_Fate.jpg"
+  },
+  {
+    "name": "Jade Dragon Wukong",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/ce/Skin_Loading_Screen_Jade_Dragon_Wukong.jpg"
+  },
+  {
+    "name": "Jade Fang Cassiopeia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b3/Skin_Loading_Screen_Jade_Fang_Cassiopeia.jpg"
+  },
+  {
+    "name": "Jailbreak Graves",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f3/Skin_Loading_Screen_Jailbreak_Graves.jpg"
+  },
+  {
+    "name": "Jaximus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b1/Skin_Loading_Screen_Jaximus.jpg"
+  },
+  {
+    "name": "Jayce Brighthammer",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c5/Skin_Loading_Screen_Jayce_Brighthammer.jpg"
+  },
+  {
+    "name": "Judgment Kayle",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/10/Skin_Loading_Screen_Judgment_Kayle.jpg"
+  },
+  {
+    "name": "Junkyard Trundle",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/ff/Skin_Loading_Screen_Junkyard_Trundle.jpg"
+  },
+  {
+    "name": "Jurassic Cho'Gath",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/be/Skin_Loading_Screen_Jurassic_Cho%27Gath.jpg"
+  },
+  {
+    "name": "Jurassic Kog'Maw",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9c/Skin_Loading_Screen_Jurassic_Kog%27Maw.jpg"
+  },
+  {
+    "name": "Justicar Aatrox",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/67/Skin_Loading_Screen_Justicar_Aatrox.jpg"
+  },
+  {
+    "name": "Justicar Syndra",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/40/Skin_Loading_Screen_Justicar_Syndra.jpg"
+  },
+  {
+    "name": "Karate Kennen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/11/Skin_Loading_Screen_Karate_Kennen.jpg"
+  },
+  {
+    "name": "Karthus Lightsbane",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/62/Skin_Loading_Screen_Karthus_Lightsbane.jpg"
+  },
+  {
+    "name": "KDA Ahri Prestige Edition",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/23/Skin_Loading_Screen_KDA_Ahri_Prestige_Edition.jpg"
+  },
+  {
+    "name": "KDA Ahri",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b0/Skin_Loading_Screen_KDA_Ahri.jpg"
+  },
+  {
+    "name": "KDA Akali Prestige Edition 2",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/01/Skin_Loading_Screen_KDA_Akali_Prestige_Edition_2.jpg"
+  },
+  {
+    "name": "KDA Akali",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/66/Skin_Loading_Screen_KDA_Akali.jpg"
+  },
+  {
+    "name": "KDA ALL OUT Ahri",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/10/Skin_Loading_Screen_KDA_ALL_OUT_Ahri.jpg"
+  },
+  {
+    "name": "KDA ALL OUT Akali",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/ce/Skin_Loading_Screen_KDA_ALL_OUT_Akali.jpg"
+  },
+  {
+    "name": "KDA ALL OUT Evelynn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/80/Skin_Loading_Screen_KDA_ALL_OUT_Evelynn.jpg"
+  },
+  {
+    "name": "KDA ALL OUT Kai'Sa Prestige Edition",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0b/Skin_Loading_Screen_KDA_ALL_OUT_Kai%27Sa_Prestige_Edition.jpg"
+  },
+  {
+    "name": "KDA ALL OUT Kai'Sa",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a5/Skin_Loading_Screen_KDA_ALL_OUT_Kai%27Sa.jpg"
+  },
+  {
+    "name": "KDA ALL OUT Seraphine Indie",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1d/Skin_Loading_Screen_KDA_ALL_OUT_Seraphine_Indie.jpg"
+  },
+  {
+    "name": "KDA ALL OUT Seraphine Rising Star",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a4/Skin_Loading_Screen_KDA_ALL_OUT_Seraphine_Rising_Star.jpg"
+  },
+  {
+    "name": "KDA ALL OUT Seraphine Superstar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/68/Skin_Loading_Screen_KDA_ALL_OUT_Seraphine_Superstar.jpg"
+  },
+  {
+    "name": "KDA Evelynn Prestige Edition",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b9/Skin_Loading_Screen_KDA_Evelynn_Prestige_Edition.jpg"
+  },
+  {
+    "name": "KDA Evelynn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/20/Skin_Loading_Screen_KDA_Evelynn.jpg"
+  },
+  {
+    "name": "KDA Kai'Sa Prestige Edition",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/60/Skin_Loading_Screen_KDA_Kai%27Sa_Prestige_Edition.jpg"
+  },
+  {
+    "name": "KDA Kai'Sa",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f2/Skin_Loading_Screen_KDA_Kai%27Sa.jpg"
+  },
+  {
+    "name": "Kennen M.D.",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c2/Skin_Loading_Screen_Kennen_M.D..jpg"
+  },
+  {
+    "name": "King of Clubs Mordekaiser",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/72/Skin_Loading_Screen_King_of_Clubs_Mordekaiser.jpg"
+  },
+  {
+    "name": "King Rammus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/14/Skin_Loading_Screen_King_Rammus.jpg"
+  },
+  {
+    "name": "King Tryndamere",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/62/Skin_Loading_Screen_King_Tryndamere.jpg"
+  },
+  {
+    "name": "Kingpin Twitch",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/37/Skin_Loading_Screen_Kingpin_Twitch.jpg"
+  },
+  {
+    "name": "Kitty Cat Katarina",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/35/Skin_Loading_Screen_Kitty_Cat_Katarina.jpg"
+  },
+  {
+    "name": "Knockout Lee Sin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/67/Skin_Loading_Screen_Knockout_Lee_Sin.jpg"
+  },
+  {
+    "name": "Koi Nami",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9c/Skin_Loading_Screen_Koi_Nami.jpg"
+  },
+  {
+    "name": "Lancer Paragon Blitzcrank",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/76/Skin_Loading_Screen_Lancer_Paragon_Blitzcrank.jpg"
+  },
+  {
+    "name": "Lancer Rogue Blitzcrank",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/ff/Skin_Loading_Screen_Lancer_Rogue_Blitzcrank.jpg"
+  },
+  {
+    "name": "Lancer Stratus Wukong",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a0/Skin_Loading_Screen_Lancer_Stratus_Wukong.jpg"
+  },
+  {
+    "name": "Lancer Zero Hecarim",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ac/Skin_Loading_Screen_Lancer_Zero_Hecarim.jpg"
+  },
+  {
+    "name": "Leopard Nidalee",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/aa/Skin_Loading_Screen_Leopard_Nidalee.jpg"
+  },
+  {
+    "name": "Leprechaun Veigar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e3/Skin_Loading_Screen_Leprechaun_Veigar.jpg"
+  },
+  {
+    "name": "Lil' Slugger Trundle",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4d/Skin_Loading_Screen_Lil%27_Slugger_Trundle.jpg"
+  },
+  {
+    "name": "Lion Dance Kog'Maw",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8e/Skin_Loading_Screen_Lion_Dance_Kog%27Maw.jpg"
+  },
+  {
+    "name": "Little Demon Tristana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/00/Skin_Loading_Screen_Little_Demon_Tristana.jpg"
+  },
+  {
+    "name": "Little Devil Fizz",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/14/Skin_Loading_Screen_Little_Devil_Fizz.jpg"
+  },
+  {
+    "name": "Little Devil Teemo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b8/Skin_Loading_Screen_Little_Devil_Teemo.jpg"
+  },
+  {
+    "name": "Little Knight Amumu",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a6/Skin_Loading_Screen_Little_Knight_Amumu.jpg"
+  },
+  {
+    "name": "Loch Ness Cho'Gath",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/95/Skin_Loading_Screen_Loch_Ness_Cho%27Gath.jpg"
+  },
+  {
+    "name": "Lollipoppy",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1b/Skin_Loading_Screen_Lollipoppy.jpg"
+  },
+  {
+    "name": "Longhorn Alistar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fc/Skin_Loading_Screen_Longhorn_Alistar.jpg"
+  },
+  {
+    "name": "Lord Darius",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6b/Skin_Loading_Screen_Lord_Darius.jpg"
+  },
+  {
+    "name": "Lord Mordekaiser",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8c/Skin_Loading_Screen_Lord_Mordekaiser.jpg"
+  },
+  {
+    "name": "Lumberjack Sion",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/52/Skin_Loading_Screen_Lumberjack_Sion.jpg"
+  },
+  {
+    "name": "Lunar Beast Alistar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/94/Skin_Loading_Screen_Lunar_Beast_Alistar.jpg"
+  },
+  {
+    "name": "Lunar Beast Annie",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/58/Skin_Loading_Screen_Lunar_Beast_Annie.jpg"
+  },
+  {
+    "name": "Lunar Beast Aphelios",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ab/Skin_Loading_Screen_Lunar_Beast_Aphelios.jpg"
+  },
+  {
+    "name": "Lunar Beast Viego",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/27/Skin_Loading_Screen_Lunar_Beast_Viego.jpg"
+  },
+  {
+    "name": "Lunar Eclipse Leona",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4e/Skin_Loading_Screen_Lunar_Eclipse_Leona.jpg"
+  },
+  {
+    "name": "Lunar Empress Lux",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0a/Skin_Loading_Screen_Lunar_Empress_Lux.jpg"
+  },
+  {
+    "name": "Lunar Goddess Diana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/20/Skin_Loading_Screen_Lunar_Goddess_Diana.jpg"
+  },
+  {
+    "name": "Lunar Guardian Nasus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3e/Skin_Loading_Screen_Lunar_Guardian_Nasus.jpg"
+  },
+  {
+    "name": "Lunar Guardian Warwick",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/23/Skin_Loading_Screen_Lunar_Guardian_Warwick.jpg"
+  },
+  {
+    "name": "Lunar Wraith Caitlyn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/89/Skin_Loading_Screen_Lunar_Wraith_Caitlyn.jpg"
+  },
+  {
+    "name": "Lunar Wraith Morgana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/73/Skin_Loading_Screen_Lunar_Wraith_Morgana.jpg"
+  },
+  {
+    "name": "Lunar Wraith Sylas",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2d/Skin_Loading_Screen_Lunar_Wraith_Sylas.jpg"
+  },
+  {
+    "name": "Mad Hatter Shaco",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/db/Skin_Loading_Screen_Mad_Hatter_Shaco.jpg"
+  },
+  {
+    "name": "Mad Scientist Singed",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f1/Skin_Loading_Screen_Mad_Scientist_Singed.jpg"
+  },
+  {
+    "name": "Mad Scientist Ziggs",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0b/Skin_Loading_Screen_Mad_Scientist_Ziggs.jpg"
+  },
+  {
+    "name": "Majestic Empress Morgana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0a/Skin_Loading_Screen_Majestic_Empress_Morgana.jpg"
+  },
+  {
+    "name": "Major Ziggs",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/55/Skin_Loading_Screen_Major_Ziggs.jpg"
+  },
+  {
+    "name": "Marauder Alistar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/34/Skin_Loading_Screen_Marauder_Alistar.jpg"
+  },
+  {
+    "name": "Marauder Ashe",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e5/Skin_Loading_Screen_Marauder_Ashe.jpg"
+  },
+  {
+    "name": "Marauder Olaf",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1a/Skin_Loading_Screen_Marauder_Olaf.jpg"
+  },
+  {
+    "name": "Marauder Warwick",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c5/Skin_Loading_Screen_Marauder_Warwick.jpg"
+  },
+  {
+    "name": "Marble Malphite",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/32/Skin_Loading_Screen_Marble_Malphite.jpg"
+  },
+  {
+    "name": "Marquis Vladimir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7b/Skin_Loading_Screen_Marquis_Vladimir.jpg"
+  },
+  {
+    "name": "Masked Shaco",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bd/Skin_Loading_Screen_Masked_Shaco.jpg"
+  },
+  {
+    "name": "Masquerade Evelynn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b1/Skin_Loading_Screen_Masquerade_Evelynn.jpg"
+  },
+  {
+    "name": "Master Arcanist Ziggs",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/64/Skin_Loading_Screen_Master_Arcanist_Ziggs.jpg"
+  },
+  {
+    "name": "Master Chef Tahm Kench",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a2/Skin_Loading_Screen_Master_Chef_Tahm_Kench.jpg"
+  },
+  {
+    "name": "Matador Alistar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/40/Skin_Loading_Screen_Matador_Alistar.jpg"
+  },
+  {
+    "name": "Mecha Aatrox",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7e/Skin_Loading_Screen_Mecha_Aatrox.jpg"
+  },
+  {
+    "name": "Mecha Aurelion Sol",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ef/Skin_Loading_Screen_Mecha_Aurelion_Sol.jpg"
+  },
+  {
+    "name": "Mecha Kha'Zix",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/02/Skin_Loading_Screen_Mecha_Kha%27Zix.jpg"
+  },
+  {
+    "name": "Mecha Kingdoms Draven",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c7/Skin_Loading_Screen_Mecha_Kingdoms_Draven.jpg"
+  },
+  {
+    "name": "Mecha Kingdoms Garen Prestige Edition",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/cc/Skin_Loading_Screen_Mecha_Kingdoms_Garen_Prestige_Edition.jpg"
+  },
+  {
+    "name": "Mecha Kingdoms Garen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/91/Skin_Loading_Screen_Mecha_Kingdoms_Garen.jpg"
+  },
+  {
+    "name": "Mecha Kingdoms Jax",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f0/Skin_Loading_Screen_Mecha_Kingdoms_Jax.jpg"
+  },
+  {
+    "name": "Mecha Kingdoms Leona",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/73/Skin_Loading_Screen_Mecha_Kingdoms_Leona.jpg"
+  },
+  {
+    "name": "Mecha Kingdoms Sett",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/62/Skin_Loading_Screen_Mecha_Kingdoms_Sett.jpg"
+  },
+  {
+    "name": "Mecha Malphite",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/16/Skin_Loading_Screen_Mecha_Malphite.jpg"
+  },
+  {
+    "name": "Mecha Rengar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5f/Skin_Loading_Screen_Mecha_Rengar.jpg"
+  },
+  {
+    "name": "Mecha Zero Sion",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5e/Skin_Loading_Screen_Mecha_Zero_Sion.jpg"
+  },
+  {
+    "name": "Medieval Twitch",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/91/Skin_Loading_Screen_Medieval_Twitch.jpg"
+  },
+  {
+    "name": "Meowkai",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2a/Skin_Loading_Screen_Meowkai.jpg"
+  },
+  {
+    "name": "Meowrick",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f8/Skin_Loading_Screen_Meowrick.jpg"
+  },
+  {
+    "name": "Mercenary Katarina",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b1/Skin_Loading_Screen_Mercenary_Katarina.jpg"
+  },
+  {
+    "name": "Midnight Ahri",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/01/Skin_Loading_Screen_Midnight_Ahri.jpg"
+  },
+  {
+    "name": "Minuteman Gangplank",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/66/Skin_Loading_Screen_Minuteman_Gangplank.jpg"
+  },
+  {
+    "name": "Mistletoe LeBlanc",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3d/Skin_Loading_Screen_Mistletoe_LeBlanc.jpg"
+  },
+  {
+    "name": "Molten Rammus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b3/Skin_Loading_Screen_Molten_Rammus.jpg"
+  },
+  {
+    "name": "Monarch Kog'Maw",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e5/Skin_Loading_Screen_Monarch_Kog%27Maw.jpg"
+  },
+  {
+    "name": "Moo Cow Alistar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c8/Skin_Loading_Screen_Moo_Cow_Alistar.jpg"
+  },
+  {
+    "name": "Mr. Mundoverse",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c1/Skin_Loading_Screen_Mr._Mundoverse.jpg"
+  },
+  {
+    "name": "Muay Thai Lee Sin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6d/Skin_Loading_Screen_Muay_Thai_Lee_Sin.jpg"
+  },
+  {
+    "name": "Mundo Mundo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d9/Skin_Loading_Screen_Mundo_Mundo.jpg"
+  },
+  {
+    "name": "Muse Sona",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c7/Skin_Loading_Screen_Muse_Sona.jpg"
+  },
+  {
+    "name": "Musketeer Twisted Fate",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/96/Skin_Loading_Screen_Musketeer_Twisted_Fate.jpg"
+  },
+  {
+    "name": "Myrmidon Pantheon",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2b/Skin_Loading_Screen_Myrmidon_Pantheon.jpg"
+  },
+  {
+    "name": "Mythic Cassiopeia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/93/Skin_Loading_Screen_Mythic_Cassiopeia.jpg"
+  },
+  {
+    "name": "Nemesis Jax",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a2/Skin_Loading_Screen_Nemesis_Jax.jpg"
+  },
+  {
+    "name": "Neo PAX Sivir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f1/Skin_Loading_Screen_Neo_PAX_Sivir.jpg"
+  },
+  {
+    "name": "Neon Strike Vi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/87/Skin_Loading_Screen_Neon_Strike_Vi.jpg"
+  },
+  {
+    "name": "Night Hunter Rengar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2a/Skin_Loading_Screen_Night_Hunter_Rengar.jpg"
+  },
+  {
+    "name": "Nightblade Irelia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bc/Skin_Loading_Screen_Nightblade_Irelia.jpg"
+  },
+  {
+    "name": "Nightbringer Aphelios",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/72/Skin_Loading_Screen_Nightbringer_Aphelios.jpg"
+  },
+  {
+    "name": "Nightbringer Lee Sin Prestige Edition",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c2/Skin_Loading_Screen_Nightbringer_Lee_Sin_Prestige_Edition.jpg"
+  },
+  {
+    "name": "Nightbringer Lee Sin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/54/Skin_Loading_Screen_Nightbringer_Lee_Sin.jpg"
+  },
+  {
+    "name": "Nightbringer Soraka",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/70/Skin_Loading_Screen_Nightbringer_Soraka.jpg"
+  },
+  {
+    "name": "Nightbringer Vladimir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7b/Skin_Loading_Screen_Nightbringer_Vladimir.jpg"
+  },
+  {
+    "name": "Nightbringer Yasuo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/be/Skin_Loading_Screen_Nightbringer_Yasuo.jpg"
+  },
+  {
+    "name": "Nightmare Cho'Gath",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/77/Skin_Loading_Screen_Nightmare_Cho%27Gath.jpg"
+  },
+  {
+    "name": "Nightmare Tryndamere",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/52/Skin_Loading_Screen_Nightmare_Tryndamere.jpg"
+  },
+  {
+    "name": "Nightraven Fiora",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9c/Skin_Loading_Screen_Nightraven_Fiora.jpg"
+  },
+  {
+    "name": "Ninja Rammus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/80/Skin_Loading_Screen_Ninja_Rammus.jpg"
+  },
+  {
+    "name": "Northern Front Swain",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a2/Skin_Loading_Screen_Northern_Front_Swain.jpg"
+  },
+  {
+    "name": "Northern Storm Volibear",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/dd/Skin_Loading_Screen_Northern_Storm_Volibear.jpg"
+  },
+  {
+    "name": "Nosferatu Vladimir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7e/Skin_Loading_Screen_Nosferatu_Vladimir.jpg"
+  },
+  {
+    "name": "Nottingham Ezreal",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5f/Skin_Loading_Screen_Nottingham_Ezreal.jpg"
+  },
+  {
+    "name": "Noxus Hunter Anivia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/73/Skin_Loading_Screen_Noxus_Hunter_Anivia.jpg"
+  },
+  {
+    "name": "Noxus Poppy",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fd/Skin_Loading_Screen_Noxus_Poppy.jpg"
+  },
+  {
+    "name": "Nunu & Willump Bot",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/18/Skin_Loading_Screen_Nunu_%26_Willump_Bot.jpg"
+  },
+  {
+    "name": "Nurse Akali",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c3/Skin_Loading_Screen_Nurse_Akali.jpg"
+  },
+  {
+    "name": "Nutcracko",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c7/Skin_Loading_Screen_Nutcracko.jpg"
+  },
+  {
+    "name": "Obsidian Dragon Sett Prestige Edition",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/05/Skin_Loading_Screen_Obsidian_Dragon_Sett_Prestige_Edition.jpg"
+  },
+  {
+    "name": "Obsidian Dragon Sett",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4c/Skin_Loading_Screen_Obsidian_Dragon_Sett.jpg"
+  },
+  {
+    "name": "Obsidian Malphite",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d2/Skin_Loading_Screen_Obsidian_Malphite.jpg"
+  },
+  {
+    "name": "Odyssey Aatrox",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/17/Skin_Loading_Screen_Odyssey_Aatrox.jpg"
+  },
+  {
+    "name": "Odyssey Jinx",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a9/Skin_Loading_Screen_Odyssey_Jinx.jpg"
+  },
+  {
+    "name": "Odyssey Karma",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/26/Skin_Loading_Screen_Odyssey_Karma.jpg"
+  },
+  {
+    "name": "Odyssey Kayn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b0/Skin_Loading_Screen_Odyssey_Kayn.jpg"
+  },
+  {
+    "name": "Odyssey Kha'Zix",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d4/Skin_Loading_Screen_Odyssey_Kha%27Zix.jpg"
+  },
+  {
+    "name": "Odyssey Malphite",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1f/Skin_Loading_Screen_Odyssey_Malphite.jpg"
+  },
+  {
+    "name": "Odyssey Sivir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/cf/Skin_Loading_Screen_Odyssey_Sivir.jpg"
+  },
+  {
+    "name": "Odyssey Sona",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ed/Skin_Loading_Screen_Odyssey_Sona.jpg"
+  },
+  {
+    "name": "Odyssey Twisted Fate",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9e/Skin_Loading_Screen_Odyssey_Twisted_Fate.jpg"
+  },
+  {
+    "name": "Odyssey Yasuo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a8/Skin_Loading_Screen_Odyssey_Yasuo.jpg"
+  },
+  {
+    "name": "Odyssey Ziggs",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2a/Skin_Loading_Screen_Odyssey_Ziggs.jpg"
+  },
+  {
+    "name": "Officer Caitlyn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c5/Skin_Loading_Screen_Officer_Caitlyn.jpg"
+  },
+  {
+    "name": "Officer Vi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/24/Skin_Loading_Screen_Officer_Vi.jpg"
+  },
+  {
+    "name": "Oktoberfest Gragas",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/34/Skin_Loading_Screen_Oktoberfest_Gragas.jpg"
+  },
+  {
+    "name": "Old Saint Zilean",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/eb/Skin_Loading_Screen_Old_Saint_Zilean.jpg"
+  },
+  {
+    "name": "Omega Squad Fizz",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/90/Skin_Loading_Screen_Omega_Squad_Fizz.jpg"
+  },
+  {
+    "name": "Omega Squad Teemo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a8/Skin_Loading_Screen_Omega_Squad_Teemo.jpg"
+  },
+  {
+    "name": "Omega Squad Tristana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/cc/Skin_Loading_Screen_Omega_Squad_Tristana.jpg"
+  },
+  {
+    "name": "Omega Squad Twitch",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4b/Skin_Loading_Screen_Omega_Squad_Twitch.jpg"
+  },
+  {
+    "name": "Omega Squad Veigar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5c/Skin_Loading_Screen_Omega_Squad_Veigar.jpg"
+  },
+  {
+    "name": "Order of the Banana Soraka",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bf/Skin_Loading_Screen_Order_of_the_Banana_Soraka.jpg"
+  },
+  {
+    "name": "Order of the Lotus Irelia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/52/Skin_Loading_Screen_Order_of_the_Lotus_Irelia.jpg"
+  },
+  {
+    "name": "Order of the Lotus Karma",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f6/Skin_Loading_Screen_Order_of_the_Lotus_Karma.jpg"
+  },
+  {
+    "name": "Outback Renekton",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7b/Skin_Loading_Screen_Outback_Renekton.jpg"
+  },
+  {
+    "name": "Overlord Malzahar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d2/Skin_Loading_Screen_Overlord_Malzahar.jpg"
+  },
+  {
+    "name": "Pajama Guardian Cosplay Urgot",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/17/Skin_Loading_Screen_Pajama_Guardian_Cosplay_Urgot.jpg"
+  },
+  {
+    "name": "Pajama Guardian Ezreal",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/db/Skin_Loading_Screen_Pajama_Guardian_Ezreal.jpg"
+  },
+  {
+    "name": "Pajama Guardian Lulu",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f0/Skin_Loading_Screen_Pajama_Guardian_Lulu.jpg"
+  },
+  {
+    "name": "Pajama Guardian Lux",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4a/Skin_Loading_Screen_Pajama_Guardian_Lux.jpg"
+  },
+  {
+    "name": "Pajama Guardian Miss Fortune",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6c/Skin_Loading_Screen_Pajama_Guardian_Miss_Fortune.jpg"
+  },
+  {
+    "name": "Pajama Guardian Soraka",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c0/Skin_Loading_Screen_Pajama_Guardian_Soraka.jpg"
+  },
+  {
+    "name": "Panda Annie",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/45/Skin_Loading_Screen_Panda_Annie.jpg"
+  },
+  {
+    "name": "Panda Teemo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1e/Skin_Loading_Screen_Panda_Teemo.jpg"
+  },
+  {
+    "name": "Papercraft Anivia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/28/Skin_Loading_Screen_Papercraft_Anivia.jpg"
+  },
+  {
+    "name": "Papercraft Nunu & Willump",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/00/Skin_Loading_Screen_Papercraft_Nunu_%26_Willump.jpg"
+  },
+  {
+    "name": "PAX Jax",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/eb/Skin_Loading_Screen_PAX_Jax.jpg"
+  },
+  {
+    "name": "PAX Sivir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3a/Skin_Loading_Screen_PAX_Sivir.jpg"
+  },
+  {
+    "name": "PAX Twisted Fate",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/ff/Skin_Loading_Screen_PAX_Twisted_Fate.jpg"
+  },
+  {
+    "name": "Pengu Cosplay Tristana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5c/Skin_Loading_Screen_Pengu_Cosplay_Tristana.jpg"
+  },
+  {
+    "name": "Pentakill Karthus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c6/Skin_Loading_Screen_Pentakill_Karthus.jpg"
+  },
+  {
+    "name": "Pentakill Kayle",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5f/Skin_Loading_Screen_Pentakill_Kayle.jpg"
+  },
+  {
+    "name": "Pentakill Mordekaiser",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b8/Skin_Loading_Screen_Pentakill_Mordekaiser.jpg"
+  },
+  {
+    "name": "Pentakill Olaf",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b0/Skin_Loading_Screen_Pentakill_Olaf.jpg"
+  },
+  {
+    "name": "Pentakill Sona",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d0/Skin_Loading_Screen_Pentakill_Sona.jpg"
+  },
+  {
+    "name": "Pentakill Yorick",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/33/Skin_Loading_Screen_Pentakill_Yorick.jpg"
+  },
+  {
+    "name": "Perseus Pantheon",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c9/Skin_Loading_Screen_Perseus_Pantheon.jpg"
+  },
+  {
+    "name": "Phantom Karthus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/42/Skin_Loading_Screen_Phantom_Karthus.jpg"
+  },
+  {
+    "name": "Pharaoh Amumu",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3e/Skin_Loading_Screen_Pharaoh_Amumu.jpg"
+  },
+  {
+    "name": "Pharaoh Nasus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/38/Skin_Loading_Screen_Pharaoh_Nasus.jpg"
+  },
+  {
+    "name": "Pharaoh Nidalee",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/62/Skin_Loading_Screen_Pharaoh_Nidalee.jpg"
+  },
+  {
+    "name": "Phoenix Quinn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/33/Skin_Loading_Screen_Phoenix_Quinn.jpg"
+  },
+  {
+    "name": "Pickpocket Twitch",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7d/Skin_Loading_Screen_Pickpocket_Twitch.jpg"
+  },
+  {
+    "name": "Piltover Customs Blitzcrank",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/84/Skin_Loading_Screen_Piltover_Customs_Blitzcrank.jpg"
+  },
+  {
+    "name": "Piltover Customs Heimerdinger",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/90/Skin_Loading_Screen_Piltover_Customs_Heimerdinger.jpg"
+  },
+  {
+    "name": "Pirate Ryze",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7e/Skin_Loading_Screen_Pirate_Ryze.jpg"
+  },
+  {
+    "name": "Pizza Delivery Sivir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3f/Skin_Loading_Screen_Pizza_Delivery_Sivir.jpg"
+  },
+  {
+    "name": "Playmaker Lee Sin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/aa/Skin_Loading_Screen_Playmaker_Lee_Sin.jpg"
+  },
+  {
+    "name": "Pool Party Caitlyn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f9/Skin_Loading_Screen_Pool_Party_Caitlyn.jpg"
+  },
+  {
+    "name": "Pool Party Draven",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f2/Skin_Loading_Screen_Pool_Party_Draven.jpg"
+  },
+  {
+    "name": "Pool Party Fiora",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a2/Skin_Loading_Screen_Pool_Party_Fiora.jpg"
+  },
+  {
+    "name": "Pool Party Gangplank",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c6/Skin_Loading_Screen_Pool_Party_Gangplank.jpg"
+  },
+  {
+    "name": "Pool Party Graves",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/74/Skin_Loading_Screen_Pool_Party_Graves.jpg"
+  },
+  {
+    "name": "Pool Party Heimerdinger",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e8/Skin_Loading_Screen_Pool_Party_Heimerdinger.jpg"
+  },
+  {
+    "name": "Pool Party Jarvan IV",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/91/Skin_Loading_Screen_Pool_Party_Jarvan_IV.jpg"
+  },
+  {
+    "name": "Pool Party Lee Sin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1f/Skin_Loading_Screen_Pool_Party_Lee_Sin.jpg"
+  },
+  {
+    "name": "Pool Party Leona",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/08/Skin_Loading_Screen_Pool_Party_Leona.jpg"
+  },
+  {
+    "name": "Pool Party Lulu",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c1/Skin_Loading_Screen_Pool_Party_Lulu.jpg"
+  },
+  {
+    "name": "Pool Party Miss Fortune",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a4/Skin_Loading_Screen_Pool_Party_Miss_Fortune.jpg"
+  },
+  {
+    "name": "Pool Party Mundo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/55/Skin_Loading_Screen_Pool_Party_Mundo.jpg"
+  },
+  {
+    "name": "Pool Party Orianna",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fe/Skin_Loading_Screen_Pool_Party_Orianna.jpg"
+  },
+  {
+    "name": "Pool Party Rek'Sai",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7e/Skin_Loading_Screen_Pool_Party_Rek%27Sai.jpg"
+  },
+  {
+    "name": "Pool Party Renekton",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e3/Skin_Loading_Screen_Pool_Party_Renekton.jpg"
+  },
+  {
+    "name": "Pool Party Syndra",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e2/Skin_Loading_Screen_Pool_Party_Syndra.jpg"
+  },
+  {
+    "name": "Pool Party Taliyah",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/26/Skin_Loading_Screen_Pool_Party_Taliyah.jpg"
+  },
+  {
+    "name": "Pool Party Taric",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/18/Skin_Loading_Screen_Pool_Party_Taric.jpg"
+  },
+  {
+    "name": "Pool Party Zac",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b2/Skin_Loading_Screen_Pool_Party_Zac.jpg"
+  },
+  {
+    "name": "Pool Party Ziggs",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5b/Skin_Loading_Screen_Pool_Party_Ziggs.jpg"
+  },
+  {
+    "name": "Pool Party Zoe",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8d/Skin_Loading_Screen_Pool_Party_Zoe.jpg"
+  },
+  {
+    "name": "Popstar Ahri",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/00/Skin_Loading_Screen_Popstar_Ahri.jpg"
+  },
+  {
+    "name": "Poro Rider Sejuani",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ad/Skin_Loading_Screen_Poro_Rider_Sejuani.jpg"
+  },
+  {
+    "name": "Praetorian Fiddlesticks",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/00/Skin_Loading_Screen_Praetorian_Fiddlesticks.jpg"
+  },
+  {
+    "name": "Praetorian Graves",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5f/Skin_Loading_Screen_Praetorian_Graves.jpg"
+  },
+  {
+    "name": "Pre-Void Kassadin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/89/Skin_Loading_Screen_Pre-Void_Kassadin.jpg"
+  },
+  {
+    "name": "Prehistoric Anivia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/65/Skin_Loading_Screen_Prehistoric_Anivia.jpg"
+  },
+  {
+    "name": "Prehistoric Cho'Gath",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fb/Skin_Loading_Screen_Prehistoric_Cho%27Gath.jpg"
+  },
+  {
+    "name": "Prehistoric Renekton",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/37/Skin_Loading_Screen_Prehistoric_Renekton.jpg"
+  },
+  {
+    "name": "Prestigious LeBlanc",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/87/Skin_Loading_Screen_Prestigious_LeBlanc.jpg"
+  },
+  {
+    "name": "Pretty Kitty Rengar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/02/Skin_Loading_Screen_Pretty_Kitty_Rengar.jpg"
+  },
+  {
+    "name": "Primal Udyr",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/65/Skin_Loading_Screen_Primal_Udyr.jpg"
+  },
+  {
+    "name": "Primetime Draven",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/40/Skin_Loading_Screen_Primetime_Draven.jpg"
+  },
+  {
+    "name": "Professor Ryze",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c4/Skin_Loading_Screen_Professor_Ryze.jpg"
+  },
+  {
+    "name": "Program Camille",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/62/Skin_Loading_Screen_Program_Camille.jpg"
+  },
+  {
+    "name": "Program LeBlanc",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a2/Skin_Loading_Screen_Program_LeBlanc.jpg"
+  },
+  {
+    "name": "Program Lissandra",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/86/Skin_Loading_Screen_Program_Lissandra.jpg"
+  },
+  {
+    "name": "Program Nami",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d6/Skin_Loading_Screen_Program_Nami.jpg"
+  },
+  {
+    "name": "Program Soraka",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/73/Skin_Loading_Screen_Program_Soraka.jpg"
+  },
+  {
+    "name": "PROJECT Akali",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/44/Skin_Loading_Screen_PROJECT_Akali.jpg"
+  },
+  {
+    "name": "PROJECT Ashe",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6b/Skin_Loading_Screen_PROJECT_Ashe.jpg"
+  },
+  {
+    "name": "PROJECT Ekko",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2c/Skin_Loading_Screen_PROJECT_Ekko.jpg"
+  },
+  {
+    "name": "PROJECT Fiora",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1c/Skin_Loading_Screen_PROJECT_Fiora.jpg"
+  },
+  {
+    "name": "PROJECT Irelia Prestige Edition",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/24/Skin_Loading_Screen_PROJECT_Irelia_Prestige_Edition.jpg"
+  },
+  {
+    "name": "PROJECT Irelia",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/14/Skin_Loading_Screen_PROJECT_Irelia.jpg"
+  },
+  {
+    "name": "PROJECT Jhin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e7/Skin_Loading_Screen_PROJECT_Jhin.jpg"
+  },
+  {
+    "name": "PROJECT Jinx",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d2/Skin_Loading_Screen_PROJECT_Jinx.jpg"
+  },
+  {
+    "name": "PROJECT Katarina",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/cc/Skin_Loading_Screen_PROJECT_Katarina.jpg"
+  },
+  {
+    "name": "PROJECT Leona",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b9/Skin_Loading_Screen_PROJECT_Leona.jpg"
+  },
+  {
+    "name": "PROJECT Lucian",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/df/Skin_Loading_Screen_PROJECT_Lucian.jpg"
+  },
+  {
+    "name": "PROJECT Pyke",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/16/Skin_Loading_Screen_PROJECT_Pyke.jpg"
+  },
+  {
+    "name": "PROJECT Vayne",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a5/Skin_Loading_Screen_PROJECT_Vayne.jpg"
+  },
+  {
+    "name": "PROJECT Vi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/cc/Skin_Loading_Screen_PROJECT_Vi.jpg"
+  },
+  {
+    "name": "PROJECT Warwick",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/97/Skin_Loading_Screen_PROJECT_Warwick.jpg"
+  },
+  {
+    "name": "PROJECT Yasuo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/86/Skin_Loading_Screen_PROJECT_Yasuo.jpg"
+  },
+  {
+    "name": "PROJECT Yi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/37/Skin_Loading_Screen_PROJECT_Yi.jpg"
+  },
+  {
+    "name": "PROJECT Zed",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7d/Skin_Loading_Screen_PROJECT_Zed.jpg"
+  },
+  {
+    "name": "Prom Queen Annie",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/dd/Skin_Loading_Screen_Prom_Queen_Annie.jpg"
+  },
+  {
+    "name": "Prototype Viktor",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/25/Skin_Loading_Screen_Prototype_Viktor.jpg"
+  },
+  {
+    "name": "PsyOps Ezreal Prestige Edition",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9a/Skin_Loading_Screen_PsyOps_Ezreal_Prestige_Edition.jpg"
+  },
+  {
+    "name": "PsyOps Ezreal",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e7/Skin_Loading_Screen_PsyOps_Ezreal.jpg"
+  },
+  {
+    "name": "PsyOps Kayle",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/01/Skin_Loading_Screen_PsyOps_Kayle.jpg"
+  },
+  {
+    "name": "PsyOps Master Yi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e8/Skin_Loading_Screen_PsyOps_Master_Yi.jpg"
+  },
+  {
+    "name": "PsyOps Pyke",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/cd/Skin_Loading_Screen_PsyOps_Pyke.jpg"
+  },
+  {
+    "name": "PsyOps Samira",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c0/Skin_Loading_Screen_PsyOps_Samira.jpg"
+  },
+  {
+    "name": "PsyOps Shen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/63/Skin_Loading_Screen_PsyOps_Shen.jpg"
+  },
+  {
+    "name": "PsyOps Sona",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b8/Skin_Loading_Screen_PsyOps_Sona.jpg"
+  },
+  {
+    "name": "PsyOps Vi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/be/Skin_Loading_Screen_PsyOps_Vi.jpg"
+  },
+  {
+    "name": "PsyOps Viktor",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ee/Skin_Loading_Screen_PsyOps_Viktor.jpg"
+  },
+  {
+    "name": "PsyOps Zed",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c2/Skin_Loading_Screen_PsyOps_Zed.jpg"
+  },
+  {
+    "name": "Pug'Maw",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/45/Skin_Loading_Screen_Pug%27Maw.jpg"
+  },
+  {
+    "name": "Pulsefire Caitlyn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/62/Skin_Loading_Screen_Pulsefire_Caitlyn.jpg"
+  },
+  {
+    "name": "Pulsefire Ekko",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ac/Skin_Loading_Screen_Pulsefire_Ekko.jpg"
+  },
+  {
+    "name": "Pulsefire Ezreal",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9d/Skin_Loading_Screen_Pulsefire_Ezreal.jpg"
+  },
+  {
+    "name": "Pulsefire Fiora",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c5/Skin_Loading_Screen_Pulsefire_Fiora.jpg"
+  },
+  {
+    "name": "Pulsefire Lucian Prestige Edition",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f9/Skin_Loading_Screen_Pulsefire_Lucian_Prestige_Edition.jpg"
+  },
+  {
+    "name": "Pulsefire Lucian",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f7/Skin_Loading_Screen_Pulsefire_Lucian.jpg"
+  },
+  {
+    "name": "Pulsefire Pantheon",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/de/Skin_Loading_Screen_Pulsefire_Pantheon.jpg"
+  },
+  {
+    "name": "Pulsefire Riven",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/05/Skin_Loading_Screen_Pulsefire_Riven.jpg"
+  },
+  {
+    "name": "Pulsefire Shen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/ce/Skin_Loading_Screen_Pulsefire_Shen.jpg"
+  },
+  {
+    "name": "Pulsefire Thresh Prestige Edition",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/81/Skin_Loading_Screen_Pulsefire_Thresh_Prestige_Edition.jpg"
+  },
+  {
+    "name": "Pulsefire Thresh",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/51/Skin_Loading_Screen_Pulsefire_Thresh.jpg"
+  },
+  {
+    "name": "Pulsefire Twisted Fate",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/53/Skin_Loading_Screen_Pulsefire_Twisted_Fate.jpg"
+  },
+  {
+    "name": "Pumpkin Prince Amumu",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/38/Skin_Loading_Screen_Pumpkin_Prince_Amumu.jpg"
+  },
+  {
+    "name": "Pumpkinhead Fiddlesticks",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5c/Skin_Loading_Screen_Pumpkinhead_Fiddlesticks.jpg"
+  },
+  {
+    "name": "Queen Ashe",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2f/Skin_Loading_Screen_Queen_Ashe.jpg"
+  },
+  {
+    "name": "Queen of Diamonds Syndra",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a4/Skin_Loading_Screen_Queen_of_Diamonds_Syndra.jpg"
+  },
+  {
+    "name": "Radiant Wukong",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3a/Skin_Loading_Screen_Radiant_Wukong.jpg"
+  },
+  {
+    "name": "Ragdoll Poppy",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c3/Skin_Loading_Screen_Ragdoll_Poppy.jpg"
+  },
+  {
+    "name": "Rageborn Mundo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/87/Skin_Loading_Screen_Rageborn_Mundo.jpg"
+  },
+  {
+    "name": "Ravager Nocturne",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/78/Skin_Loading_Screen_Ravager_Nocturne.jpg"
+  },
+  {
+    "name": "Ravenborn LeBlanc",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4f/Skin_Loading_Screen_Ravenborn_LeBlanc.jpg"
+  },
+  {
+    "name": "Re-Gifted Amumu",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/86/Skin_Loading_Screen_Re-Gifted_Amumu.jpg"
+  },
+  {
+    "name": "Reaper Hecarim",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/30/Skin_Loading_Screen_Reaper_Hecarim.jpg"
+  },
+  {
+    "name": "Reaper Soraka",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/63/Skin_Loading_Screen_Reaper_Soraka.jpg"
+  },
+  {
+    "name": "Recon Teemo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/48/Skin_Loading_Screen_Recon_Teemo.jpg"
+  },
+  {
+    "name": "Red Baron Corki",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8d/Skin_Loading_Screen_Red_Baron_Corki.jpg"
+  },
+  {
+    "name": "Red Card Katarina",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fb/Skin_Loading_Screen_Red_Card_Katarina.jpg"
+  },
+  {
+    "name": "Red Card Twisted Fate",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9e/Skin_Loading_Screen_Red_Card_Twisted_Fate.jpg"
+  },
+  {
+    "name": "Red Riding Annie",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/15/Skin_Loading_Screen_Red_Riding_Annie.jpg"
+  },
+  {
+    "name": "Redeemed Riven",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9e/Skin_Loading_Screen_Redeemed_Riven.jpg"
+  },
+  {
+    "name": "Reindeer Kog'Maw",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/00/Skin_Loading_Screen_Reindeer_Kog%27Maw.jpg"
+  },
+  {
+    "name": "Renegade Talon",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ad/Skin_Loading_Screen_Renegade_Talon.jpg"
+  },
+  {
+    "name": "Renektoy",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3e/Skin_Loading_Screen_Renektoy.jpg"
+  },
+  {
+    "name": "Resistance Caitlyn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/dd/Skin_Loading_Screen_Resistance_Caitlyn.jpg"
+  },
+  {
+    "name": "Resistance Illaoi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d7/Skin_Loading_Screen_Resistance_Illaoi.jpg"
+  },
+  {
+    "name": "Resistance Jayce",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/56/Skin_Loading_Screen_Resistance_Jayce.jpg"
+  },
+  {
+    "name": "Resistance Singed",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/87/Skin_Loading_Screen_Resistance_Singed.jpg"
+  },
+  {
+    "name": "Resistance Yorick",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e9/Skin_Loading_Screen_Resistance_Yorick.jpg"
+  },
+  {
+    "name": "Reverse Annie",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/39/Skin_Loading_Screen_Reverse_Annie.jpg"
+  },
+  {
+    "name": "Riot Blitzcrank",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/45/Skin_Loading_Screen_Riot_Blitzcrank.jpg"
+  },
+  {
+    "name": "Totemic Maokai",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0b/Skin_Loading_Screen_Totemic_Maokai.jpg"
+  },
+  {
+    "name": "Toxic Dr. Mundo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/19/Skin_Loading_Screen_Toxic_Dr._Mundo.jpg"
+  },
+  {
+    "name": "Toy Soldier Gangplank",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9a/Skin_Loading_Screen_Toy_Soldier_Gangplank.jpg"
+  },
+  {
+    "name": "TPA Ezreal",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/df/Skin_Loading_Screen_TPA_Ezreal.jpg"
+  },
+  {
+    "name": "TPA Mundo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3a/Skin_Loading_Screen_TPA_Mundo.jpg"
+  },
+  {
+    "name": "TPA Nunu & Willump",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e2/Skin_Loading_Screen_TPA_Nunu_%26_Willump.jpg"
+  },
+  {
+    "name": "TPA Orianna",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f4/Skin_Loading_Screen_TPA_Orianna.jpg"
+  },
+  {
+    "name": "TPA Shen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/64/Skin_Loading_Screen_TPA_Shen.jpg"
+  },
+  {
+    "name": "Traditional Karma",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/00/Skin_Loading_Screen_Traditional_Karma.jpg"
+  },
+  {
+    "name": "Traditional Lee Sin",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a7/Skin_Loading_Screen_Traditional_Lee_Sin.jpg"
+  },
+  {
+    "name": "Traditional Sejuani",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f6/Skin_Loading_Screen_Traditional_Sejuani.jpg"
+  },
+  {
+    "name": "Traditional Trundle",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b2/Skin_Loading_Screen_Traditional_Trundle.jpg"
+  },
+  {
+    "name": "Transcended Kayle",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a1/Skin_Loading_Screen_Transcended_Kayle.jpg"
+  },
+  {
+    "name": "Tribal Ryze",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1e/Skin_Loading_Screen_Tribal_Ryze.jpg"
+  },
+  {
+    "name": "Trick or Treat Ekko",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1b/Skin_Loading_Screen_Trick_or_Treat_Ekko.jpg"
+  },
+  {
+    "name": "Triumphant Ryze",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/47/Skin_Loading_Screen_Triumphant_Ryze.jpg"
+  },
+  {
+    "name": "True Damage Akali",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b6/Skin_Loading_Screen_True_Damage_Akali.jpg"
+  },
+  {
+    "name": "True Damage Ekko",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b9/Skin_Loading_Screen_True_Damage_Ekko.jpg"
+  },
+  {
+    "name": "True Damage Qiyana Prestige Edition",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d4/Skin_Loading_Screen_True_Damage_Qiyana_Prestige_Edition.jpg"
+  },
+  {
+    "name": "True Damage Qiyana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/08/Skin_Loading_Screen_True_Damage_Qiyana.jpg"
+  },
+  {
+    "name": "True Damage Senna Prestige Edition",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c8/Skin_Loading_Screen_True_Damage_Senna_Prestige_Edition.jpg"
+  },
+  {
+    "name": "True Damage Senna",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/44/Skin_Loading_Screen_True_Damage_Senna.jpg"
+  },
+  {
+    "name": "True Damage Yasuo Prestige Edition",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a2/Skin_Loading_Screen_True_Damage_Yasuo_Prestige_Edition.jpg"
+  },
+  {
+    "name": "True Damage Yasuo",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d7/Skin_Loading_Screen_True_Damage_Yasuo.jpg"
+  },
+  {
+    "name": "Tundra Fizz",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5e/Skin_Loading_Screen_Tundra_Fizz.jpg"
+  },
+  {
+    "name": "Tundra Hunter Warwick",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/93/Skin_Loading_Screen_Tundra_Hunter_Warwick.jpg"
+  },
+  {
+    "name": "Twitch Shadowfoot",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9d/Skin_Loading_Screen_Twitch_Shadowfoot.jpg"
+  },
+  {
+    "name": "Tyrant Swain",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9c/Skin_Loading_Screen_Tyrant_Swain.jpg"
+  },
+  {
+    "name": "UFO Corki",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b2/Skin_Loading_Screen_UFO_Corki.jpg"
+  },
+  {
+    "name": "Unchained Alistar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/97/Skin_Loading_Screen_Unchained_Alistar.jpg"
+  },
+  {
+    "name": "Uncle Ryze",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/07/Skin_Loading_Screen_Uncle_Ryze.jpg"
+  },
+  {
+    "name": "Undertaker Yorick",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/44/Skin_Loading_Screen_Undertaker_Yorick.jpg"
+  },
+  {
+    "name": "Underworld Twisted Fate",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7e/Skin_Loading_Screen_Underworld_Twisted_Fate.jpg"
+  },
+  {
+    "name": "Underworld Wukong",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2e/Skin_Loading_Screen_Underworld_Wukong.jpg"
+  },
+  {
+    "name": "Union Jack Fiddlesticks",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0e/Skin_Loading_Screen_Union_Jack_Fiddlesticks.jpg"
+  },
+  {
+    "name": "Urf Kench",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4f/Skin_Loading_Screen_Urf_Kench.jpg"
+  },
+  {
+    "name": "Urf the Manatee",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c7/Skin_Loading_Screen_Urf_the_Manatee.jpg"
+  },
+  {
+    "name": "Urf the Nami-tee",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bd/Skin_Loading_Screen_Urf_the_Nami-tee.jpg"
+  },
+  {
+    "name": "Urfrider Corki",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1e/Skin_Loading_Screen_Urfrider_Corki.jpg"
+  },
+  {
+    "name": "Urfwick",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d5/Skin_Loading_Screen_Urfwick.jpg"
+  },
+  {
+    "name": "Valiant Sword Riven Prestige Edition",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/05/Skin_Loading_Screen_Valiant_Sword_Riven_Prestige_Edition.jpg"
+  },
+  {
+    "name": "Valiant Sword Riven",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/64/Skin_Loading_Screen_Valiant_Sword_Riven.jpg"
+  },
+  {
+    "name": "Valkyrie Leona",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/11/Skin_Loading_Screen_Valkyrie_Leona.jpg"
+  },
+  {
+    "name": "Vancouver Amumu",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a4/Skin_Loading_Screen_Vancouver_Amumu.jpg"
+  },
+  {
+    "name": "Vandal Brand",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7f/Skin_Loading_Screen_Vandal_Brand.jpg"
+  },
+  {
+    "name": "Vandal Gragas",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/12/Skin_Loading_Screen_Vandal_Gragas.jpg"
+  },
+  {
+    "name": "Vandal Jax",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/ca/Skin_Loading_Screen_Vandal_Jax.jpg"
+  },
+  {
+    "name": "Vandal Twitch",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b5/Skin_Loading_Screen_Vandal_Twitch.jpg"
+  },
+  {
+    "name": "Vandal Vladimir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/69/Skin_Loading_Screen_Vandal_Vladimir.jpg"
+  },
+  {
+    "name": "Varus Swiftbolt",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/71/Skin_Loading_Screen_Varus_Swiftbolt.jpg"
+  },
+  {
+    "name": "Veigar Greybeard",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0c/Skin_Loading_Screen_Veigar_Greybeard.jpg"
+  },
+  {
+    "name": "Victorious Aatrox",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c4/Skin_Loading_Screen_Victorious_Aatrox.jpg"
+  },
+  {
+    "name": "Victorious Elise",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8e/Skin_Loading_Screen_Victorious_Elise.jpg"
+  },
+  {
+    "name": "Victorious Graves",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fb/Skin_Loading_Screen_Victorious_Graves.jpg"
+  },
+  {
+    "name": "Victorious Janna",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ea/Skin_Loading_Screen_Victorious_Janna.jpg"
+  },
+  {
+    "name": "Victorious Jarvan IV",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/93/Skin_Loading_Screen_Victorious_Jarvan_IV.jpg"
+  },
+  {
+    "name": "Victorious Lucian",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1a/Skin_Loading_Screen_Victorious_Lucian.jpg"
+  },
+  {
+    "name": "Victorious Maokai",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/aa/Skin_Loading_Screen_Victorious_Maokai.jpg"
+  },
+  {
+    "name": "Victorious Morgana",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4b/Skin_Loading_Screen_Victorious_Morgana.jpg"
+  },
+  {
+    "name": "Victorious Orianna",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3c/Skin_Loading_Screen_Victorious_Orianna.jpg"
+  },
+  {
+    "name": "Victorious Sivir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/98/Skin_Loading_Screen_Victorious_Sivir.jpg"
+  },
+  {
+    "name": "Viking Tryndamere",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f1/Skin_Loading_Screen_Viking_Tryndamere.jpg"
+  },
+  {
+    "name": "Vindicator Vayne",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/05/Skin_Loading_Screen_Vindicator_Vayne.jpg"
+  },
+  {
+    "name": "Viridian Kayle",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3b/Skin_Loading_Screen_Viridian_Kayle.jpg"
+  },
+  {
+    "name": "Viscero Xin Zhao",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a2/Skin_Loading_Screen_Viscero_Xin_Zhao.jpg"
+  },
+  {
+    "name": "Vizier Malzahar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a7/Skin_Loading_Screen_Vizier_Malzahar.jpg"
+  },
+  {
+    "name": "Void Bringer Illaoi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ab/Skin_Loading_Screen_Void_Bringer_Illaoi.jpg"
+  },
+  {
+    "name": "Void Fizz",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/cd/Skin_Loading_Screen_Void_Fizz.jpg"
+  },
+  {
+    "name": "Void Nocturne",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6f/Skin_Loading_Screen_Void_Nocturne.jpg"
+  },
+  {
+    "name": "Volcanic Wukong",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3c/Skin_Loading_Screen_Volcanic_Wukong.jpg"
+  },
+  {
+    "name": "Warden Jax",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5e/Skin_Loading_Screen_Warden_Jax.jpg"
+  },
+  {
+    "name": "Warden Karma",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/81/Skin_Loading_Screen_Warden_Karma.jpg"
+  },
+  {
+    "name": "Warden Nautilus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/93/Skin_Loading_Screen_Warden_Nautilus.jpg"
+  },
+  {
+    "name": "Warden Sivir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/aa/Skin_Loading_Screen_Warden_Sivir.jpg"
+  },
+  {
+    "name": "Warlord Shen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5c/Skin_Loading_Screen_Warlord_Shen.jpg"
+  },
+  {
+    "name": "Warmonger Sion",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/34/Skin_Loading_Screen_Warmonger_Sion.jpg"
+  },
+  {
+    "name": "Warring Kingdoms Azir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b1/Skin_Loading_Screen_Warring_Kingdoms_Azir.jpg"
+  },
+  {
+    "name": "Warring Kingdoms Garen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/57/Skin_Loading_Screen_Warring_Kingdoms_Garen.jpg"
+  },
+  {
+    "name": "Warring Kingdoms Jarvan IV",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/ff/Skin_Loading_Screen_Warring_Kingdoms_Jarvan_IV.jpg"
+  },
+  {
+    "name": "Warring Kingdoms Katarina",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e1/Skin_Loading_Screen_Warring_Kingdoms_Katarina.jpg"
+  },
+  {
+    "name": "Warring Kingdoms Nidalee",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9a/Skin_Loading_Screen_Warring_Kingdoms_Nidalee.jpg"
+  },
+  {
+    "name": "Warring Kingdoms Tryndamere",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/13/Skin_Loading_Screen_Warring_Kingdoms_Tryndamere.jpg"
+  },
+  {
+    "name": "Warring Kingdoms Vi",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5a/Skin_Loading_Screen_Warring_Kingdoms_Vi.jpg"
+  },
+  {
+    "name": "Warring Kingdoms Xin Zhao",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/91/Skin_Loading_Screen_Warring_Kingdoms_Xin_Zhao.jpg"
+  },
+  {
+    "name": "Warrior Princess Sivir",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/90/Skin_Loading_Screen_Warrior_Princess_Sivir.jpg"
+  },
+  {
+    "name": "Waterloo Miss Fortune",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8d/Skin_Loading_Screen_Waterloo_Miss_Fortune.jpg"
+  },
+  {
+    "name": "Whistler Village Twitch",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/96/Skin_Loading_Screen_Whistler_Village_Twitch.jpg"
+  },
+  {
+    "name": "White Mage Veigar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9f/Skin_Loading_Screen_White_Mage_Veigar.jpg"
+  },
+  {
+    "name": "Wicked LeBlanc",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/93/Skin_Loading_Screen_Wicked_LeBlanc.jpg"
+  },
+  {
+    "name": "Wicked Lulu",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/61/Skin_Loading_Screen_Wicked_Lulu.jpg"
+  },
+  {
+    "name": "Wild Card Shaco",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/79/Skin_Loading_Screen_Wild_Card_Shaco.jpg"
+  },
+  {
+    "name": "Wildfire Zyra",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/93/Skin_Loading_Screen_Wildfire_Zyra.jpg"
+  },
+  {
+    "name": "Winged Hussar Xin Zhao",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/ca/Skin_Loading_Screen_Winged_Hussar_Xin_Zhao.jpg"
+  },
+  {
+    "name": "Winter Wonder Karma",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3f/Skin_Loading_Screen_Winter_Wonder_Karma.jpg"
+  },
+  {
+    "name": "Winter Wonder Lulu",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/25/Skin_Loading_Screen_Winter_Wonder_Lulu.jpg"
+  },
+  {
+    "name": "Winter Wonder Neeko",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/59/Skin_Loading_Screen_Winter_Wonder_Neeko.jpg"
+  },
+  {
+    "name": "Winter Wonder Orianna",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5e/Skin_Loading_Screen_Winter_Wonder_Orianna.jpg"
+  },
+  {
+    "name": "Winter Wonder Soraka",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5f/Skin_Loading_Screen_Winter_Wonder_Soraka.jpg"
+  },
+  {
+    "name": "Witch's Brew Blitzcrank",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a4/Skin_Loading_Screen_Witch%27s_Brew_Blitzcrank.jpg"
+  },
+  {
+    "name": "Woad Ashe",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/97/Skin_Loading_Screen_Woad_Ashe.jpg"
+  },
+  {
+    "name": "Woad King Darius",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ec/Skin_Loading_Screen_Woad_King_Darius.jpg"
+  },
+  {
+    "name": "Woad Scout Quinn",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9e/Skin_Loading_Screen_Woad_Scout_Quinn.jpg"
+  },
+  {
+    "name": "Workshop Nunu & Willump",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/42/Skin_Loading_Screen_Workshop_Nunu_%26_Willump.jpg"
+  },
+  {
+    "name": "Workshop Shaco",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/82/Skin_Loading_Screen_Workshop_Shaco.jpg"
+  },
+  {
+    "name": "Worldbreaker Hecarim",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b2/Skin_Loading_Screen_Worldbreaker_Hecarim.jpg"
+  },
+  {
+    "name": "Worldbreaker Malzahar",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/22/Skin_Loading_Screen_Worldbreaker_Malzahar.jpg"
+  },
+  {
+    "name": "Worldbreaker Maokai",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a7/Skin_Loading_Screen_Worldbreaker_Maokai.jpg"
+  },
+  {
+    "name": "Worldbreaker Nasus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/98/Skin_Loading_Screen_Worldbreaker_Nasus.jpg"
+  },
+  {
+    "name": "Worldbreaker Nautilus",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/84/Skin_Loading_Screen_Worldbreaker_Nautilus.jpg"
+  },
+  {
+    "name": "Worldbreaker Sion",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9f/Skin_Loading_Screen_Worldbreaker_Sion.jpg"
+  },
+  {
+    "name": "Worldbreaker Trundle",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8f/Skin_Loading_Screen_Worldbreaker_Trundle.jpg"
+  },
+  {
+    "name": "Yellow Jacket Shen",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/84/Skin_Loading_Screen_Yellow_Jacket_Shen.jpg"
+  },
+  {
+    "name": "Young Ryze",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/90/Skin_Loading_Screen_Young_Ryze.jpg"
+  },
+  {
+    "name": "Zombie Brand",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4f/Skin_Loading_Screen_Zombie_Brand.jpg"
+  },
+  {
+    "name": "Zombie Nunu & Willump",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/cb/Skin_Loading_Screen_Zombie_Nunu_%26_Willump.jpg"
+  },
+  {
+    "name": "Zombie Ryze",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/97/Skin_Loading_Screen_Zombie_Ryze.jpg"
+  },
+  {
+    "name": "Zombie Slayer Jinx",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a1/Skin_Loading_Screen_Zombie_Slayer_Jinx.jpg"
+  },
+  {
+    "name": "Zombie Slayer Pantheon",
+    "image": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ab/Skin_Loading_Screen_Zombie_Slayer_Pantheon.jpg"
+  }
+]
