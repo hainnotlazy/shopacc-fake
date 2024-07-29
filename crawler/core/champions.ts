@@ -1,16 +1,18 @@
-import * as fs from "fs";
 import puppeteer from "puppeteer";
 import { Champion } from "./schema";
+import * as path from "path";
+import { saveData } from "./helper";
 
-const CHAMPIONS_IMAGE_DIR = "champions";
+const CHAMPIONS_IMAGE_DIR = path.join(__dirname, "..", "champions");
+const CHAMPIONS_FILE_NAME = "champions.json";
 const CHAMPIONS_RESOURCE_URLs = [
 	"https://lol.fandom.com/wiki/Category:Champion_Square_Images",
 	"https://lol.fandom.com/wiki/Category:Champion_Square_Images?filefrom=YuumiSquare.png",
 ];
 
-async function crawlChampionsData() {
+async function crawlChampionsData(headless: boolean = false) {
 	const champions: Champion[] = [];
-	const browser = await puppeteer.launch({ headless: false });
+	const browser = await puppeteer.launch({ headless });
 	const page = await browser.newPage();
 
 	try {
@@ -21,12 +23,12 @@ async function crawlChampionsData() {
 			await page.setViewport({ width: 1080, height: 1024 });
 
 			const data = await page.evaluate(() => {
-				const boxes = document.querySelectorAll(".gallerybox");
+				const elements = document.querySelectorAll(".gallerybox");
 
 				const data: Champion[] = [];
 
-				boxes.forEach(box => {
-					const image = box.querySelector("img") as HTMLImageElement;
+				elements.forEach(element => {
+					const image = element.querySelector("img") as HTMLImageElement;
 					const imageName = (image.getAttribute("data-image-name") as string).replace(
 						/(Square.png|Square Unreleased.png)/,
 						"",
@@ -48,24 +50,13 @@ async function crawlChampionsData() {
 			champions.push(...data);
 		}
 
-		await browser.close();
-
 		// Handle to save data
-		saveData(champions);
+		saveData(champions, CHAMPIONS_IMAGE_DIR, CHAMPIONS_FILE_NAME);
 	} catch (err) {
+		console.error("Failed when crawling emotes");
+	} finally {
 		await browser.close();
 	}
-}
-
-function saveData(data: Champion[]) {
-	if (!fs.existsSync(CHAMPIONS_IMAGE_DIR)) {
-		fs.mkdirSync(CHAMPIONS_IMAGE_DIR);
-	}
-
-	fs.writeFileSync(`${CHAMPIONS_IMAGE_DIR}/champions.json`, JSON.stringify(data, null, 2), {
-		encoding: "utf8",
-		flag: "w",
-	});
 }
 
 crawlChampionsData();

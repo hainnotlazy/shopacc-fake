@@ -3,8 +3,9 @@
 	"version": "1.0.0",
 	"main": "index.ts",
 	"scripts": {
-		"crawl-champions": "ts-node champions.ts",
-		"crawl-skins": "ts-node skins.ts"
+		"crawl-champions": "npx ts-node core/champions.ts",
+		"crawl-skins": "npx ts-node core/skins.ts",
+		"crawl-emotes": "npx ts-node core/emotes.ts"
 	},
 	"keywords": [],
 	"author": "",

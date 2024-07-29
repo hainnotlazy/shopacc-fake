@@ -1,8 +1,10 @@
-import * as fs from "fs";
 import puppeteer from "puppeteer";
+import * as path from "path";
 import { Skin } from "./schema";
+import { saveData } from "./helper";
 
-const SKINS_IMAGE_DIR = "skins";
+const SKINS_IMAGE_DIR = path.join(__dirname, "..", "skins");
+const SKINS_FILE_NAME = "skins.json";
 const SKINS_RESOURCE_URLs = [
 	"https://lol.fandom.com/wiki/Category:Champion_Skin_Loading_Screens",
 	"https://lol.fandom.com/wiki/Category:Champion_Skin_Loading_Screens?filefrom=Skin+Loading+Screen+Classic+Brand.jpg",
@@ -12,9 +14,9 @@ const SKINS_RESOURCE_URLs = [
 	"https://lol.fandom.com/wiki/Category:Champion_Skin_Loading_Screens?filefrom=Skin+Loading+Screen+Totemic+Maokai.jpg",
 ];
 
-async function crawlChampionsData() {
+async function crawlChampionsData(headless: boolean = false) {
 	const skins: Skin[] = [];
-	const browser = await puppeteer.launch({ headless: false });
+	const browser = await puppeteer.launch({ headless });
 	const page = await browser.newPage();
 
 	try {
@@ -25,12 +27,12 @@ async function crawlChampionsData() {
 			await page.setViewport({ width: 1080, height: 1024 });
 
 			const data = await page.evaluate(() => {
-				const boxes = document.querySelectorAll(".gallerybox");
+				const elements = document.querySelectorAll(".gallerybox");
 
 				const data: Skin[] = [];
 
-				boxes.forEach(box => {
-					const image = box.querySelector("img") as HTMLImageElement;
+				elements.forEach(element => {
+					const image = element.querySelector("img") as HTMLImageElement;
 					const imageName = (image.getAttribute("data-image-name") as string)
 						.replace(/Skin Loading Screen /, "")
 						.replace(/.jpg/, "");
@@ -55,21 +57,12 @@ async function crawlChampionsData() {
 		await browser.close();
 
 		// Handle to save data
-		saveData(skins);
+		saveData(skins, SKINS_IMAGE_DIR, SKINS_FILE_NAME);
 	} catch (err) {
+		console.error("Failed when crawling emotes");
+	} finally {
 		await browser.close();
 	}
-}
-
-function saveData(data: Skin[]) {
-	if (!fs.existsSync(SKINS_IMAGE_DIR)) {
-		fs.mkdirSync(SKINS_IMAGE_DIR);
-	}
-
-	fs.writeFileSync(`${SKINS_IMAGE_DIR}/skins.json`, JSON.stringify(data, null, 2), {
-		encoding: "utf8",
-		flag: "w",
-	});
 }
 
 crawlChampionsData();
