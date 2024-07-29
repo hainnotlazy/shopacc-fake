@@ -5,7 +5,8 @@
 	"scripts": {
 		"crawl-champions": "npx ts-node core/champions.ts",
 		"crawl-skins": "npx ts-node core/skins.ts",
-		"crawl-emotes": "npx ts-node core/emotes.ts"
+		"crawl-emotes": "npx ts-node core/emotes.ts",
+		"crawl-icons": "npx ts-node core/icons.ts"
 	},
 	"keywords": [],
 	"author": "",

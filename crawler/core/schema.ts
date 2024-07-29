@@ -11,6 +11,6 @@ export interface Emote extends BaseSchema {}
 
 export interface Icon extends BaseSchema {
 	id: number;
-	releasedAt: string; // YYYY
-	rarity: number;
+	description: string;
+	releasedAt: number; // YYYY
 }
