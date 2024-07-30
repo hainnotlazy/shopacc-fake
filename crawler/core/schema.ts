@@ -14,3 +14,7 @@ export interface Icon extends BaseSchema {
 	description: string;
 	releasedAt: number; // YYYY
 }
+
+export interface TFTArena extends BaseSchema {}
+
+export interface TFTBoom extends BaseSchema {}

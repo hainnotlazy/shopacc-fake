@@ -3,7 +3,7 @@ import { Icon } from "./schema";
 import { saveData } from "./helper";
 import * as path from "path";
 
-const ICONS_IMAGE_DIR = path.join(__dirname, "..", "icons");
+const ICONS_IMAGE_DIR = path.join(__dirname, "..", "assets", "icons");
 const ICONS_FILE_NAME = "icons.json";
 const ICONS_RESOURCE_URL = "https://lolmath.net/articles/summoner-icons";
 
@@ -63,7 +63,7 @@ async function crawlIconsData(headless: boolean = false) {
 		// Handle to save data
 		saveData(icons, ICONS_IMAGE_DIR, ICONS_FILE_NAME);
 	} catch (err) {
-		console.error("Failed when crawling emotes");
+		console.error("Failed when crawling icons");
 	} finally {
 		await browser.close();
 	}

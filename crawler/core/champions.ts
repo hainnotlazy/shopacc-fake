@@ -3,7 +3,7 @@ import { Champion } from "./schema";
 import * as path from "path";
 import { saveData } from "./helper";
 
-const CHAMPIONS_IMAGE_DIR = path.join(__dirname, "..", "champions");
+const CHAMPIONS_IMAGE_DIR = path.join(__dirname, "..", "assets", "champions");
 const CHAMPIONS_FILE_NAME = "champions.json";
 const CHAMPIONS_RESOURCE_URLs = [
 	"https://lol.fandom.com/wiki/Category:Champion_Square_Images",
@@ -53,7 +53,7 @@ async function crawlChampionsData(headless: boolean = false) {
 		// Handle to save data
 		saveData(champions, CHAMPIONS_IMAGE_DIR, CHAMPIONS_FILE_NAME);
 	} catch (err) {
-		console.error("Failed when crawling emotes");
+		console.error("Failed when crawling champions");
 	} finally {
 		await browser.close();
 	}

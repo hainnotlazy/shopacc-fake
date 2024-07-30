@@ -3,7 +3,7 @@ import * as path from "path";
 import { Skin } from "./schema";
 import { saveData } from "./helper";
 
-const SKINS_IMAGE_DIR = path.join(__dirname, "..", "skins");
+const SKINS_IMAGE_DIR = path.join(__dirname, "..", "assets", "skins");
 const SKINS_FILE_NAME = "skins.json";
 const SKINS_RESOURCE_URLs = [
 	"https://lol.fandom.com/wiki/Category:Champion_Skin_Loading_Screens",
@@ -59,7 +59,7 @@ async function crawlChampionsData(headless: boolean = false) {
 		// Handle to save data
 		saveData(skins, SKINS_IMAGE_DIR, SKINS_FILE_NAME);
 	} catch (err) {
-		console.error("Failed when crawling emotes");
+		console.error("Failed when crawling skins");
 	} finally {
 		await browser.close();
 	}

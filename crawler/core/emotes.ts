@@ -3,7 +3,7 @@ import { Emote } from "./schema";
 import { saveData } from "./helper";
 import * as path from "path";
 
-const EMOTES_IMAGE_DIR = path.join(__dirname, "..", "emotes");
+const EMOTES_IMAGE_DIR = path.join(__dirname, "..", "assets", "emotes");
 const EMOTES_FILE_NAME = "emotes.json";
 const EMOTES_RESOURCE_URLs = [
 	"https://leagueoflegends.fandom.com/wiki/Category:Emotes",

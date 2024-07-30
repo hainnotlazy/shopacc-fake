@@ -1,0 +1,20 @@
+TFT Pets (vi)
+https://tft.dakgg.io/api/v1/data/companions?hl=en
+
+TFT Pets (en)
+https://tft.dakgg.io/api/v1/data/companions?hl=vi
+
+TFT Pets Image
+https://cdn.lolchess.gg/assets/loadouts/companions/<<<tooltip_tft_avatar_blue.png>>>
+
+TFT Arena (vi)
+https://ddragon.leagueoflegends.com/cdn/13.24.1/data/vi_VN/tft-arena.json
+
+TFT Arena (en)
+https://ddragon.leagueoflegends.com/cdn/13.24.1/data/en_US/tft-arena.json
+
+https://leagueoflegends.fandom.com/wiki/Category:Little_Legend
+
+https://leagueoflegends.fandom.com/wiki/Category:TFT_Arena
+
+https://leagueoflegends.fandom.com/wiki/Category:Boom_images
