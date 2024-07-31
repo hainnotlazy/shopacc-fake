@@ -1,15 +1,16 @@
+import { Footer, Header } from "@/components";
 import { Outlet } from "react-router-dom";
 
 export function DefaultLayout() {
 	return (
-		<>
-			<header>Header</header>
+		<div className="overflow-x-hidden">
+			<Header />
 
-			<main>
+			<main className="bg-slate-100 min-h-screen">
 				<Outlet />
 			</main>
 
-			<footer>Footer</footer>
-		</>
+			<Footer />
+		</div>
 	);
 }
