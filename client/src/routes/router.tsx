@@ -1,3 +1,4 @@
+import { LoginForm } from "@/components";
 import { AuthLayout, DefaultLayout } from "@/layouts";
 import { HelloPage, HomePage } from "@/pages";
 import { createBrowserRouter } from "react-router-dom";
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
 		children: [
 			{
 				path: "/login",
-				element: <div>login form here</div>,
+				element: <LoginForm />,
 			},
 		],
 	},

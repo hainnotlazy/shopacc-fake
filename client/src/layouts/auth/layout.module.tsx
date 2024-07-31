@@ -6,7 +6,7 @@ import clsx from "clsx";
 export function AuthLayout() {
 	return (
 		<main className="bg-slate-100 flex h-screen max-h-screen overflow-hidden">
-			<div className="md:w-1/2 xl:w-1/3">
+			<div className="md:w-1/2 xl:w-1/3 w-full p-4">
 				<Outlet />
 			</div>
 
