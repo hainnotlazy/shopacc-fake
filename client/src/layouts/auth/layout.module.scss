@@ -1,0 +1,12 @@
+.animate-saturate {
+	animation: saturate-animation 3s infinite alternate;
+}
+
+@keyframes saturate-animation {
+	0% {
+		filter: saturate(1);
+	}
+	100% {
+		filter: saturate(2);
+	}
+}
