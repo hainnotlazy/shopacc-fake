@@ -3,7 +3,7 @@ import logoText from "@/assets/logo-text.svg";
 import { Button, Label, Switch } from "@/components";
 import { TbUserHexagon, TbBrightnessUp } from "react-icons/tb";
 import { Link } from "react-router-dom";
-import { Divide as Hamburger } from "hamburger-react";
+import { Turn as Hamburger } from "hamburger-react";
 import { useState } from "react";
 import clsx from "clsx";
 
@@ -12,7 +12,7 @@ export function Header() {
 	const [isSidenavOpen, setSidenavOpen] = useState(false);
 
 	return (
-		<header className="py-2.5 relative z-10 text-red-500 border-b border-gray-300 shadow-md">
+		<header className="py-2.5 fixed top-0 right-0 left-0 z-10 text-red-500 border-b border-gray-300 shadow-md bg-white">
 			<div className="md:px-8 container flex items-center justify-between px-2 mx-auto">
 				<Link
 					to="/"
@@ -53,15 +53,19 @@ export function Header() {
 					<Button
 						variant="default"
 						className="flex items-center gap-2 text-base"
+						asChild
 					>
-						<TbUserHexagon
-							size={18}
-							className="md:block hidden"
-						/>
-						Sign In
+						<Link to={"/login"}>
+							<TbUserHexagon
+								size={18}
+								className="md:block hidden"
+							/>
+							Sign In
+						</Link>
 					</Button>
 					<button className="md:hidden z-10 -ml-4">
 						<Hamburger
+							direction="right"
 							size={24}
 							toggled={isSidenavOpen}
 							toggle={setSidenavOpen}
