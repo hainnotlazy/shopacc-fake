@@ -3,3 +3,6 @@
 bin
 obj
 packages
+
+appsettings.*.json
+!appsettings.example.json
