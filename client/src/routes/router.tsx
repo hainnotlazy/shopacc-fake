@@ -1,12 +1,13 @@
 import { LoginForm } from "@/components";
 import { RegisterForm } from "@/components/common/register-form/register-form.module";
 import { AuthLayout, DefaultLayout } from "@/layouts";
-import { HelloPage, HomePage } from "@/pages";
+import { ErrorPage, HelloPage, HomePage, NotFoundPage } from "@/pages";
 import { createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
 	{
 		element: <DefaultLayout />,
+		errorElement: <ErrorPage />,
 		children: [
 			{
 				index: true,
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
 	},
 	{
 		element: <AuthLayout />,
+		errorElement: <ErrorPage />,
 		children: [
 			{
 				path: "/login",
@@ -30,6 +32,10 @@ const router = createBrowserRouter([
 				element: <RegisterForm />,
 			},
 		],
+	},
+	{
+		path: "*",
+		element: <NotFoundPage />,
 	},
 ]);
 

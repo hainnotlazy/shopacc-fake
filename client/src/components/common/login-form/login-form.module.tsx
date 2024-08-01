@@ -12,8 +12,9 @@ import {
 import { loginFormSchema } from "@/core/form-schemas";
 import { zodResolver } from "@hookform/resolvers/zod";
 import clsx from "clsx";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { TbChevronLeft, TbGhost2 } from "react-icons/tb";
+import { TbChevronLeft, TbGhost2, TbEye, TbEyeOff } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import { z } from "zod";
 
@@ -21,6 +22,8 @@ export function LoginForm() {
 	const form = useForm<z.infer<typeof loginFormSchema>>({
 		resolver: zodResolver(loginFormSchema),
 	});
+
+	const [showPassword, setShowPassword] = useState(false);
 
 	function onSubmit() {}
 
@@ -79,13 +82,24 @@ export function LoginForm() {
 							name="password"
 							render={({ field }) => (
 								<FormItem>
-									<FormLabel>Password</FormLabel>
+									<FormLabel className="flex items-center justify-between gap-4">
+										<span>Password</span>
+										<button
+											className="hover:text-blue-500 flex items-center gap-1 mr-1 text-blue-600"
+											type="button"
+											onClick={() => setShowPassword(!showPassword)}
+										>
+											{showPassword ? <TbEyeOff size={16} /> : <TbEye size={16} />}
+											{showPassword ? "Hide" : "Show"}
+										</button>
+									</FormLabel>
 									<FormControl>
 										<Input
 											className={clsx(
 												"focus:!ring-sky-500",
 												form.getFieldState("password").invalid && "ring-1 !ring-red-500",
 											)}
+											type={showPassword ? "text" : "password"}
 											placeholder="Enter your password"
 											maxLength={150}
 											{...field}
