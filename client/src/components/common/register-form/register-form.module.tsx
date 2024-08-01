@@ -9,7 +9,7 @@ import {
 	Input,
 	OAuthSection,
 } from "@/components";
-import { loginFormSchema } from "@/core/form-schemas";
+import { registerFormSchema } from "@/core/form-schemas";
 import { zodResolver } from "@hookform/resolvers/zod";
 import clsx from "clsx";
 import { useForm } from "react-hook-form";
@@ -17,9 +17,9 @@ import { TbChevronLeft, TbGhost2 } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import { z } from "zod";
 
-export function LoginForm() {
-	const form = useForm<z.infer<typeof loginFormSchema>>({
-		resolver: zodResolver(loginFormSchema),
+export function RegisterForm() {
+	const form = useForm<z.infer<typeof registerFormSchema>>({
+		resolver: zodResolver(registerFormSchema),
 	});
 
 	function onSubmit() {}
@@ -41,11 +41,11 @@ export function LoginForm() {
 			<div className="flex flex-col justify-center flex-grow w-full h-full gap-6 px-4">
 				<div className="space-y-2">
 					<h2 className="flex items-center justify-center gap-2 text-2xl font-semibold select-none">
-						Welcome back
+						Welcome to our store
 						<TbGhost2 size={30} />
 					</h2>
 					<p className="text-neutral-500 text-base text-center">
-						Enter your username and password to continue your shopping
+						It's just take a minute to create your own account
 					</p>
 				</div>
 				<Form {...form}>
@@ -67,6 +67,28 @@ export function LoginForm() {
 												form.getFieldState("username").invalid && "ring-1 !ring-red-500",
 											)}
 											placeholder="Enter your username"
+											maxLength={80}
+											{...field}
+										/>
+									</FormControl>
+									<FormMessage />
+								</FormItem>
+							)}
+						/>
+						<FormField
+							control={form.control}
+							name="email"
+							render={({ field }) => (
+								<FormItem>
+									<FormLabel>Email</FormLabel>
+									<FormControl>
+										<Input
+											className={clsx(
+												"focus:!ring-sky-500",
+												form.getFieldState("email").invalid && "ring-1 !ring-red-500",
+											)}
+											placeholder="Enter your email"
+											type="email"
 											{...field}
 										/>
 									</FormControl>
@@ -95,19 +117,40 @@ export function LoginForm() {
 								</FormItem>
 							)}
 						/>
+						<FormField
+							control={form.control}
+							name="confirmPassword"
+							render={({ field }) => (
+								<FormItem>
+									<FormLabel>Confirm password</FormLabel>
+									<FormControl>
+										<Input
+											className={clsx(
+												"focus:!ring-sky-500",
+												form.getFieldState("confirmPassword").invalid && "ring-1 !ring-red-500",
+											)}
+											placeholder="Confirm your password"
+											maxLength={150}
+											{...field}
+										/>
+									</FormControl>
+									<FormMessage />
+								</FormItem>
+							)}
+						/>
 						<Button
 							className="hover:bg-blue-500 focus-visible:ring-blue-600 block ml-auto bg-blue-600"
 							type="submit"
 						>
-							Login
+							Register
 						</Button>
-						<p className="!mt-0 text-neutral-500">
-							Don't have an account?{" "}
+						<p className="!mt-3 sm:!mt-0 text-neutral-500">
+							Already have an account?{" "}
 							<Link
 								className="hover:text-blue-800 hover:underline font-semibold text-blue-600"
-								to={"/register"}
+								to={"/login"}
 							>
-								Register now
+								Login now
 							</Link>
 						</p>
 					</form>

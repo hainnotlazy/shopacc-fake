@@ -6,14 +6,14 @@ import clsx from "clsx";
 export function AuthLayout() {
 	return (
 		<main className="bg-slate-100 flex h-screen max-h-screen overflow-hidden">
-			<div className="md:w-1/2 xl:w-1/3 w-full p-4">
+			<div className="md:w-1/2 xl:w-1/3 w-full p-4 overflow-y-auto">
 				<Outlet />
 			</div>
 
-			<div className="md:block xl:w-2/3 relative hidden w-1/2">
+			<div className="md:block xl:w-2/3 relative hidden w-1/2 overflow-hidden">
 				<img
 					className={clsx(
-						"aspect-square brightness-50 object-cover w-full h-full",
+						"aspect-square brightness-50 object-cover w-full h-full select-none",
 						styles["animate-saturate"],
 					)}
 					src={altBackground}
@@ -21,6 +21,7 @@ export function AuthLayout() {
 					loading="eager"
 					width="1024"
 					height="1024"
+					draggable="false"
 				/>
 				<div className="bottom-16 absolute left-0 right-0 px-4 space-y-3 text-center text-white">
 					<h1 className="text-4xl font-semibold select-none">ShopLOL.fake</h1>

@@ -26,6 +26,7 @@ export function Header() {
 						width="50"
 						height="50"
 						loading="eager"
+						draggable="false"
 					/>
 					<img
 						src={logoText}
@@ -33,6 +34,7 @@ export function Header() {
 						width="120"
 						height="50"
 						loading="eager"
+						draggable="false"
 					/>
 				</Link>
 				<div className="md:block hidden space-x-4">
@@ -91,6 +93,7 @@ export function Header() {
 						width="50"
 						height="50"
 						loading="eager"
+						draggable="false"
 					/>
 					<img
 						src={logoText}
@@ -98,6 +101,7 @@ export function Header() {
 						width="120"
 						height="50"
 						loading="eager"
+						draggable="false"
 					/>
 				</Link>
 				<div className="flex items-center justify-center gap-3">

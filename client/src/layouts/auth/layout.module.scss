@@ -1,10 +1,13 @@
 .animate-saturate {
-	animation: saturate-animation 3s infinite alternate;
+	animation: saturate-animation 5s infinite alternate;
 }
 
 @keyframes saturate-animation {
 	0% {
 		filter: saturate(1);
+	}
+	50% {
+		transform: scale3d(1.05, 1.05, 1);
 	}
 	100% {
 		filter: saturate(2);
