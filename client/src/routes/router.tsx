@@ -3,6 +3,8 @@ import { RegisterForm } from "@/components/common/register-form/register-form.mo
 import { AuthLayout, DefaultLayout } from "@/layouts";
 import { ErrorPage, HelloPage, HomePage, NotFoundPage } from "@/pages";
 import { createBrowserRouter } from "react-router-dom";
+import { ProtectedRoute } from "./protected-route";
+import { AuthRoute } from "./auth-route";
 
 const router = createBrowserRouter([
 	{
@@ -15,12 +17,20 @@ const router = createBrowserRouter([
 			},
 			{
 				path: "/hello",
-				element: <HelloPage />,
+				element: (
+					<ProtectedRoute>
+						<HelloPage />
+					</ProtectedRoute>
+				),
 			},
 		],
 	},
 	{
-		element: <AuthLayout />,
+		element: (
+			<AuthRoute>
+				<AuthLayout />
+			</AuthRoute>
+		),
 		errorElement: <ErrorPage />,
 		children: [
 			{

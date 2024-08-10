@@ -31,7 +31,7 @@ namespace server.Services
 			_configuration = configuration;
 
 			ACCESS_TOKEN_SECRET = _configuration["JwtBearer:SecretKey"] ?? "access-token-very-secret-jwt-key";
-			REFRESH_TOKEN_SECRET = _configuration["JwtBearer:RefreshTokenKey"] ?? "refresh-token-very-secret-jwy-key";
+			REFRESH_TOKEN_SECRET = _configuration["JwtBearer:RefreshTokenKey"] ?? "refresh-token-very-secret-jwt-key";
 			ACCESS_TOKEN_LIFESPAN_DAYS = int.Parse(_configuration["JwtBearer:AccessTokenLifespanDays"] ?? 1.ToString());
 			REFRESH_TOKEN_LIFESPAN_DAYS = int.Parse(_configuration["JwtBearer:RefreshTokenLifespanDays"] ?? 30.ToString());
 		}
