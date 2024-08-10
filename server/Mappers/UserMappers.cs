@@ -11,7 +11,8 @@ namespace server.Mappers
 			{
 				Id = userModel.Id,
 				Username = userModel.Username,
-				Email = userModel.Email
+				Email = userModel.Email,
+				IsEmailVerified = userModel.IsEmailVerified
 			};
 		}
 
@@ -20,7 +21,8 @@ namespace server.Mappers
 			return new User
 			{
 				Username = registerUserDto.Username.Trim(),
-				Password = registerUserDto.Password.Trim()
+				Password = registerUserDto.Password.Trim(),
+				Email = registerUserDto.Email.Trim()
 			};
 		}
 
@@ -29,7 +31,8 @@ namespace server.Mappers
 			return new User
 			{
 				Username = loginUserDto.Username.Trim(),
-				Password = loginUserDto.Password.Trim()
+				Password = loginUserDto.Password.Trim(),
+				Email = ""
 			};
 		}
 	}

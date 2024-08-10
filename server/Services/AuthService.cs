@@ -8,6 +8,8 @@ using server.Mappers;
 using server.Models;
 using server.Services.Interfaces;
 using System.IdentityModel.Tokens.Jwt;
+using System.Net;
+using System.Net.Mail;
 using System.Security.Claims;
 using System.Text;
 
@@ -18,17 +20,19 @@ namespace server.Services
 		private readonly DefaultDbContext _context;
 		private readonly DbSet<User> _usersRepository;
 		private readonly IConfiguration _configuration;
+		private readonly IMailService _mailService;
 
 		private readonly string ACCESS_TOKEN_SECRET;
 		private readonly string REFRESH_TOKEN_SECRET;
 		private readonly int ACCESS_TOKEN_LIFESPAN_DAYS;
 		private readonly int REFRESH_TOKEN_LIFESPAN_DAYS;
 
-		public AuthService(DefaultDbContext context, IConfiguration configuration)
+		public AuthService(DefaultDbContext context, IConfiguration configuration, IMailService mailService)
 		{
 			_context = context ?? throw new ArgumentNullException(nameof(context));
 			_usersRepository = _context.Users;
 			_configuration = configuration;
+			_mailService = mailService;
 
 			ACCESS_TOKEN_SECRET = _configuration["JwtBearer:SecretKey"] ?? "access-token-very-secret-jwt-key";
 			REFRESH_TOKEN_SECRET = _configuration["JwtBearer:RefreshTokenKey"] ?? "refresh-token-very-secret-jwt-key";
@@ -40,7 +44,7 @@ namespace server.Services
 		{
 			User loginUser = requestDto.ToUserFromLoginDto();
 			var existingUser = await _usersRepository.FirstOrDefaultAsync(user =>
-				user.Username.Equals(loginUser.Username)
+				user.Username.Equals(loginUser.Username) || user.Email.Equals(loginUser.Username)
 			);
 
 			if (existingUser != null && BCrypt.Net.BCrypt.Verify(requestDto.Password, existingUser.Password))
@@ -77,6 +81,13 @@ namespace server.Services
 			registerUser.Password = BCrypt.Net.BCrypt.HashPassword(registerUser.Password);
 			await _usersRepository.AddAsync(registerUser);
 			await _context.SaveChangesAsync();
+
+			// Send verification code to email
+			_mailService.SendMailAsync(
+				registerUser.Email,
+				"[ShopAcc.Fake] Verify Your Account",
+				$"Your email verification code is: {registerUser.EmailVerificationCode}"
+			);
 
 			// Create token payload
 			UserDto savedUser = registerUser.ToUserDto();
@@ -126,14 +137,26 @@ namespace server.Services
 
 		private async Task<ObjectResult?> ValidateRegistrationAsync(RegisterUserRequestDto requestDto)
 		{
-			var existingUser = await _usersRepository.FirstOrDefaultAsync(
+			var existingUsername = await _usersRepository.FirstOrDefaultAsync(
 				user => user.Username.Equals(requestDto.Username)
 			);
-			if (existingUser != null)
+			if (existingUsername != null)
 			{
 				return new BadRequestObjectResult(new ErrorResponse(
 					HttpErrorStatusCode.BadRequest,
 					"Username already exists!"
+					)
+				);
+			}
+
+			var existingEmail = await _usersRepository.FirstOrDefaultAsync(
+				user => user.Email.Equals(requestDto.Email)
+			);
+			if (existingEmail != null)
+			{
+				return new BadRequestObjectResult(new ErrorResponse(
+					HttpErrorStatusCode.BadRequest,
+					"Email already exists!"
 					)
 				);
 			}

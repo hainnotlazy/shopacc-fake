@@ -22,7 +22,7 @@ builder.Services.AddDbContext<DefaultDbContext>(options =>
 });
 
 /** Configure JWT */
-var jwtSecret = builder.Configuration.GetValue<string>("JwtBearer:SecretKey");
+var jwtSecret = builder.Configuration.GetValue<string>("JwtBearer:SecretKey") ?? "access-token-very-secret-jwt-key";
 var jwtSecretBytes = System.Text.Encoding.UTF8.GetBytes(jwtSecret);
 
 builder.Services
@@ -38,8 +38,11 @@ builder.Services
 		};
 	});
 
+/** Configure MailKit */
+
 /** Configure Services */
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IMailService, MailService>();
 
 var app = builder.Build();
 

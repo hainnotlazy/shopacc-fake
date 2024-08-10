@@ -13,5 +13,10 @@ namespace server.Dtos.User
 		[MinLength(8, ErrorMessage = "Password must be at least 8 characters")]
 		[MaxLength(150, ErrorMessage = "Password must be at most 255 characters")]
 		public required string Password { get; set; }
+
+		[Required(ErrorMessage = "Email is required")]
+		[EmailAddress(ErrorMessage = "Email is invalid")]
+		[MaxLength(255, ErrorMessage = "Email must be at most 255 characters")]
+		public required string Email { get; set; }
 	}
 }

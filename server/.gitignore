@@ -4,5 +4,9 @@ bin
 obj
 packages
 
+# migration files
+migrations/**
+
+# appsettings
 appsettings*.json
 !appsettings.example.json

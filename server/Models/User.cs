@@ -18,7 +18,12 @@ namespace server.Models
 		[Required]
 		public required string Password { get; set; }
 
+		[Required]
 		[StringLength(255)]
-		public string? Email { get; set; }
+		public required string Email { get; set; }
+
+		[StringLength(6)]
+		public int EmailVerificationCode { get; set; } = new Random().Next(100000, 999999);
+		public bool IsEmailVerified { get; set; } = false;
 	}
 }
