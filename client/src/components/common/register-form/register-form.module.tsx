@@ -8,11 +8,15 @@ import {
 	FormMessage,
 	Input,
 	OAuthSection,
+	useToast,
 } from "@/components";
 import { registerFormSchema } from "@/core/form-schemas";
+import { handleSetAuthToken } from "@/core/utils";
+import { AuthService, HttpClient } from "@/services";
 import { zodResolver } from "@hookform/resolvers/zod";
 import clsx from "clsx";
 import { useState } from "react";
+import { useCookies } from "react-cookie";
 import { useForm } from "react-hook-form";
 import { TbChevronLeft, TbEye, TbEyeOff, TbGhost2 } from "react-icons/tb";
 import { Link } from "react-router-dom";
@@ -21,12 +25,46 @@ import { z } from "zod";
 export function RegisterForm() {
 	const form = useForm<z.infer<typeof registerFormSchema>>({
 		resolver: zodResolver(registerFormSchema),
+		defaultValues: {
+			username: "",
+			email: "",
+			password: "",
+			confirmPassword: "",
+		},
 	});
 
 	const [showPassword, setShowPassword] = useState(false);
 	const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+	const { toast } = useToast();
+	const [cookie, setCookie] = useCookies(["access-token", "refresh-token"]);
 
-	function onSubmit() {}
+	async function onSubmit() {
+		const { username, email, password } = form.getValues();
+
+		try {
+			const result = await AuthService.register(username, password);
+
+			handleSetAuthToken(setCookie, "access-token", result.accessToken);
+			handleSetAuthToken(setCookie, "refresh-token", result.refreshToken);
+
+			toast({
+				title: "Registered account successfully",
+				description: "A verification code has been sent to your email",
+				duration: 4000,
+			});
+		} catch (e) {
+			const { status, message: errMessage } = HttpClient.getErrorResponse(e);
+			form.setError("root", {
+				type: status.toString(),
+				message: errMessage,
+			});
+			toast({
+				variant: "destructive",
+				title: "Register account failed",
+				description: errMessage,
+			});
+		}
+	}
 
 	return (
 		<div className="h-fit flex flex-col items-center gap-12">
@@ -110,6 +148,7 @@ export function RegisterForm() {
 										<button
 											className="hover:text-blue-500 flex items-center gap-1 mr-1 text-blue-600"
 											type="button"
+											tabIndex={-1}
 											onClick={() => setShowPassword(!showPassword)}
 										>
 											{showPassword ? <TbEyeOff size={16} /> : <TbEye size={16} />}
@@ -142,6 +181,7 @@ export function RegisterForm() {
 										<button
 											className="hover:text-blue-500 flex items-center gap-1 mr-1 text-blue-600"
 											type="button"
+											tabIndex={-1}
 											onClick={() => setShowConfirmPassword(!showConfirmPassword)}
 										>
 											{showConfirmPassword ? <TbEyeOff size={16} /> : <TbEye size={16} />}
@@ -164,6 +204,11 @@ export function RegisterForm() {
 								</FormItem>
 							)}
 						/>
+						{form.formState.errors.root && (
+							<p className="!mt-3 !-mb-3 text-center text-red-500">
+								{form.formState.errors.root.message}
+							</p>
+						)}
 						<Button
 							className="hover:bg-blue-500 focus-visible:ring-blue-600 block ml-auto bg-blue-600"
 							type="submit"
