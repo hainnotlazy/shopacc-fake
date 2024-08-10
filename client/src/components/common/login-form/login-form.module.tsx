@@ -21,6 +21,10 @@ import { z } from "zod";
 export function LoginForm() {
 	const form = useForm<z.infer<typeof loginFormSchema>>({
 		resolver: zodResolver(loginFormSchema),
+		defaultValues: {
+			username: "",
+			password: "",
+		},
 	});
 
 	const [showPassword, setShowPassword] = useState(false);

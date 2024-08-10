@@ -1,5 +1,5 @@
 import background from "@/assets/images/background.png";
-import { Footer, Header } from "@/components";
+import { Footer, Header, Toaster } from "@/components";
 import { Outlet } from "react-router-dom";
 import styles from "./layout.module.scss";
 import clsx from "clsx";
@@ -20,6 +20,8 @@ export function DefaultLayout() {
 					<Outlet />
 				</div>
 			</main>
+
+			<Toaster />
 
 			<Footer />
 		</div>
