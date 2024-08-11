@@ -82,12 +82,9 @@ namespace server.Services
 			await _usersRepository.AddAsync(registerUser);
 			await _context.SaveChangesAsync();
 
-			// Send verification code to email
-			_mailService.SendMailAsync(
-				registerUser.Email,
-				"[ShopAcc.Fake] Verify Your Account",
-				$"Your email verification code is: {registerUser.EmailVerificationCode}"
-			);
+			// Send verification code to email (async)
+#pragma warning disable CS4014
+			_mailService.SendVerificationMailAsync(registerUser.Email, registerUser.EmailVerificationCode.ToString());
 
 			// Create token payload
 			UserDto savedUser = registerUser.ToUserDto();

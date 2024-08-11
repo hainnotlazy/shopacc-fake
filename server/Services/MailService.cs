@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
-using System.Runtime.CompilerServices;
-using System.Threading.Tasks;
 using server.Services.Interfaces;
 
 namespace server.Services
@@ -27,16 +25,34 @@ namespace server.Services
 			EMAIL_PASSWORD = _configuration["MailSettings:EmailPassword"] ?? "shopacc.fake.password";
 		}
 
-		public async void SendMailAsync(string EmailDestination, string Subject, string Body)
+		public async Task<bool> SendMailAsync(string EmailDestination, string Subject, string Body)
 		{
-			var mailClient = new SmtpClient(SERVER, PORT)
+			try
 			{
-				EnableSsl = true,
-				Credentials = new NetworkCredential(EMAIL_ADDRESS, EMAIL_PASSWORD)
-			};
+				var mailClient = new SmtpClient(SERVER, PORT)
+				{
+					EnableSsl = true,
+					Credentials = new NetworkCredential(EMAIL_ADDRESS, EMAIL_PASSWORD)
+				};
 
-			await mailClient.SendMailAsync(
-				new MailMessage(EMAIL_ADDRESS, EmailDestination, Subject, Body)
+				await mailClient.SendMailAsync(
+					new MailMessage(EMAIL_ADDRESS, EmailDestination, Subject, Body)
+				);
+
+				return true;
+			}
+			catch (Exception)
+			{
+				return false;
+			}
+		}
+
+		public async Task<bool> SendVerificationMailAsync(string EmailDestination, string VerificationCode)
+		{
+			return await SendMailAsync(
+				EmailDestination,
+				"[ShopAcc.Fake] Verify Your Account",
+				$"Your email verification code is: {VerificationCode}"
 			);
 		}
 	}
