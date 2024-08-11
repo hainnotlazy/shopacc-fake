@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using server.DbContexts;
 using server.Dtos.Response;
+using server.Dtos.User;
 using server.Models;
 using server.Services.Interfaces;
 
@@ -33,22 +34,15 @@ namespace server.Services
 			// Validate user
 			if (existingUser == null)
 			{
-				return new BadRequestObjectResult(new ErrorResponse(
-					HttpErrorStatusCode.NotFound,
-					"User not found!"
-				));
+				return new BadRequestObjectResult(ErrorResponse.NotFoundResponse("User not found!"));
 			}
 			else if (existingUser.IsEmailVerified)
 			{
-				return new BadRequestObjectResult(new ErrorResponse(
-					HttpErrorStatusCode.BadRequest,
-					"Email already verified!"
-				));
+				return new BadRequestObjectResult(ErrorResponse.BadRequestResponse("Email already verified!"));
 			}
 			else if (existingUser.NextEmailVerificationTime > DateTime.Now)
 			{
-				return new BadRequestObjectResult(new ErrorResponse(
-					HttpErrorStatusCode.BadRequest,
+				return new BadRequestObjectResult(ErrorResponse.BadRequestResponse(
 					"Please wait for 15 minutes to resend verification email!"
 				));
 			}
@@ -60,7 +54,7 @@ namespace server.Services
 			);
 			if (!sendMailResult)
 			{
-				return new BadRequestObjectResult(new ErrorResponse(HttpErrorStatusCode.BadRequest, "Failed to send verification email!"));
+				return new BadRequestObjectResult(ErrorResponse.BadRequestResponse("Failed to send verification email!"));
 			}
 
 			// Update next get verification email time
@@ -71,9 +65,34 @@ namespace server.Services
 			return new OkObjectResult("Send verification code email successfully!");
 		}
 
-		public void UpdateVerificationStatusEmail()
+		public async Task<ObjectResult> VerifyEmail(int UserId, VerifyEmailRequestDto requestDto)
 		{
-			throw new NotImplementedException();
+			var existingUser = await _userRepository.FirstOrDefaultAsync(user =>
+				user.Id.Equals(UserId)
+			);
+			int code = int.Parse(requestDto.VerificationCode);
+
+			// Validate
+			if (existingUser == null)
+			{
+				return new BadRequestObjectResult(ErrorResponse.NotFoundResponse("User not found!"));
+			}
+			else if (existingUser.IsEmailVerified)
+			{
+				return new BadRequestObjectResult(ErrorResponse.BadRequestResponse("Email already verified!"));
+			}
+			else if (existingUser.EmailVerificationCode != code)
+			{
+				return new BadRequestObjectResult(ErrorResponse.BadRequestResponse("Incorrect verification code!"));
+			}
+
+			// Update user
+			existingUser.EmailVerificationCode = 0;
+			existingUser.IsEmailVerified = true;
+			_userRepository.Update(existingUser);
+			await _context.SaveChangesAsync();
+
+			return new OkObjectResult("Verify email successfully!");
 		}
 	}
 }

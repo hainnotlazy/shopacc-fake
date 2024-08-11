@@ -35,5 +35,30 @@ namespace server.Dtos.Response
 			Title = ErrorTitles[StatusCode];
 			Errors = new HttpError { Error = Message };
 		}
+
+		public static ErrorResponse BadRequestResponse(string Message)
+		{
+			return new ErrorResponse(HttpErrorStatusCode.BadRequest, Message);
+		}
+
+		public static ErrorResponse UnauthorizedResponse(string Message)
+		{
+			return new ErrorResponse(HttpErrorStatusCode.Unauthorized, Message);
+		}
+
+		public static ErrorResponse ForbiddenResponse(string Message)
+		{
+			return new ErrorResponse(HttpErrorStatusCode.Forbidden, Message);
+		}
+
+		public static ErrorResponse NotFoundResponse(string Message)
+		{
+			return new ErrorResponse(HttpErrorStatusCode.NotFound, Message);
+		}
+
+		public static ErrorResponse InternalServerErrorResponse(string Message)
+		{
+			return new ErrorResponse(HttpErrorStatusCode.InternalServerError, Message);
+		}
 	}
 }

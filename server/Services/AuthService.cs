@@ -54,16 +54,12 @@ namespace server.Services
 				return new OkObjectResult(new AuthenticatedResponse(
 					GenerateToken(TokenType.AccessToken, payload),
 					GenerateToken(TokenType.RefreshToken, payload),
-					null
+					existingUser.ToUserDto()
 				));
 			}
 			else
 			{
-				return new BadRequestObjectResult(new ErrorResponse(
-					HttpErrorStatusCode.BadRequest,
-					"Username or password is incorrect!"
-					)
-				);
+				return new BadRequestObjectResult(ErrorResponse.BadRequestResponse("Invalid username or password!"));
 			}
 		}
 
@@ -139,11 +135,7 @@ namespace server.Services
 			);
 			if (existingUsername != null)
 			{
-				return new BadRequestObjectResult(new ErrorResponse(
-					HttpErrorStatusCode.BadRequest,
-					"Username already exists!"
-					)
-				);
+				return new BadRequestObjectResult(ErrorResponse.BadRequestResponse("Username already exists!"));
 			}
 
 			var existingEmail = await _usersRepository.FirstOrDefaultAsync(
@@ -151,11 +143,7 @@ namespace server.Services
 			);
 			if (existingEmail != null)
 			{
-				return new BadRequestObjectResult(new ErrorResponse(
-					HttpErrorStatusCode.BadRequest,
-					"Email already exists!"
-					)
-				);
+				return new BadRequestObjectResult(ErrorResponse.BadRequestResponse("Email already exists!"));
 			}
 
 			return null;
