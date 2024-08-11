@@ -4,15 +4,12 @@ import "./index.scss";
 import { RouterProvider } from "react-router-dom";
 import router from "./routes/router";
 import { Provider } from "react-redux";
-import store from "./core/store/store";
-import { CookiesProvider } from "react-cookie";
+import { store } from "./core/store";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
 	<React.StrictMode>
-		<CookiesProvider>
-			{/* <Provider store={store}> */}
+		<Provider store={store}>
 			<RouterProvider router={router} />
-			{/* </Provider> */}
-		</CookiesProvider>
+		</Provider>
 	</React.StrictMode>,
 );

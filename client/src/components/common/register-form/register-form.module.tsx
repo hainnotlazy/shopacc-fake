@@ -11,15 +11,15 @@ import {
 	useToast,
 } from "@/components";
 import { registerFormSchema } from "@/core/form-schemas";
-import { handleSetAuthToken } from "@/core/utils";
-import { AuthService, HttpClient } from "@/services";
+import { currentUserReducer } from "@/core/store/slices";
+import { AuthService, AuthTokenType, CookiesService, HttpClient } from "@/services";
 import { zodResolver } from "@hookform/resolvers/zod";
 import clsx from "clsx";
 import { useState } from "react";
-import { useCookies } from "react-cookie";
 import { useForm } from "react-hook-form";
 import { TbChevronLeft, TbEye, TbEyeOff, TbGhost2 } from "react-icons/tb";
-import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { z } from "zod";
 
 export function RegisterForm() {
@@ -33,25 +33,29 @@ export function RegisterForm() {
 		},
 	});
 
+	const dispatch = useDispatch();
+	const navigate = useNavigate();
 	const [showPassword, setShowPassword] = useState(false);
 	const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 	const { toast } = useToast();
-	const [cookie, setCookie] = useCookies(["access-token", "refresh-token"]);
 
 	async function onSubmit() {
 		const { username, email, password } = form.getValues();
 
 		try {
-			const result = await AuthService.register(username, password);
+			const result = await AuthService.register(username, email, password);
 
-			handleSetAuthToken(setCookie, "access-token", result.accessToken);
-			handleSetAuthToken(setCookie, "refresh-token", result.refreshToken);
+			dispatch(currentUserReducer.actions.setCurrentUser(result.user));
+			CookiesService.setToken(AuthTokenType.ACCESS_TOKEN, result.accessToken);
+			CookiesService.setToken(AuthTokenType.REFRESH_TOKEN, result.refreshToken);
 
 			toast({
 				title: "Registered account successfully",
 				description: "A verification code has been sent to your email",
 				duration: 4000,
 			});
+
+			navigate("/verify");
 		} catch (e) {
 			const { status, message: errMessage } = HttpClient.getErrorResponse(e);
 			form.setError("root", {

@@ -3,8 +3,16 @@ import altBackground from "@/assets/images/auth-alt-background.png";
 import styles from "./layout.module.scss";
 import clsx from "clsx";
 import { Toaster } from "@/components";
+import { fetchCurrentUser } from "@/core/store/slices";
+import { useEffect } from "react";
+import { useAppDispatch } from "@/core/store/store";
 
 export function AuthLayout() {
+	const dispatch = useAppDispatch();
+	useEffect(() => {
+		dispatch(fetchCurrentUser());
+	}, []);
+
 	return (
 		<>
 			<main className="bg-slate-100 flex h-screen max-h-screen overflow-hidden">

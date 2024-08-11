@@ -86,10 +86,13 @@ namespace server.Services
 			UserDto savedUser = registerUser.ToUserDto();
 			TokenPayload payload = new(savedUser.Id, savedUser.Username);
 
-			return new CreatedAtRouteResult(null, new AuthenticatedResponse(
-				GenerateToken(TokenType.AccessToken, payload),
-				GenerateToken(TokenType.RefreshToken, payload),
-				savedUser)
+			return new CreatedAtRouteResult(
+				null,
+				new AuthenticatedResponse(
+					GenerateToken(TokenType.AccessToken, payload),
+					GenerateToken(TokenType.RefreshToken, payload),
+					savedUser
+				)
 			);
 		}
 

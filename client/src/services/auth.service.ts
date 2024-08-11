@@ -11,9 +11,14 @@ class AuthService implements IAuthService {
 	login(username: string, password: string): Promise<AuthenticatedResponse> {
 		throw new Error("Method not implemented.");
 	}
-	async register(username: string, password: string): Promise<AuthenticatedResponse> {
+	async register(
+		username: string,
+		email: string,
+		password: string,
+	): Promise<AuthenticatedResponse> {
 		const result = await this.httpClient.post<AuthenticatedResponse>("/api/auth/register", {
 			username,
+			email,
 			password,
 		});
 
