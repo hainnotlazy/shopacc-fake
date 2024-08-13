@@ -19,7 +19,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { TbChevronLeft, TbEye, TbEyeOff, TbGhost2 } from "react-icons/tb";
 import { useDispatch } from "react-redux";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { z } from "zod";
 
 export function RegisterForm() {
@@ -50,7 +50,7 @@ export function RegisterForm() {
 			CookiesService.setToken(AuthTokenType.REFRESH_TOKEN, result.refreshToken);
 
 			toast({
-				title: "Registered account successfully",
+				title: "Registered account successfully 👌!",
 				description: "A verification code has been sent to your email",
 				duration: 4000,
 			});
@@ -64,7 +64,7 @@ export function RegisterForm() {
 			});
 			toast({
 				variant: "destructive",
-				title: "Register account failed",
+				title: "Register account failed 🥲",
 				description: errMessage,
 			});
 		}

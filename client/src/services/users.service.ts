@@ -1,8 +1,8 @@
 import { User } from "@/core/models";
 import httpClient from "./httpClient";
-import { IHttpClient } from "./interfaces";
+import { IHttpClient, IUsersService } from "./interfaces";
 
-class UsersService {
+class UsersService implements IUsersService {
 	constructor(private readonly httpClient: IHttpClient) {
 		this.httpClient = httpClient;
 	}

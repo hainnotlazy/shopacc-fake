@@ -1,5 +1,5 @@
 import { User } from "@/core/models";
-import { UsersService } from "@/services";
+import { CookiesService, UsersService } from "@/services";
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 const initialState: {
@@ -24,6 +24,9 @@ export const currentUserReducer = createSlice({
 });
 
 export const fetchCurrentUser = createAsyncThunk("currentUser/fetchCurrentUser", async () => {
-	const user = await UsersService.getCurrentUser();
-	return user;
+	if (CookiesService.hasAccessToken()) {
+		const user = await UsersService.getCurrentUser();
+		return user;
+	}
+	return null;
 });

@@ -8,11 +8,6 @@ import { useEffect } from "react";
 import { useAppDispatch } from "@/core/store/store";
 
 export function AuthLayout() {
-	const dispatch = useAppDispatch();
-	useEffect(() => {
-		dispatch(fetchCurrentUser());
-	}, []);
-
 	return (
 		<>
 			<main className="bg-slate-100 flex h-screen max-h-screen overflow-hidden">

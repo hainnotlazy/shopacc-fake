@@ -8,21 +8,23 @@ class AuthService implements IAuthService {
 		this.httpClient = httpClient;
 	}
 
-	login(username: string, password: string): Promise<AuthenticatedResponse> {
-		throw new Error("Method not implemented.");
+	async login(username: string, password: string): Promise<AuthenticatedResponse> {
+		return await this.httpClient.post<AuthenticatedResponse>("/api/auth/login", {
+			username,
+			password,
+		});
 	}
+
 	async register(
 		username: string,
 		email: string,
 		password: string,
 	): Promise<AuthenticatedResponse> {
-		const result = await this.httpClient.post<AuthenticatedResponse>("/api/auth/register", {
+		return await this.httpClient.post<AuthenticatedResponse>("/api/auth/register", {
 			username,
 			email,
 			password,
 		});
-
-		return result;
 	}
 }
 

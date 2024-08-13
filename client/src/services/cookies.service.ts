@@ -31,6 +31,14 @@ class CookiesService implements ICookiesService {
 			maxAge: tokenLifeSpan * 24 * 60 * 60,
 		});
 	}
+
+	hasAccessToken(): boolean {
+		return !!this.getToken(AuthTokenType.ACCESS_TOKEN);
+	}
+
+	hasRefreshToken(): boolean {
+		return !!this.getToken(AuthTokenType.REFRESH_TOKEN);
+	}
 }
 
 const cookiesService = new CookiesService();
