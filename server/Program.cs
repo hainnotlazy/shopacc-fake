@@ -38,8 +38,6 @@ builder.Services
 		};
 	});
 
-/** Configure MailKit */
-
 /** Configure Services */
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IMailService, MailService>();
@@ -54,7 +52,6 @@ if (app.Environment.IsDevelopment())
 	app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
