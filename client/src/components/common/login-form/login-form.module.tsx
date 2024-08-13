@@ -7,6 +7,7 @@ import {
 	FormLabel,
 	FormMessage,
 	Input,
+	Loader,
 	OAuthSection,
 	useToast,
 } from "@/components";
@@ -30,6 +31,7 @@ export function LoginForm() {
 			password: "",
 		},
 	});
+	const { isSubmitting } = form.formState;
 
 	const dispatch = useAppDispatch();
 	const navigate = useNavigate();
@@ -151,10 +153,12 @@ export function LoginForm() {
 							)}
 						/>
 						<Button
-							className="hover:bg-blue-500 focus-visible:ring-blue-600 block ml-auto bg-blue-600"
+							className="hover:bg-blue-500 focus-visible:ring-blue-600 disabled:bg-blue-400 flex items-center gap-2 ml-auto bg-blue-600"
 							type="submit"
+							disabled={isSubmitting}
 						>
-							Login
+							{isSubmitting && <Loader />}
+							{isSubmitting ? "Processing..." : "Login"}
 						</Button>
 						<p className="!mt-0 text-neutral-500">
 							Don't have an account?{" "}

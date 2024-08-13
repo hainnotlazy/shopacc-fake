@@ -1,11 +1,12 @@
 import { Button, InputOTP, InputOTPGroup, InputOTPSlot } from "@/components";
 import { useAppSelector } from "@/core/store";
+import { currentUserSelector } from "@/core/store/selectors";
 import { UsersService } from "@/services";
 import { TbChevronLeft, TbGhost2 } from "react-icons/tb";
 import { Link } from "react-router-dom";
 
 export function EmailVerification() {
-	const currentUser = useAppSelector(state => state.currentUser);
+	const currentUser = useAppSelector(currentUserSelector);
 
 	async function handleResendVerificationCode() {
 		await UsersService.resendVerificationEmail();
@@ -32,8 +33,8 @@ export function EmailVerification() {
 						<TbGhost2 size={30} />
 					</h2>
 					<p className="text-neutral-500 text-base text-center">
-						We have sent a verification code to {currentUser.user && currentUser.user.email}. To
-						verify that this is your email address, enter it below.
+						We have sent a verification code to {currentUser && currentUser.email}. To verify that
+						this is your email address, enter it below.
 					</p>
 				</div>
 

@@ -7,6 +7,8 @@ export { LoginForm } from "./common/login-form/login-form.module";
 export { RegisterForm } from "./common/register-form/register-form.module";
 export { OAuthSection } from "./common/oauth-section/oauth-section.module";
 export { EmailVerification } from "./common/email-verification/email-verification.module";
+export { Loader } from "./common/loader/loader.module";
+export { LoadingScreen } from "./common/loading-screen/loading-screen.module";
 
 /** Shadui components */
 export * from "./ui/button";

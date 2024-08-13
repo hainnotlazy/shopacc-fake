@@ -7,6 +7,7 @@ import {
 	FormLabel,
 	FormMessage,
 	Input,
+	Loader,
 	OAuthSection,
 	useToast,
 } from "@/components";
@@ -32,6 +33,7 @@ export function RegisterForm() {
 			confirmPassword: "",
 		},
 	});
+	const { isSubmitting } = form.formState;
 
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
@@ -214,10 +216,12 @@ export function RegisterForm() {
 							</p>
 						)}
 						<Button
-							className="hover:bg-blue-500 focus-visible:ring-blue-600 block ml-auto bg-blue-600"
+							className="hover:bg-blue-500 focus-visible:ring-blue-600 disabled:bg-blue-400 flex items-center gap-2 ml-auto bg-blue-600"
 							type="submit"
+							disabled={isSubmitting}
 						>
-							Register
+							{isSubmitting && <Loader />}
+							{isSubmitting ? "Processing..." : "Register"}
 						</Button>
 						<p className="!mt-3 sm:!mt-0 text-neutral-500">
 							Already have an account?{" "}

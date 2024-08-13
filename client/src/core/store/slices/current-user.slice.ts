@@ -3,8 +3,10 @@ import { CookiesService, UsersService } from "@/services";
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 const initialState: {
+	fetched: boolean;
 	user: User | null;
 } = {
+	fetched: false,
 	user: null,
 };
 
@@ -18,6 +20,7 @@ export const currentUserReducer = createSlice({
 	},
 	extraReducers: builder => {
 		builder.addCase(fetchCurrentUser.fulfilled, (state, action) => {
+			state.fetched = true;
 			state.user = action.payload;
 		});
 	},

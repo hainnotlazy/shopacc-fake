@@ -1,0 +1,46 @@
+.loader {
+	background:
+		var(--c) 50% 0,
+		var(--c) 50% 100%,
+		var(--c) 100% 50%,
+		var(--c) 0 50%;
+	background-repeat: no-repeat;
+	animation: s7 1s infinite;
+}
+@keyframes s7 {
+	to {
+		transform: rotate(0.5turn);
+	}
+}
+
+.text-white {
+	--c: radial-gradient(farthest-side, #fff 92%, #0000);
+}
+
+.text-primary {
+	--c: radial-gradient(farthest-side, rgb(190, 18, 60) 92%, #0000);
+}
+
+.size-base {
+	width: 18px;
+	height: 18px;
+	background-size: 5px 5px;
+}
+
+.size-lg {
+	width: 25px;
+	height: 25px;
+	background-size: 6px 6px;
+}
+
+.size-xl {
+	width: 50px;
+	height: 50px;
+	background-size: 12px 12px;
+}
+
+.size-2xl {
+	width: 80px;
+	height: 80px;
+	background-size: 20px 20px;
+}
