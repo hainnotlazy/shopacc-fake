@@ -14,9 +14,9 @@ namespace server.Dtos.Response
 		public string Username { get; set; } = Username;
 	}
 
-	public class AuthenticatedResponse(string AccessToken, string RefreshToken, UserDto? User)
+	public class AuthenticatedResponse(string AccessToken, string RefreshToken, UserDto User)
 	{
-		public UserDto? User { get; set; } = User;
+		public UserDto User { get; set; } = User;
 		public string AccessToken { get; set; } = AccessToken;
 		public string RefreshToken { get; set; } = RefreshToken;
 	}
