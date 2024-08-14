@@ -1,5 +1,4 @@
-import { LoginForm } from "@/components";
-import { RegisterForm } from "@/components/common/register-form/register-form.module";
+import { EmailVerification, LoginForm, RegisterForm } from "@/components";
 import { AuthLayout, DefaultLayout } from "@/layouts";
 import { ErrorPage, HelloPage, HomePage, NotFoundPage } from "@/pages";
 import { createBrowserRouter } from "react-router-dom";
@@ -26,20 +25,28 @@ const router = createBrowserRouter([
 		],
 	},
 	{
-		element: (
-			<AuthRoute>
-				<AuthLayout />
-			</AuthRoute>
-		),
+		element: <AuthLayout />,
 		errorElement: <ErrorPage />,
 		children: [
 			{
 				path: "/login",
-				element: <LoginForm />,
+				element: (
+					<AuthRoute>
+						<LoginForm />
+					</AuthRoute>
+				),
 			},
 			{
 				path: "/register",
-				element: <RegisterForm />,
+				element: (
+					<AuthRoute>
+						<RegisterForm />
+					</AuthRoute>
+				),
+			},
+			{
+				path: "verify",
+				element: <EmailVerification />,
 			},
 		],
 	},

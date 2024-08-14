@@ -1,10 +1,11 @@
-import { useCookies } from "react-cookie";
+import { AuthTokenType, CookiesService } from "@/services";
 import { Navigate, Outlet } from "react-router-dom";
 
 export function AuthRoute({ children }: { children: React.ReactNode }) {
-	const [cookie] = useCookies(["access-token", "refresh-token"]);
+	const accessToken = CookiesService.getToken(AuthTokenType.ACCESS_TOKEN);
+	const refreshToken = CookiesService.getToken(AuthTokenType.REFRESH_TOKEN);
 
-	if (cookie["access-token"] && cookie["refresh-token"]) {
+	if (accessToken && refreshToken) {
 		return (
 			<Navigate
 				to="/"

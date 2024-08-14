@@ -1,3 +1,7 @@
 export function HelloPage() {
-	return <div>Hello page!!</div>;
+	return (
+		<div>
+			<p>Hello page!!</p>
+		</div>
+	);
 }

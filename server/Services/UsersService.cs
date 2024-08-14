@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using server.DbContexts;
 using server.Dtos.Response;
 using server.Dtos.User;
+using server.Mappers;
 using server.Models;
 using server.Services.Interfaces;
 
@@ -23,6 +24,32 @@ namespace server.Services
 			_context = context ?? throw new ArgumentNullException(nameof(context));
 			_userRepository = _context.Users;
 			_mailService = mailService;
+		}
+
+		public async Task<ActionResult<UserDto>> GetCurrentUser(int UserId)
+		{
+			var existingUser = await _userRepository.FirstOrDefaultAsync(user =>
+				user.Id.Equals(UserId)
+			);
+			if (existingUser == null)
+			{
+				return new BadRequestObjectResult(ErrorResponse.NotFoundResponse("User not found!"));
+			}
+
+			return new OkObjectResult(existingUser.ToUserDto());
+		}
+
+		public async Task<ActionResult<ResendVerificationCodeResponse>> GetNextVerificationCodeTime(int UserId)
+		{
+			var existingUser = await _userRepository.FirstOrDefaultAsync(user =>
+				user.Id.Equals(UserId)
+			);
+			if (existingUser == null)
+			{
+				return new BadRequestObjectResult(ErrorResponse.NotFoundResponse("User not found!"));
+			}
+
+			return new OkObjectResult(existingUser.ToResendVerificationCodeResponse());
 		}
 
 		public async Task<ObjectResult> SendVerificationCodeEmail(int UserId)
@@ -43,7 +70,7 @@ namespace server.Services
 			else if (existingUser.NextEmailVerificationTime > DateTime.Now)
 			{
 				return new BadRequestObjectResult(ErrorResponse.BadRequestResponse(
-					"Please wait for 15 minutes to resend verification email!"
+					"Please wait until next email verification time!"
 				));
 			}
 
@@ -62,7 +89,7 @@ namespace server.Services
 			_userRepository.Update(existingUser);
 			await _context.SaveChangesAsync();
 
-			return new OkObjectResult("Send verification code email successfully!");
+			return new OkObjectResult(existingUser.ToResendVerificationCodeResponse());
 		}
 
 		public async Task<ObjectResult> VerifyEmail(int UserId, VerifyEmailRequestDto requestDto)

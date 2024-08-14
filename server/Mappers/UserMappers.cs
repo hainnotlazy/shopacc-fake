@@ -1,3 +1,4 @@
+using server.Dtos.Response;
 using server.Dtos.User;
 using server.Models;
 
@@ -33,6 +34,14 @@ namespace server.Mappers
 				Username = loginUserDto.Username.Trim(),
 				Password = loginUserDto.Password.Trim(),
 				Email = ""
+			};
+		}
+
+		public static ResendVerificationCodeResponse ToResendVerificationCodeResponse(this User userModel)
+		{
+			return new ResendVerificationCodeResponse
+			{
+				NextEmailVerificationTime = userModel.NextEmailVerificationTime,
 			};
 		}
 	}

@@ -7,15 +7,20 @@ import {
 	FormLabel,
 	FormMessage,
 	Input,
+	Loader,
 	OAuthSection,
+	useToast,
 } from "@/components";
 import { loginFormSchema } from "@/core/form-schemas";
+import { useAppDispatch } from "@/core/store";
+import { currentUserReducer } from "@/core/store/slices";
+import { AuthService, AuthTokenType, CookiesService, HttpClient } from "@/services";
 import { zodResolver } from "@hookform/resolvers/zod";
 import clsx from "clsx";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { TbChevronLeft, TbGhost2, TbEye, TbEyeOff } from "react-icons/tb";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { z } from "zod";
 
 export function LoginForm() {
@@ -26,10 +31,43 @@ export function LoginForm() {
 			password: "",
 		},
 	});
+	const { isSubmitting } = form.formState;
 
+	const dispatch = useAppDispatch();
+	const navigate = useNavigate();
+	const { toast } = useToast();
 	const [showPassword, setShowPassword] = useState(false);
 
-	function onSubmit() {}
+	async function onSubmit() {
+		const { username, password } = form.getValues();
+
+		try {
+			const result = await AuthService.login(username, password);
+
+			dispatch(currentUserReducer.actions.setCurrentUser(result.user));
+			CookiesService.setToken(AuthTokenType.ACCESS_TOKEN, result.accessToken);
+			CookiesService.setToken(AuthTokenType.REFRESH_TOKEN, result.refreshToken);
+
+			toast({
+				title: "Welcome back 👋!",
+				description: "Login successfully",
+				duration: 4000,
+			});
+
+			navigate("/");
+		} catch (e) {
+			const { status, message: errMessage } = HttpClient.getErrorResponse(e);
+			form.setError("root", {
+				type: status.toString(),
+				message: errMessage,
+			});
+			toast({
+				variant: "destructive",
+				title: "Login failed 🥲",
+				description: errMessage,
+			});
+		}
+	}
 
 	return (
 		<div className="h-fit flex flex-col items-center gap-12">
@@ -91,6 +129,7 @@ export function LoginForm() {
 										<button
 											className="hover:text-blue-500 flex items-center gap-1 mr-1 text-blue-600"
 											type="button"
+											tabIndex={-1}
 											onClick={() => setShowPassword(!showPassword)}
 										>
 											{showPassword ? <TbEyeOff size={16} /> : <TbEye size={16} />}
@@ -114,10 +153,12 @@ export function LoginForm() {
 							)}
 						/>
 						<Button
-							className="hover:bg-blue-500 focus-visible:ring-blue-600 block ml-auto bg-blue-600"
+							className="hover:bg-blue-500 focus-visible:ring-blue-600 disabled:bg-blue-400 flex items-center gap-2 ml-auto bg-blue-600"
 							type="submit"
+							disabled={isSubmitting}
 						>
-							Login
+							{isSubmitting && <Loader />}
+							{isSubmitting ? "Processing..." : "Login"}
 						</Button>
 						<p className="!mt-0 text-neutral-500">
 							Don't have an account?{" "}

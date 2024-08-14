@@ -16,6 +16,34 @@ namespace server.Controllers
 	public class UsersController(IUsersService usersService) : ControllerBase
 	{
 		[Authorize]
+		[HttpGet]
+		[Route("")]
+		public async Task<ActionResult<UserDto>> GetCurrentUser()
+		{
+			if (User.Identity is not ClaimsIdentity user)
+			{
+				return new BadRequestObjectResult(ErrorResponse.NotFoundResponse("User not found!"));
+			}
+			int.TryParse(user.FindFirst("UId")?.Value, out int userId);
+
+			return await usersService.GetCurrentUser(userId);
+		}
+
+		[Authorize]
+		[HttpGet]
+		[Route("next-verification-time")]
+		public async Task<ActionResult<ResendVerificationCodeResponse>> GetNextVerificationCodeTime()
+		{
+			if (User.Identity is not ClaimsIdentity user)
+			{
+				return new BadRequestObjectResult(ErrorResponse.NotFoundResponse("User not found!"));
+			}
+			int.TryParse(user.FindFirst("UId")?.Value, out int userId);
+
+			return await usersService.GetNextVerificationCodeTime(userId);
+		}
+
+		[Authorize]
 		[HttpPost]
 		[Route("resend-verification-mail")]
 		public async Task<ObjectResult> SendVerificationCodeEmail()

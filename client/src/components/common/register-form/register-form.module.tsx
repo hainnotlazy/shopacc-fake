@@ -7,19 +7,20 @@ import {
 	FormLabel,
 	FormMessage,
 	Input,
+	Loader,
 	OAuthSection,
 	useToast,
 } from "@/components";
 import { registerFormSchema } from "@/core/form-schemas";
-import { handleSetAuthToken } from "@/core/utils";
-import { AuthService, HttpClient } from "@/services";
+import { currentUserReducer } from "@/core/store/slices";
+import { AuthService, AuthTokenType, CookiesService, HttpClient } from "@/services";
 import { zodResolver } from "@hookform/resolvers/zod";
 import clsx from "clsx";
 import { useState } from "react";
-import { useCookies } from "react-cookie";
 import { useForm } from "react-hook-form";
 import { TbChevronLeft, TbEye, TbEyeOff, TbGhost2 } from "react-icons/tb";
-import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
 import { z } from "zod";
 
 export function RegisterForm() {
@@ -32,26 +33,31 @@ export function RegisterForm() {
 			confirmPassword: "",
 		},
 	});
+	const { isSubmitting } = form.formState;
 
+	const dispatch = useDispatch();
+	const navigate = useNavigate();
 	const [showPassword, setShowPassword] = useState(false);
 	const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 	const { toast } = useToast();
-	const [cookie, setCookie] = useCookies(["access-token", "refresh-token"]);
 
 	async function onSubmit() {
 		const { username, email, password } = form.getValues();
 
 		try {
-			const result = await AuthService.register(username, password);
+			const result = await AuthService.register(username, email, password);
 
-			handleSetAuthToken(setCookie, "access-token", result.accessToken);
-			handleSetAuthToken(setCookie, "refresh-token", result.refreshToken);
+			dispatch(currentUserReducer.actions.setCurrentUser(result.user));
+			CookiesService.setToken(AuthTokenType.ACCESS_TOKEN, result.accessToken);
+			CookiesService.setToken(AuthTokenType.REFRESH_TOKEN, result.refreshToken);
 
 			toast({
-				title: "Registered account successfully",
+				title: "Registered account successfully 👌!",
 				description: "A verification code has been sent to your email",
 				duration: 4000,
 			});
+
+			navigate("/verify");
 		} catch (e) {
 			const { status, message: errMessage } = HttpClient.getErrorResponse(e);
 			form.setError("root", {
@@ -60,7 +66,7 @@ export function RegisterForm() {
 			});
 			toast({
 				variant: "destructive",
-				title: "Register account failed",
+				title: "Register account failed 🥲",
 				description: errMessage,
 			});
 		}
@@ -210,10 +216,12 @@ export function RegisterForm() {
 							</p>
 						)}
 						<Button
-							className="hover:bg-blue-500 focus-visible:ring-blue-600 block ml-auto bg-blue-600"
+							className="hover:bg-blue-500 focus-visible:ring-blue-600 disabled:bg-blue-400 flex items-center gap-2 ml-auto bg-blue-600"
 							type="submit"
+							disabled={isSubmitting}
 						>
-							Register
+							{isSubmitting && <Loader />}
+							{isSubmitting ? "Processing..." : "Register"}
 						</Button>
 						<p className="!mt-3 sm:!mt-0 text-neutral-500">
 							Already have an account?{" "}
