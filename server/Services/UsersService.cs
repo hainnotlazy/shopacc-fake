@@ -26,10 +26,10 @@ namespace server.Services
 			_mailService = mailService;
 		}
 
-		public async Task<ActionResult<UserDto>> GetCurrentUser(int UserId)
+		public async Task<ActionResult<UserDto>> GetCurrentUser(int userId)
 		{
 			var existingUser = await _userRepository.FirstOrDefaultAsync(user =>
-				user.Id.Equals(UserId)
+				user.Id.Equals(userId)
 			);
 			if (existingUser == null)
 			{
@@ -39,10 +39,10 @@ namespace server.Services
 			return new OkObjectResult(existingUser.ToUserDto());
 		}
 
-		public async Task<ActionResult<ResendVerificationCodeResponse>> GetNextVerificationCodeTime(int UserId)
+		public async Task<ActionResult<ResendVerificationCodeResponse>> GetNextVerificationCodeTime(int userId)
 		{
 			var existingUser = await _userRepository.FirstOrDefaultAsync(user =>
-				user.Id.Equals(UserId)
+				user.Id.Equals(userId)
 			);
 			if (existingUser == null)
 			{
@@ -52,10 +52,10 @@ namespace server.Services
 			return new OkObjectResult(existingUser.ToResendVerificationCodeResponse());
 		}
 
-		public async Task<ObjectResult> SendVerificationCodeEmail(int UserId)
+		public async Task<ObjectResult> SendVerificationCodeEmail(int userId)
 		{
 			var existingUser = await _userRepository.FirstOrDefaultAsync(user =>
-				user.Id.Equals(UserId)
+				user.Id.Equals(userId)
 			);
 
 			// Validate user
@@ -92,10 +92,10 @@ namespace server.Services
 			return new OkObjectResult(existingUser.ToResendVerificationCodeResponse());
 		}
 
-		public async Task<ObjectResult> VerifyEmail(int UserId, VerifyEmailRequestDto requestDto)
+		public async Task<ObjectResult> VerifyEmail(int userId, VerifyEmailRequestDto requestDto)
 		{
 			var existingUser = await _userRepository.FirstOrDefaultAsync(user =>
-				user.Id.Equals(UserId)
+				user.Id.Equals(userId)
 			);
 			int code = int.Parse(requestDto.VerificationCode);
 

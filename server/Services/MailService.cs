@@ -25,7 +25,7 @@ namespace server.Services
 			EMAIL_PASSWORD = _configuration["MailSettings:EmailPassword"] ?? "shopacc.fake.password";
 		}
 
-		public async Task<bool> SendMailAsync(string EmailDestination, string Subject, string Body)
+		public async Task<bool> SendMailAsync(string emailDestination, string subject, string body)
 		{
 			try
 			{
@@ -36,7 +36,7 @@ namespace server.Services
 				};
 
 				await mailClient.SendMailAsync(
-					new MailMessage(EMAIL_ADDRESS, EmailDestination, Subject, Body)
+					new MailMessage(EMAIL_ADDRESS, emailDestination, subject, body)
 				);
 
 				return true;
@@ -47,12 +47,12 @@ namespace server.Services
 			}
 		}
 
-		public async Task<bool> SendVerificationMailAsync(string EmailDestination, string VerificationCode)
+		public async Task<bool> SendVerificationMailAsync(string emailDestination, string verificationCode)
 		{
 			return await SendMailAsync(
-				EmailDestination,
+				emailDestination,
 				"[ShopAcc.Fake] Verify Your Account",
-				$"Your email verification code is: {VerificationCode}"
+				$"Your email verification code is: {verificationCode}"
 			);
 		}
 	}
