@@ -36,6 +36,12 @@ builder.Services
 			ValidateIssuerSigningKey = true,
 			IssuerSigningKey = new SymmetricSecurityKey(jwtSecretBytes),
 		};
+	})
+	.AddGoogle(options =>
+	{
+		IConfigurationSection googleConfigSection = builder.Configuration.GetSection("Authentication:Google");
+		options.ClientSecret = googleConfigSection.GetValue<string>("ClientSecret")!;
+		options.ClientId = googleConfigSection.GetValue<string>("ClientId")!;
 	});
 
 /** Configure MailKit */

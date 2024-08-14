@@ -1,5 +1,14 @@
+using Google.Apis.Auth;
+using Google.Apis.Auth.OAuth2;
+using Google.Apis.Auth.OAuth2.Flows;
+using Google.Apis.Auth.OAuth2.Requests;
+using Google.Apis.Auth.OAuth2.Responses;
+using Google.Apis.Util;
+using Google.Apis.Util.Store;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Internal;
 using Microsoft.IdentityModel.Tokens;
 using server.DbContexts;
 using server.Dtos.Response;
@@ -12,11 +21,12 @@ using System.Net;
 using System.Net.Mail;
 using System.Security.Claims;
 using System.Text;
+using static System.Net.WebRequestMethods;
 
 namespace server.Services
 {
-	public class AuthService : IAuthService
-	{
+  public class AuthService : IAuthService
+  {
 		private readonly DefaultDbContext _context;
 		private readonly DbSet<User> _usersRepository;
 		private readonly IConfiguration _configuration;
@@ -27,9 +37,12 @@ namespace server.Services
 		private readonly int ACCESS_TOKEN_LIFESPAN_DAYS;
 		private readonly int REFRESH_TOKEN_LIFESPAN_DAYS;
 
+		private readonly string OAUTH_CLIENT_ID;
+		private readonly string OAUTH_CLIENT_SECRET;
 		public AuthService(DefaultDbContext context, IConfiguration configuration, IMailService mailService)
 		{
-			_context = context ?? throw new ArgumentNullException(nameof(context));
+			_context = context ??
+				throw new ArgumentNullException(nameof(context));
 			_usersRepository = _context.Users;
 			_configuration = configuration;
 			_mailService = mailService;
@@ -38,6 +51,9 @@ namespace server.Services
 			REFRESH_TOKEN_SECRET = _configuration["JwtBearer:RefreshTokenKey"] ?? "refresh-token-very-secret-jwt-key";
 			ACCESS_TOKEN_LIFESPAN_DAYS = int.Parse(_configuration["JwtBearer:AccessTokenLifespanDays"] ?? 1.ToString());
 			REFRESH_TOKEN_LIFESPAN_DAYS = int.Parse(_configuration["JwtBearer:RefreshTokenLifespanDays"] ?? 30.ToString());
+
+			OAUTH_CLIENT_ID = _configuration["Authentication:Google:ClientId"] ?? "google-authentication-client-id";
+			OAUTH_CLIENT_SECRET = _configuration["Authentication:Google:ClientSecret"] ?? "google-authentication-client-secret";
 		}
 
 		public async Task<ActionResult<AuthenticatedResponse>> LoginAsync(LoginUserRequestDto requestDto)
@@ -151,5 +167,61 @@ namespace server.Services
 
 			return null;
 		}
-	}
+
+		private async Task<GoogleJsonWebSignature.Payload?> VerifyGoogleToken(string googleAuthCode)
+		{
+			GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow(
+				new GoogleAuthorizationCodeFlow.Initializer {
+					ClientSecrets = new ClientSecrets()
+					{
+						ClientId = OAUTH_CLIENT_ID,
+						ClientSecret = OAUTH_CLIENT_SECRET
+					},
+					Scopes = ["https://www.googleapis.com/auth/userinfo.profile"],
+					IncludeGrantedScopes = true
+				}
+			);
+
+			//Exchange authorization code to get id_token and access_token
+			TokenResponse token = await flow.ExchangeCodeForTokenAsync("me", googleAuthCode, "postmessage", CancellationToken.None);
+				
+			var settings = new GoogleJsonWebSignature.ValidationSettings()
+			{
+				Audience = [OAUTH_CLIENT_ID]
+			};
+
+			return await GoogleJsonWebSignature.ValidateAsync(token.IdToken, settings);
+		}
+
+		public async Task<ActionResult<AuthenticatedResponse>> HandleGoogleLoginAsync(string googleTokenId)
+		{
+			var payload = await VerifyGoogleToken(googleTokenId);
+
+			if(payload != null)
+			{
+				
+				UserDto user = new()
+				{
+					Email = payload.Email,
+					Username = payload.Name,
+					Id = 1,
+					IsEmailVerified = payload.EmailVerified
+				};
+
+				//Update or store this user to database
+
+				TokenPayload tokenPayload = new (1, payload.GivenName);
+
+				return new CreatedAtRouteResult(null, new AuthenticatedResponse(
+					GenerateToken(TokenType.AccessToken, tokenPayload),
+					GenerateToken(TokenType.RefreshToken, tokenPayload),
+					user)
+			);
+			}
+			else
+			{
+				return new BadRequestObjectResult(ErrorResponse.BadRequestResponse("Invalid google authorization code"));
+			}
+		}
+  }
 }

@@ -7,6 +7,12 @@ class AuthService implements IAuthService {
 	constructor(private readonly httpClient: IHttpClient) {
 		this.httpClient = httpClient;
 	}
+	async loginAsGoogle(googleAuthCode: string): Promise<AuthenticatedResponse> {
+		return await this.httpClient.post<AuthenticatedResponse>("/api/auth/external-login", {
+			loginProvider: "google",
+			authorizationCode: googleAuthCode,
+		});
+	}
 
 	async login(username: string, password: string): Promise<AuthenticatedResponse> {
 		return await this.httpClient.post<AuthenticatedResponse>("/api/auth/login", {

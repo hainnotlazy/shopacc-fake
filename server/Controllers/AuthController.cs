@@ -1,4 +1,6 @@
+using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Mvc;
+using server.Dtos.Request;
 using server.Dtos.Response;
 using server.Dtos.User;
 using server.Services.Interfaces;
@@ -23,6 +25,20 @@ namespace server.Controllers
 		public async Task<ActionResult<AuthenticatedResponse>> Login([FromBody] LoginUserRequestDto requestDto)
 		{
 			return await _authService.LoginAsync(requestDto);
+		}
+
+		[HttpPost]
+		[Route("external-login")]
+		public async Task<ActionResult<AuthenticatedResponse>> HandleExternalLogin([FromBody] ExternalLoginRequest request)
+		{
+			if(string.Equals(request.LoginProvider, GoogleDefaults.AuthenticationScheme, StringComparison.OrdinalIgnoreCase))
+			{
+				return await _authService.HandleGoogleLoginAsync(request.AuthorizationCode);
+			}
+			else
+			{
+				return new BadRequestObjectResult(ErrorResponse.BadRequestResponse("Unknown login provider"));
+			}
 		}
 	}
 }
