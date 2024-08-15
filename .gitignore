@@ -1,3 +1,7 @@
 .vs
 .vscode
 .github
+
+# .env files
+.database-env*
+!.database-env.example

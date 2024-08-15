@@ -10,11 +10,16 @@ export default defineConfig({
 		},
 	},
 	server: {
+		watch: {
+			usePolling: true,
+		},
+		host: true,
+		strictPort: true,
 		proxy: {
 			"/api": {
-				target: "https://localhost:7002",
+				target: "http://server:3000",
 				changeOrigin: true,
-				secure: false
+				secure: false,
 			},
 		},
 	},

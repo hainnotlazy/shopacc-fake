@@ -1,0 +1,19 @@
+# Base
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+WORKDIR /app
+
+# Development
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS development
+WORKDIR /app
+COPY server.csproj .
+RUN dotnet restore "./server.csproj"
+COPY . .
+
+RUN dotnet tool install --global dotnet-ef
+ENV PATH="$PATH:/root/.dotnet/tools"
+
+EXPOSE 3000
+EXPOSE 7002
+
+CMD [ "dotnet", "watch", "run", "--non-interactive" ]
+
