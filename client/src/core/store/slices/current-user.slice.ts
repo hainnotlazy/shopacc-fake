@@ -17,6 +17,10 @@ export const currentUserReducer = createSlice({
 		setCurrentUser: (state, action: PayloadAction<User>) => {
 			state.user = action.payload;
 		},
+		setFetchedUser: (state, action: PayloadAction<boolean>) => {
+			state.fetched = action.payload;
+			console.log(action.payload);
+		}
 	},
 	extraReducers: builder => {
 		builder
@@ -27,6 +31,10 @@ export const currentUserReducer = createSlice({
 			.addCase(fetchCurrentUser.fulfilled, (state, action) => {
 				state.fetched = true;
 				state.user = action.payload;
+			})
+			.addCase(fetchCurrentUser.pending, state => {
+				state.fetched = false;
+				state.user = null;
 			});
 	},
 });

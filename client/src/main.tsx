@@ -16,3 +16,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 		</Provider>
 	</React.StrictMode>,
 );
+
+const env = import.meta.env;
+export default env;

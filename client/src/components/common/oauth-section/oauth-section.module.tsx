@@ -1,16 +1,16 @@
 import { FcGoogle } from "react-icons/fc";
 import { CodeResponse, GoogleOAuthProvider, useGoogleLogin } from "@react-oauth/google";
-import authService from "@/services/auth.service";
-import { AuthenticatedResponse } from "@/core/responses";
-import { AuthTokenType, CookiesService, HttpClient } from "@/services";
+import { AuthService, AuthTokenType, CookiesService, HttpClient } from "@/services";
 import { useToast } from "@/components";
 import { useNavigate } from "react-router-dom";
 import { useAppDispatch } from "@/core/store";
+import env from "@/main";
+import { AuthenticatedResponse } from "@/core/responses";
 import { currentUserReducer } from "@/core/store/slices";
 
 export function OAuthSection() {
 	const googleClientId =
-		import.meta.env.VITE_GOOGLE_AUTHENTICATION_CLIENT_ID ?? "google-authentication-client-id";
+		env.VITE_GOOGLE_AUTHENTICATION_CLIENT_ID ?? "google-authentication-client-id";
 
 	return (
 		<>
@@ -36,11 +36,15 @@ export function GoogleCustomButton() {
 	const handleGoogleLogin = useGoogleLogin({
 		flow: "auth-code", //required
 		onSuccess: async (codeResponse: CodeResponse) => {
+			//Toggle loading screen on
+			dispatch(currentUserReducer.actions.setFetchedUser(false));
+			
 			try {
-				const authorizationCode: string = codeResponse.code; //Get authorization code for custom google button after sign-in Google
-				const result: AuthenticatedResponse = await authService.loginAsGoogle(authorizationCode);
-
+				const authorizationCode: string = codeResponse.code; //Get authorization code for custom google button after signing in Google				
+				const result: AuthenticatedResponse = await AuthService.loginAsGoogle(authorizationCode);
+	
 				dispatch(currentUserReducer.actions.setCurrentUser(result.user));
+
 				CookiesService.setToken(AuthTokenType.ACCESS_TOKEN, result.accessToken);
 				CookiesService.setToken(AuthTokenType.REFRESH_TOKEN, result.refreshToken);
 
@@ -58,6 +62,9 @@ export function GoogleCustomButton() {
 					title: "Authenticate failed 🥲",
 					description: errMessage,
 				});
+			} finally {
+				//Toggle loading screen off
+				dispatch(currentUserReducer.actions.setFetchedUser(true));
 			}
 		},
 	});
