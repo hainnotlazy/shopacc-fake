@@ -2,14 +2,16 @@ import { Outlet } from "react-router-dom";
 import altBackground from "@/assets/images/auth-alt-background.png";
 import styles from "./layout.module.scss";
 import clsx from "clsx";
-import { Toaster } from "@/components";
-import { fetchCurrentUser } from "@/core/store/slices";
-import { useEffect } from "react";
-import { useAppDispatch } from "@/core/store/store";
+import { LoadingScreen, Toaster } from "@/components";
+import { fetchedCurrentUserSelector } from "@/core/store/selectors";
+import { useSelector } from "react-redux";
 
 export function AuthLayout() {
+	const fetchedCurrentUser = useSelector(fetchedCurrentUserSelector);
+
 	return (
 		<>
+			{!fetchedCurrentUser && <LoadingScreen />}
 			<main className="bg-slate-100 flex h-screen max-h-screen overflow-hidden">
 				<div className="md:w-1/2 xl:w-1/3 w-full p-4 overflow-y-auto">
 					<Outlet />

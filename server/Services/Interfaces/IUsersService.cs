@@ -10,9 +10,9 @@ namespace server.Services.Interfaces
 {
 	public interface IUsersService
 	{
-		Task<ActionResult<UserDto>> GetCurrentUser(int UserId);
-		Task<ActionResult<ResendVerificationCodeResponse>> GetNextVerificationCodeTime(int UserId);
-		Task<ObjectResult> SendVerificationCodeEmail(int UserId);
-		Task<ObjectResult> VerifyEmail(int UserId, VerifyEmailRequestDto requestDto);
+		Task<ActionResult<UserDto>> GetCurrentUser(int userId);
+		Task<ActionResult<ResendVerificationCodeResponse>> GetNextVerificationCodeTime(int userId);
+		Task<ObjectResult> SendVerificationCodeEmail(int userId);
+		Task<ObjectResult> VerifyEmail(int userId, VerifyEmailRequestDto requestDto);
 	}
 }

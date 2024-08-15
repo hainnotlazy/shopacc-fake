@@ -1,3 +1,7 @@
+using Google.Apis.Auth;
+using Google.Apis.Auth.OAuth2;
+using Google.Apis.Auth.OAuth2.Flows;
+using Google.Apis.Auth.OAuth2.Responses;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -8,8 +12,6 @@ using server.Mappers;
 using server.Models;
 using server.Services.Interfaces;
 using System.IdentityModel.Tokens.Jwt;
-using System.Net;
-using System.Net.Mail;
 using System.Security.Claims;
 using System.Text;
 
@@ -27,9 +29,12 @@ namespace server.Services
 		private readonly int ACCESS_TOKEN_LIFESPAN_DAYS;
 		private readonly int REFRESH_TOKEN_LIFESPAN_DAYS;
 
+		private readonly string OAUTH_CLIENT_ID;
+		private readonly string OAUTH_CLIENT_SECRET;
 		public AuthService(DefaultDbContext context, IConfiguration configuration, IMailService mailService)
 		{
-			_context = context ?? throw new ArgumentNullException(nameof(context));
+			_context = context ??
+				throw new ArgumentNullException(nameof(context));
 			_usersRepository = _context.Users;
 			_configuration = configuration;
 			_mailService = mailService;
@@ -38,6 +43,9 @@ namespace server.Services
 			REFRESH_TOKEN_SECRET = _configuration["JwtBearer:RefreshTokenKey"] ?? "refresh-token-very-secret-jwt-key";
 			ACCESS_TOKEN_LIFESPAN_DAYS = int.Parse(_configuration["JwtBearer:AccessTokenLifespanDays"] ?? 1.ToString());
 			REFRESH_TOKEN_LIFESPAN_DAYS = int.Parse(_configuration["JwtBearer:RefreshTokenLifespanDays"] ?? 30.ToString());
+
+			OAUTH_CLIENT_ID = _configuration["Authentication:Google:ClientId"] ?? "google-authentication-client-id";
+			OAUTH_CLIENT_SECRET = _configuration["Authentication:Google:ClientSecret"] ?? "google-authentication-client-secret";
 		}
 
 		public async Task<ActionResult<AuthenticatedResponse>> LoginAsync(LoginUserRequestDto requestDto)
@@ -96,6 +104,59 @@ namespace server.Services
 			);
 		}
 
+		public async Task<ActionResult<AuthenticatedResponse>> HandleGoogleLoginAsync(string googleTokenId)
+		{
+			var payload = await VerifyGoogleToken(googleTokenId);
+			if (payload == null)
+			{
+				return new BadRequestObjectResult(ErrorResponse.BadRequestResponse("Invalid google authorization code"));
+			}
+
+			var existingUser = await _usersRepository.FirstOrDefaultAsync(user =>
+				user.Email.Equals(payload.Email)
+			);
+
+			// Create new user if user is not existing
+			if (existingUser == null)
+			{
+				User newUser = new()
+				{
+					Username = payload.Name,
+					Password = BCrypt.Net.BCrypt.HashPassword(Guid.NewGuid().ToString()),
+					Email = payload.Email,
+					IsEmailVerified = payload.EmailVerified,
+					EmailVerificationCode = 0
+				};
+				await _usersRepository.AddAsync(newUser);
+				await _context.SaveChangesAsync();
+
+				TokenPayload tokenPayload = new(newUser.Id, newUser.Username);
+
+				return new CreatedAtRouteResult(
+					null,
+					new AuthenticatedResponse(
+						GenerateToken(TokenType.AccessToken, tokenPayload),
+						GenerateToken(TokenType.RefreshToken, tokenPayload),
+						newUser.ToUserDto()
+					)
+				);
+			}
+			// Login as existing user
+			else
+			{
+				TokenPayload tokenPayload = new(existingUser.Id, existingUser.Username);
+
+				return new CreatedAtRouteResult(
+					null,
+					new AuthenticatedResponse(
+						GenerateToken(TokenType.AccessToken, tokenPayload),
+						GenerateToken(TokenType.RefreshToken, tokenPayload),
+						existingUser.ToUserDto()
+					)
+				);
+			}
+		}
+
 		public string GenerateToken(TokenType type, TokenPayload payload)
 		{
 			var tokenHandler = new JwtSecurityTokenHandler();
@@ -150,6 +211,32 @@ namespace server.Services
 			}
 
 			return null;
+		}
+
+		private async Task<GoogleJsonWebSignature.Payload?> VerifyGoogleToken(string googleAuthCode)
+		{
+			GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow(
+				new GoogleAuthorizationCodeFlow.Initializer
+				{
+					ClientSecrets = new ClientSecrets()
+					{
+						ClientId = OAUTH_CLIENT_ID,
+						ClientSecret = OAUTH_CLIENT_SECRET,
+					},
+					Scopes = ["https://www.googleapis.com/auth/userinfo.profile"],
+					IncludeGrantedScopes = true,
+				}
+			);
+
+			//Exchange authorization code to get id_token and access_token
+			TokenResponse token = await flow.ExchangeCodeForTokenAsync("me", googleAuthCode, "postmessage", CancellationToken.None);
+
+			var settings = new GoogleJsonWebSignature.ValidationSettings()
+			{
+				Audience = [OAUTH_CLIENT_ID]
+			};
+
+			return await GoogleJsonWebSignature.ValidateAsync(token.IdToken, settings);
 		}
 	}
 }

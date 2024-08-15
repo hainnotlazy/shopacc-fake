@@ -51,30 +51,37 @@ class HttpClient implements IHttpClient {
 			};
 		}
 
-		const response = error.response as AxiosResponse<ErrorResponse>;
+		try {
+			const response = error.response as AxiosResponse<ErrorResponse>;
 
-		if (response && response.data && typeof response.data.errors === "object") {
-			const errors = response.data.errors;
+			if (response && response.data && typeof response.data.errors === "object") {
+				const errors = response.data.errors;
 
-			for (const key of Object.keys(errors)) {
-				if (typeof errors[key] === "string") {
+				for (const key of Object.keys(errors)) {
+					if (typeof errors[key] === "string") {
+						return {
+							status: response.data.status,
+							message: errors[key],
+						};
+					}
+
 					return {
 						status: response.data.status,
-						message: errors[key],
+						message: errors[key][0],
 					};
 				}
-
-				return {
-					status: response.data.status,
-					message: errors[key][0],
-				};
 			}
-		}
 
-		return {
-			status: response.data.status,
-			message: this.DEFAULT_ERROR_MESSAGE,
-		};
+			return {
+				status: response.data.status,
+				message: this.DEFAULT_ERROR_MESSAGE,
+			};
+		} catch {
+			return {
+				status: 500,
+				message: this.DEFAULT_ERROR_MESSAGE,
+			};
+		}
 	}
 }
 

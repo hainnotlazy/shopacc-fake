@@ -8,7 +8,7 @@ namespace server.Services.Interfaces
 {
 	public interface IMailService
 	{
-		Task<bool> SendMailAsync(string EmailDestination, string Subject, string Body);
-		Task<bool> SendVerificationMailAsync(string EmailDestination, string VerificationCode);
+		Task<bool> SendMailAsync(string emailDestination, string subject, string body);
+		Task<bool> SendVerificationMailAsync(string emailDestination, string verificationCode);
 	}
 }
