@@ -4,13 +4,13 @@ import { AuthService, AuthTokenType, CookiesService, HttpClient } from "@/servic
 import { useToast } from "@/components";
 import { useNavigate } from "react-router-dom";
 import { useAppDispatch } from "@/core/store";
-import env from "@/main";
+import { appEnv } from "@/main";
 import { AuthenticatedResponse } from "@/core/responses";
 import { currentUserReducer } from "@/core/store/slices";
 
 export function OAuthSection() {
 	const googleClientId =
-		env.VITE_GOOGLE_AUTHENTICATION_CLIENT_ID ?? "google-authentication-client-id";
+		appEnv.VITE_GOOGLE_AUTHENTICATION_CLIENT_ID ?? "google-authentication-client-id";
 
 	return (
 		<>
