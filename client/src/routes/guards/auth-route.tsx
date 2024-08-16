@@ -1,8 +1,6 @@
 import { AuthTokenType, CookiesService } from "@/services";
 import { Navigate, Outlet, useLocation } from "react-router-dom";
-
-const AUTH_ROUTES: string[] = ["/login", "/register"];
-const PROTECTED_ROUTES: string[] = ["/verify"];
+import { AUTH_ROUTES } from "../routes";
 
 export function AuthRoute({
 	children,
@@ -21,15 +19,6 @@ export function AuthRoute({
 		return (
 			<Navigate
 				to={isAdminRoute ? "/admin/dashboard" : "/"}
-				replace
-			/>
-		);
-	}
-
-	if (PROTECTED_ROUTES.includes(pathname) && !accessToken && !refreshToken) {
-		return (
-			<Navigate
-				to={isAdminRoute ? "/admin/login" : "/login"}
 				replace
 			/>
 		);

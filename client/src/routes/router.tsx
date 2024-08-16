@@ -2,8 +2,7 @@ import { EmailVerification, LoginForm, RegisterForm } from "@/components";
 import { AdminAuthLayout, AuthLayout, DefaultLayout } from "@/layouts";
 import { ErrorPage, HelloPage, HomePage, NotFoundPage } from "@/pages";
 import { createBrowserRouter } from "react-router-dom";
-import { ProtectedRoute } from "./protected-route";
-import { AuthRoute } from "./auth-route";
+import { AuthRoute, ProtectedRoute, VerifyEmailRoute } from "./guards";
 
 const router = createBrowserRouter([
 	{
@@ -42,7 +41,13 @@ const router = createBrowserRouter([
 			},
 			{
 				path: "verify",
-				element: <EmailVerification />,
+				element: (
+					<ProtectedRoute>
+						<VerifyEmailRoute>
+							<EmailVerification />
+						</VerifyEmailRoute>
+					</ProtectedRoute>
+				),
 			},
 		],
 	},
