@@ -1,9 +1,9 @@
+import { useAppSelector } from "@/core/store";
 import { currentUserSelector } from "@/core/store/selectors";
-import { useSelector } from "react-redux";
 import { Navigate, Outlet } from "react-router-dom";
 
 export function VerifyEmailRoute({ children }: { children: React.ReactNode }) {
-	const currentUser = useSelector(currentUserSelector);
+	const currentUser = useAppSelector(currentUserSelector);
 
 	if (currentUser?.isEmailVerified) {
 		return (

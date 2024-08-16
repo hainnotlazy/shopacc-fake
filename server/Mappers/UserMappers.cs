@@ -14,7 +14,8 @@ namespace server.Mappers
 				Username = userModel.Username,
 				Email = userModel.Email,
 				IsEmailVerified = userModel.IsEmailVerified,
-				NextEmailVerificationTime = userModel.NextEmailVerificationTime
+				NextEmailVerificationTime = userModel.NextEmailVerificationTime,
+				UseDarkMode = userModel.UseDarkMode
 			};
 		}
 

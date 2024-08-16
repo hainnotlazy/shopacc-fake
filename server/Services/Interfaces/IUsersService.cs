@@ -11,8 +11,8 @@ namespace server.Services.Interfaces
 	public interface IUsersService
 	{
 		Task<ActionResult<UserDto>> GetCurrentUser(int userId);
-		Task<ActionResult<ResendVerificationCodeResponse>> GetNextVerificationCodeTime(int userId);
 		Task<ActionResult<ResendVerificationCodeResponse>> SendVerificationCodeEmail(int userId);
 		Task<ObjectResult> VerifyEmail(int userId, VerifyEmailRequestDto requestDto);
+		Task<ActionResult<UserDto>> UpdateUser(int userId, UpdateUserRequestDto requestDto);
 	}
 }

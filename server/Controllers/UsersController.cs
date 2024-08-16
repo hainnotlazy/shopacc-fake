@@ -30,20 +30,6 @@ namespace server.Controllers
 		}
 
 		[Authorize]
-		[HttpGet]
-		[Route("next-verification-time")]
-		public async Task<ActionResult<ResendVerificationCodeResponse>> GetNextVerificationCodeTime()
-		{
-			if (User.Identity is not ClaimsIdentity user)
-			{
-				return new BadRequestObjectResult(ErrorResponse.NotFoundResponse("User not found!"));
-			}
-			int.TryParse(user.FindFirst("UId")?.Value, out int userId);
-
-			return await usersService.GetNextVerificationCodeTime(userId);
-		}
-
-		[Authorize]
 		[HttpPost]
 		[Route("resend-verification-mail")]
 		public async Task<ActionResult<ResendVerificationCodeResponse>> SendVerificationCodeEmail()
@@ -69,6 +55,20 @@ namespace server.Controllers
 			int.TryParse(user.FindFirst("UId")?.Value, out int userId);
 
 			return await usersService.VerifyEmail(userId, requestDto);
+		}
+
+		[Authorize]
+		[HttpPut]
+		[Route("")]
+		public async Task<ActionResult<UserDto>> UpdateUser([FromBody] UpdateUserRequestDto requestDto)
+		{
+			if (User.Identity is not ClaimsIdentity user)
+			{
+				return new BadRequestObjectResult(ErrorResponse.NotFoundResponse("User not found!"));
+			}
+			int.TryParse(user.FindFirst("UId")?.Value, out int userId);
+
+			return await usersService.UpdateUser(userId, requestDto);
 		}
 	}
 }

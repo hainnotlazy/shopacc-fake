@@ -12,5 +12,6 @@ namespace server.Dtos.User
 		public required string Email { get; set; }
 		public bool IsEmailVerified { get; set; }
 		public DateTime NextEmailVerificationTime { get; set; }
+		public bool UseDarkMode { get; set; }
 	}
 }

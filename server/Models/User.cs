@@ -26,5 +26,6 @@ namespace server.Models
 		public int EmailVerificationCode { get; set; } = new Random().Next(100000, 999999);
 		public bool IsEmailVerified { get; set; } = false;
 		public DateTime NextEmailVerificationTime { get; set; } = DateTime.Now;
+		public bool UseDarkMode { get; set; } = false;
 	}
 }

@@ -39,19 +39,6 @@ namespace server.Services
 			return new OkObjectResult(existingUser.ToUserDto());
 		}
 
-		public async Task<ActionResult<ResendVerificationCodeResponse>> GetNextVerificationCodeTime(int userId)
-		{
-			var existingUser = await _userRepository.FirstOrDefaultAsync(user =>
-				user.Id.Equals(userId)
-			);
-			if (existingUser == null)
-			{
-				return new BadRequestObjectResult(ErrorResponse.NotFoundResponse("User not found!"));
-			}
-
-			return new OkObjectResult(existingUser.ToResendVerificationCodeResponse());
-		}
-
 		public async Task<ActionResult<ResendVerificationCodeResponse>> SendVerificationCodeEmail(int userId)
 		{
 			var existingUser = await _userRepository.FirstOrDefaultAsync(user =>
@@ -120,6 +107,23 @@ namespace server.Services
 			await _context.SaveChangesAsync();
 
 			return new OkObjectResult("Verify email successfully!");
+		}
+
+		public async Task<ActionResult<UserDto>> UpdateUser(int userId, UpdateUserRequestDto requestDto)
+		{
+			var existingUser = await _userRepository.FirstOrDefaultAsync(user =>
+				user.Id.Equals(userId)
+			);
+			if (existingUser == null)
+			{
+				return new BadRequestObjectResult(ErrorResponse.NotFoundResponse("User not found!"));
+			}
+
+			existingUser.UseDarkMode = requestDto.UseDarkMode;
+			_userRepository.Update(existingUser);
+			await _context.SaveChangesAsync();
+
+			return new OkObjectResult(existingUser.ToUserDto());
 		}
 	}
 }

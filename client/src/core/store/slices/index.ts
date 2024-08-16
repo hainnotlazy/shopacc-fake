@@ -1,5 +1,5 @@
-import { currentUserReducer } from "./current-user.slice";
+import { currentUserReducer, fetchCurrentUser } from "./current-user.slice";
 const currentUserActions = currentUserReducer.actions;
 
-export { fetchCurrentUser, currentUserReducer } from "./current-user.slice";
-export { currentUserActions };
+// Current User Reducers & Actions
+export { fetchCurrentUser, currentUserReducer, currentUserActions };
