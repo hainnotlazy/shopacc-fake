@@ -1,5 +1,6 @@
 import { User } from "@/core/models";
 import { CookiesService, UsersService } from "@/services";
+import cookiesService from "@/services/cookies.service";
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 const initialState: {
@@ -26,17 +27,20 @@ export const currentUserReducer = createSlice({
 	},
 	extraReducers: builder => {
 		builder
-			.addCase(fetchCurrentUser.rejected, state => {
-				state.fetched = true;
+			.addCase(fetchCurrentUser.pending, state => {
+				state.fetched = false;
 				state.user = null;
 			})
 			.addCase(fetchCurrentUser.fulfilled, (state, action) => {
 				state.fetched = true;
 				state.user = action.payload;
 			})
-			.addCase(fetchCurrentUser.pending, state => {
-				state.fetched = false;
+			.addCase(fetchCurrentUser.rejected, state => {
+				state.fetched = true;
 				state.user = null;
+			})
+			.addCase(updateUseDarkMode.fulfilled, (state, action) => {
+				!!state.user && Object.assign(state.user, action.payload);
 			});
 	},
 });
@@ -48,3 +52,14 @@ export const fetchCurrentUser = createAsyncThunk("currentUser/fetchCurrentUser",
 	}
 	return null;
 });
+
+export const updateUseDarkMode = createAsyncThunk(
+	"currentUser/updateUseDarkMode",
+	async (useDarkMode: boolean) => {
+		if (cookiesService.hasAccessToken()) {
+			const user = await UsersService.updateCurrentUser({ useDarkMode });
+			return user;
+		}
+		return null;
+	},
+);

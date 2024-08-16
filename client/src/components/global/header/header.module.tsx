@@ -1,7 +1,6 @@
 import logo from "@/assets/logo.svg";
 import logoText from "@/assets/logo-text.svg";
-import { UserNavigation, DefaultNavigation } from "@/components";
-import { TbBrightnessUp } from "react-icons/tb";
+import { UserNavigation, DefaultNavigation, DarkModeToggle } from "@/components";
 import { Link } from "react-router-dom";
 import { currentUserSelector } from "@/core/store/selectors";
 import styles from "./header.module.scss";
@@ -14,7 +13,7 @@ export function Header() {
 	return (
 		<header
 			className={clsx(
-				"py-2.5 fixed top-0 right-0 left-0 z-10 text-red-500 border-b border-gray-300 shadow-md bg-white flex items-center",
+				"py-2.5 fixed top-0 right-0 left-0 z-10 text-red-500 border-b border-gray-300 shadow-md bg-white flex items-center dark:bg-neutral-900",
 				styles.header,
 			)}
 		>
@@ -54,13 +53,9 @@ export function Header() {
 					</button>
 				</div>
 				<div className="flex items-center gap-4">
-					<button type="button">
-						<TbBrightnessUp size={24} />
-					</button>
+					<DarkModeToggle />
 
-					{currentUser && <UserNavigation />}
-
-					{!currentUser && <DefaultNavigation />}
+					{currentUser ? <UserNavigation /> : <DefaultNavigation />}
 				</div>
 			</div>
 		</header>

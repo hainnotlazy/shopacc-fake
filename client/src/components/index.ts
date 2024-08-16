@@ -3,6 +3,7 @@ export { Header } from "./global/header/header.module";
 export { Footer } from "./global/footer/footer.module";
 export { DefaultNavigation } from "./global/default-navigation/default-navigation.module";
 export { UserNavigation } from "./global/user-navigation/user-navigation.module";
+export { DarkModeToggle } from "./global/dark-mode-toggle/dark-mode-toggle.module";
 
 /** Common components */
 export { LoginForm } from "./common/login-form/login-form.module";

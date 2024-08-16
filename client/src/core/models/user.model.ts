@@ -6,4 +6,5 @@ export interface User {
 	emailVerificationCode?: number;
 	isEmailVerified: boolean;
 	nextEmailVerificationTime: Date | null;
+	useDarkMode: boolean;
 }

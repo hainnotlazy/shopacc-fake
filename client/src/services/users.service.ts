@@ -2,6 +2,7 @@ import { User } from "@/core/models";
 import httpClient from "./httpClient";
 import { IHttpClient, IUsersService } from "./interfaces";
 import { ResendVerificationCodeResponse } from "@/core/responses";
+import { UpdateUserDto } from "@/core/dtos";
 
 class UsersService implements IUsersService {
 	constructor(private readonly httpClient: IHttpClient) {
@@ -25,6 +26,10 @@ class UsersService implements IUsersService {
 
 	async verifyEmail(verificationCode: string): Promise<void> {
 		await this.httpClient.post("/api/users/verify-email", { verificationCode });
+	}
+
+	async updateCurrentUser(updateUserDto: UpdateUserDto): Promise<User> {
+		return await this.httpClient.put<User>("/api/users", updateUserDto);
 	}
 }
 

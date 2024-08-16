@@ -33,8 +33,15 @@ class HttpClient implements IHttpClient {
 		const response = await axios.post<T>(url, payload, options);
 		return response.data;
 	}
-	put<T>(url: string, data: unknown): Promise<T> {
-		throw new Error("Method not implemented.");
+	async put<T>(url: string, payload: unknown, options: AxiosRequestConfig = {}): Promise<T> {
+		options = {
+			...options,
+			headers: {
+				Authorization: `Bearer ${this.ACCESS_TOKEN}`,
+			},
+		};
+		const response = await axios.put<T>(url, payload, options);
+		return response.data;
 	}
 	delete<T>(url: string): Promise<T> {
 		throw new Error("Method not implemented.");
