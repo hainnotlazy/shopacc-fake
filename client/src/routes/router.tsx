@@ -63,6 +63,12 @@ const router = createBrowserRouter([
 			{
 				path: "dashboard",
 				element: <AdminAuthLayout />,
+				children: [
+					{
+						path: "",
+						index: true
+					}
+				]
 			},
 			{
 				path: "login",
@@ -71,13 +77,11 @@ const router = createBrowserRouter([
 						<AdminAuthLayout />
 					</AuthRoute>
 				),
-				children: [
-					{
-						path: "",
-						index: true
-					}
-				]
 			},
+			{
+				path: "*",
+				element: <NotFoundPage />
+			}
 		],
 	},
 	{
