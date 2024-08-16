@@ -1,14 +1,14 @@
 import { AuthTokenType, CookiesService } from "@/services";
 import { Navigate, Outlet } from "react-router-dom";
 
-export function AuthRoute({ children }: { children: React.ReactNode }) {
+export function AuthRoute({ children, onAuthenticatedUri }: { children: React.ReactNode, onAuthenticatedUri?: string }) {
 	const accessToken = CookiesService.getToken(AuthTokenType.ACCESS_TOKEN);
 	const refreshToken = CookiesService.getToken(AuthTokenType.REFRESH_TOKEN);
 
 	if (accessToken && refreshToken) {
 		return (
 			<Navigate
-				to="/"
+				to={ !!onAuthenticatedUri ? onAuthenticatedUri : "/" }
 				replace
 			/>
 		);

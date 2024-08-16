@@ -1,5 +1,5 @@
 import { EmailVerification, LoginForm, RegisterForm } from "@/components";
-import { AuthLayout, DefaultLayout } from "@/layouts";
+import { AdminAuthLayout, AuthLayout, DefaultLayout } from "@/layouts";
 import { ErrorPage, HelloPage, HomePage, NotFoundPage } from "@/pages";
 import { createBrowserRouter } from "react-router-dom";
 import { ProtectedRoute } from "./protected-route";
@@ -49,6 +49,20 @@ const router = createBrowserRouter([
 				element: <EmailVerification />,
 			},
 		],
+	},
+	{
+		errorElement: <ErrorPage />,
+		path: "admin",
+		children: [
+			{
+				path: "login",
+				element: (
+					<AuthRoute onAuthenticatedUri="/admin/dashboard">
+						<AdminAuthLayout/>
+					</AuthRoute>
+				),
+			}
+		]
 	},
 	{
 		path: "*",
