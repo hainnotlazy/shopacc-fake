@@ -4,10 +4,10 @@ import styles from "./layout.module.scss";
 import clsx from "clsx";
 import { LoadingScreen, Toaster } from "@/components";
 import { fetchedCurrentUserSelector } from "@/core/store/selectors";
-import { useSelector } from "react-redux";
+import { useAppSelector } from "@/core/store";
 
 export function AuthLayout() {
-	const fetchedCurrentUser = useSelector(fetchedCurrentUserSelector);
+	const fetchedCurrentUser = useAppSelector(fetchedCurrentUserSelector);
 
 	return (
 		<div>

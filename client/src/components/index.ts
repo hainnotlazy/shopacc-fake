@@ -1,6 +1,8 @@
 /** Global components */
 export { Header } from "./global/header/header.module";
 export { Footer } from "./global/footer/footer.module";
+export { DefaultNavigation } from "./global/default-navigation/default-navigation.module";
+export { UserNavigation } from "./global/user-navigation/user-navigation.module";
 
 /** Common components */
 export { LoginForm } from "./common/login-form/login-form.module";
@@ -20,3 +22,4 @@ export * from "./ui/toast";
 export * from "./ui/toaster";
 export * from "./ui/use-toast";
 export * from "./ui/input-otp";
+export * from "./ui/sheet";
