@@ -31,7 +31,7 @@ export function LoginForm() {
 			password: "",
 		},
 	});
-	const { isSubmitting } = form.formState;
+	const { isSubmitting, errors } = form.formState;
 
 	const dispatch = useAppDispatch();
 	const navigate = useNavigate();
@@ -108,7 +108,7 @@ export function LoginForm() {
 										<Input
 											autoFocus
 											className={clsx(
-												"focus:!ring-sky-500",
+												"focus:!ring-sky-500 bg-white",
 												form.getFieldState("username").invalid && "ring-1 !ring-red-500",
 											)}
 											placeholder="Enter your username"
@@ -139,7 +139,7 @@ export function LoginForm() {
 									<FormControl>
 										<Input
 											className={clsx(
-												"focus:!ring-sky-500",
+												"focus:!ring-sky-500 bg-white",
 												form.getFieldState("password").invalid && "ring-1 !ring-red-500",
 											)}
 											type={showPassword ? "text" : "password"}
@@ -152,6 +152,11 @@ export function LoginForm() {
 								</FormItem>
 							)}
 						/>
+						{errors.root && (
+							<p className="!mt-4 !-mb-3 text-center text-red-500 font-semibold text-sm">
+								{errors.root.message}
+							</p>
+						)}
 						<Button
 							className="hover:bg-blue-500 focus-visible:ring-blue-600 disabled:bg-blue-400 flex items-center gap-2 ml-auto bg-blue-600"
 							type="submit"

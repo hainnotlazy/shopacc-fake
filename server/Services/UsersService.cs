@@ -52,7 +52,7 @@ namespace server.Services
 			return new OkObjectResult(existingUser.ToResendVerificationCodeResponse());
 		}
 
-		public async Task<ObjectResult> SendVerificationCodeEmail(int userId)
+		public async Task<ActionResult<ResendVerificationCodeResponse>> SendVerificationCodeEmail(int userId)
 		{
 			var existingUser = await _userRepository.FirstOrDefaultAsync(user =>
 				user.Id.Equals(userId)

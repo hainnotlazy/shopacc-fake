@@ -33,7 +33,7 @@ export function RegisterForm() {
 			confirmPassword: "",
 		},
 	});
-	const { isSubmitting } = form.formState;
+	const { isSubmitting, errors } = form.formState;
 
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
@@ -111,7 +111,7 @@ export function RegisterForm() {
 										<Input
 											autoFocus
 											className={clsx(
-												"focus:!ring-sky-500",
+												"focus:!ring-sky-500 bg-white",
 												form.getFieldState("username").invalid && "ring-1 !ring-red-500",
 											)}
 											placeholder="Enter your username"
@@ -132,7 +132,7 @@ export function RegisterForm() {
 									<FormControl>
 										<Input
 											className={clsx(
-												"focus:!ring-sky-500",
+												"focus:!ring-sky-500 bg-white",
 												form.getFieldState("email").invalid && "ring-1 !ring-red-500",
 											)}
 											placeholder="Enter your email"
@@ -164,7 +164,7 @@ export function RegisterForm() {
 									<FormControl>
 										<Input
 											className={clsx(
-												"focus:!ring-sky-500",
+												"focus:!ring-sky-500 bg-white",
 												form.getFieldState("password").invalid && "ring-1 !ring-red-500",
 											)}
 											type={showPassword ? "text" : "password"}
@@ -183,7 +183,7 @@ export function RegisterForm() {
 							render={({ field }) => (
 								<FormItem>
 									<FormLabel className="flex items-center justify-between gap-4">
-										Confirm password{" "}
+										Confirm password
 										<button
 											className="hover:text-blue-500 flex items-center gap-1 mr-1 text-blue-600"
 											type="button"
@@ -197,7 +197,7 @@ export function RegisterForm() {
 									<FormControl>
 										<Input
 											className={clsx(
-												"focus:!ring-sky-500",
+												"focus:!ring-sky-500 bg-white",
 												form.getFieldState("confirmPassword").invalid && "ring-1 !ring-red-500",
 											)}
 											type={showConfirmPassword ? "text" : "password"}
@@ -210,9 +210,9 @@ export function RegisterForm() {
 								</FormItem>
 							)}
 						/>
-						{form.formState.errors.root && (
-							<p className="!mt-3 !-mb-3 text-center text-red-500">
-								{form.formState.errors.root.message}
+						{errors.root && (
+							<p className="!mt-4 !-mb-3 text-center text-red-500 font-semibold text-sm">
+								{errors.root.message}
 							</p>
 						)}
 						<Button

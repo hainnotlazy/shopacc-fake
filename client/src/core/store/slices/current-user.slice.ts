@@ -19,8 +19,10 @@ export const currentUserReducer = createSlice({
 		},
 		setFetchedUser: (state, action: PayloadAction<boolean>) => {
 			state.fetched = action.payload;
-			console.log(action.payload);
-		}
+		},
+		updateCurrentUser: (state, action: PayloadAction<Partial<User>>) => {
+			!!state.user && Object.assign(state.user, action.payload);
+		},
 	},
 	extraReducers: builder => {
 		builder

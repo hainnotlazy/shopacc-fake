@@ -46,7 +46,7 @@ namespace server.Controllers
 		[Authorize]
 		[HttpPost]
 		[Route("resend-verification-mail")]
-		public async Task<ObjectResult> SendVerificationCodeEmail()
+		public async Task<ActionResult<ResendVerificationCodeResponse>> SendVerificationCodeEmail()
 		{
 			if (User.Identity is not ClaimsIdentity user)
 			{

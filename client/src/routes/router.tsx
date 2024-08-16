@@ -25,24 +25,20 @@ const router = createBrowserRouter([
 		],
 	},
 	{
-		element: <AuthLayout />,
+		element: (
+			<AuthRoute>
+				<AuthLayout />
+			</AuthRoute>
+		),
 		errorElement: <ErrorPage />,
 		children: [
 			{
 				path: "/login",
-				element: (
-					<AuthRoute>
-						<LoginForm />
-					</AuthRoute>
-				),
+				element: <LoginForm />,
 			},
 			{
 				path: "/register",
-				element: (
-					<AuthRoute>
-						<RegisterForm />
-					</AuthRoute>
-				),
+				element: <RegisterForm />,
 			},
 			{
 				path: "verify",
@@ -57,12 +53,12 @@ const router = createBrowserRouter([
 			{
 				path: "login",
 				element: (
-					<AuthRoute onAuthenticatedUri="/admin/dashboard">
-						<AdminAuthLayout/>
+					<AuthRoute isAdminRoute={true}>
+						<AdminAuthLayout />
 					</AuthRoute>
 				),
-			}
-		]
+			},
+		],
 	},
 	{
 		path: "*",

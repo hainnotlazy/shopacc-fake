@@ -13,7 +13,8 @@ namespace server.Mappers
 				Id = userModel.Id,
 				Username = userModel.Username,
 				Email = userModel.Email,
-				IsEmailVerified = userModel.IsEmailVerified
+				IsEmailVerified = userModel.IsEmailVerified,
+				NextEmailVerificationTime = userModel.NextEmailVerificationTime
 			};
 		}
 

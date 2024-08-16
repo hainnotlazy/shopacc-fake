@@ -1,6 +1,7 @@
 import { User } from "@/core/models";
 import httpClient from "./httpClient";
 import { IHttpClient, IUsersService } from "./interfaces";
+import { ResendVerificationCodeResponse } from "@/core/responses";
 
 class UsersService implements IUsersService {
 	constructor(private readonly httpClient: IHttpClient) {
@@ -13,8 +14,13 @@ class UsersService implements IUsersService {
 		return user;
 	}
 
-	async resendVerificationEmail(): Promise<void> {
-		await this.httpClient.post("/api/users/resend-verification-mail", null);
+	async resendVerificationEmail(): Promise<ResendVerificationCodeResponse> {
+		const result = await this.httpClient.post<ResendVerificationCodeResponse>(
+			"/api/users/resend-verification-mail",
+			null,
+		);
+
+		return result;
 	}
 
 	async verifyEmail(verificationCode: string): Promise<void> {

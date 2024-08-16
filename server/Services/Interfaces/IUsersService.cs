@@ -12,7 +12,7 @@ namespace server.Services.Interfaces
 	{
 		Task<ActionResult<UserDto>> GetCurrentUser(int userId);
 		Task<ActionResult<ResendVerificationCodeResponse>> GetNextVerificationCodeTime(int userId);
-		Task<ObjectResult> SendVerificationCodeEmail(int userId);
+		Task<ActionResult<ResendVerificationCodeResponse>> SendVerificationCodeEmail(int userId);
 		Task<ObjectResult> VerifyEmail(int userId, VerifyEmailRequestDto requestDto);
 	}
 }
