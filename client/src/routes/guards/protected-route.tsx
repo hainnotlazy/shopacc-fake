@@ -1,6 +1,7 @@
 import { AuthTokenType, CookiesService } from "@/services";
 import { Navigate, Outlet, useLocation } from "react-router-dom";
-import { PROTECTED_ROUTES } from "../routes";
+import { matchPath } from "react-router-dom";
+import { AUTH_ROUTES, PROTECTED_ROUTES } from "../routes";
 
 export function ProtectedRoute({
 	children,
@@ -15,7 +16,9 @@ export function ProtectedRoute({
 	const accessToken = CookiesService.getToken(AuthTokenType.ACCESS_TOKEN);
 	const refreshToken = CookiesService.getToken(AuthTokenType.REFRESH_TOKEN);
 
-	if (PROTECTED_ROUTES.includes(pathname) && !accessToken && !refreshToken) {
+	const isMatch = PROTECTED_ROUTES.some((protectedRoute) => matchPath(protectedRoute, pathname) && !AUTH_ROUTES.includes(pathname));
+
+	if (isMatch && !accessToken && !refreshToken) {
 		return (
 			<Navigate
 				to={isAdminRoute ? "/admin/login" : "/login"}
