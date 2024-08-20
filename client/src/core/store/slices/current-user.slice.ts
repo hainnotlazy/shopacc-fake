@@ -1,6 +1,6 @@
 import { User } from "@/core/models";
 import { CookiesService, UsersService } from "@/services";
-import cookiesService from "@/services/cookies.service";
+import cookiesService, { AuthTokenType } from "@/services/cookies.service";
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 const initialState: {
@@ -15,7 +15,7 @@ export const currentUserReducer = createSlice({
 	name: "currentUser",
 	initialState,
 	reducers: {
-		setCurrentUser: (state, action: PayloadAction<User>) => {
+		setCurrentUser: (state, action: PayloadAction<User | null>) => {
 			state.user = action.payload;
 		},
 		setFetchedUser: (state, action: PayloadAction<boolean>) => {
@@ -41,6 +41,16 @@ export const currentUserReducer = createSlice({
 			})
 			.addCase(updateUseDarkMode.fulfilled, (state, action) => {
 				!!state.user && Object.assign(state.user, action.payload);
+			})
+			.addCase(logCurrentUserOut.pending, state => {
+				state.fetched = false;
+			})
+			.addCase(logCurrentUserOut.fulfilled, (state, action) => {
+				state.user = action.payload;
+				state.fetched = true;
+			})
+			.addCase(logCurrentUserOut.rejected, state => {
+				state.fetched = true;
 			});
 	},
 });
@@ -50,6 +60,13 @@ export const fetchCurrentUser = createAsyncThunk("currentUser/fetchCurrentUser",
 		const user = await UsersService.getCurrentUser();
 		return user;
 	}
+	return null;
+});
+
+export const logCurrentUserOut = createAsyncThunk("currentUser/logout", async() => {
+	CookiesService.clearToken(AuthTokenType.ACCESS_TOKEN);
+	CookiesService.clearToken(AuthTokenType.REFRESH_TOKEN);
+
 	return null;
 });
 

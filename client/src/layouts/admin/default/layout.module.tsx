@@ -1,10 +1,12 @@
-import { Outlet } from "react-router-dom";
+import { AdminSidebar } from "@/components/common/sidebar/admin-sidebar.module";
 
 export function AdminDefaultLayout() {
-    return (
-        <div>
-            <h1>Admin layout</h1>
-            <Outlet />
-        </div>
-    );
+	return (
+		<main>
+			<div>
+				<AdminSidebar />
+			</div>
+			<div className="content"></div>
+		</main>
+	);
 }

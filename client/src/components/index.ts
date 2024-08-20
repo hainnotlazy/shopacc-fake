@@ -7,6 +7,7 @@ export { DarkModeToggle } from "./global/dark-mode-toggle/dark-mode-toggle.modul
 
 /** Common components */
 export { LoginForm } from "./common/login-form/login-form.module";
+export { AdminLoginForm } from "./common/login-form/admin-login-form.module";
 export { RegisterForm } from "./common/register-form/register-form.module";
 export { OAuthSection } from "./common/oauth-section/oauth-section.module";
 export { EmailVerification } from "./common/email-verification/email-verification.module";

@@ -3,6 +3,7 @@ import { AdminAuthLayout, AdminDefaultLayout, AuthLayout, DefaultLayout } from "
 import { ErrorPage, HelloPage, HomePage, NotFoundPage } from "@/pages";
 import { createBrowserRouter, Navigate, Outlet } from "react-router-dom";
 import { AuthRoute, ProtectedRoute, VerifyEmailRoute } from "./guards";
+import { AdminContainer } from "@/layouts/admin/container/layout.module";
 
 const router = createBrowserRouter([
 	{
@@ -56,19 +57,13 @@ const router = createBrowserRouter([
 		errorElement: <ErrorPage />,
 		element: (
 			<ProtectedRoute isAdminRoute={true}>
-				<Outlet />
+				<AdminContainer />
 			</ProtectedRoute>
 		),
 		children: [
 			{
 				path: "dashboard",
-				element: <AdminAuthLayout />,
-				children: [
-					{
-						path: "",
-						index: true
-					}
-				]
+				element: <AdminDefaultLayout />,
 			},
 			{
 				path: "login",

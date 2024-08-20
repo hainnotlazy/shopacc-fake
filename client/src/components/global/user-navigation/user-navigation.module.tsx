@@ -5,10 +5,19 @@ import clsx from "clsx";
 import { Button, Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components";
 import { TbUser, TbWallet, TbHistory, TbHeadset, TbLogout2 } from "react-icons/tb";
 import { Link } from "react-router-dom";
-import { useAppSelector } from "@/core/store";
+import { useAppDispatch, useAppSelector } from "@/core/store";
+import { logCurrentUserOut } from "@/core/store/slices/current-user.slice";
 
 export function UserNavigation() {
 	const currentUser = useAppSelector(currentUserSelector);
+	const dispatch = useAppDispatch();
+	const handleLogout = () => {
+		try {
+			dispatch(logCurrentUserOut());
+		} catch(e) {
+
+		}
+	}
 
 	return (
 		<Sheet>
@@ -119,7 +128,7 @@ export function UserNavigation() {
 						</div>
 					</Button>
 				</div>
-				<Button className="flex items-center w-full gap-2 mt-4">
+				<Button className="flex items-center w-full gap-2 mt-4" onClick={handleLogout}>
 					<TbLogout2 />
 					<span>Log out</span>
 				</Button>

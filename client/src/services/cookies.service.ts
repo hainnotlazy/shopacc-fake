@@ -15,6 +15,9 @@ class CookiesService implements ICookiesService {
 			sameSite: "strict",
 		});
 	}
+	clearToken(type: AuthTokenType): void {
+		this.cookies.remove(type);
+	}
 
 	getToken(type: AuthTokenType): string | undefined {
 		const token = this.cookies.get(type);

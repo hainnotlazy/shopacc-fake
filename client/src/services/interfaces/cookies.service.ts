@@ -5,4 +5,5 @@ export interface ICookiesService {
 	setToken(type: AuthTokenType, value: string): void;
 	hasAccessToken(): boolean;
 	hasRefreshToken(): boolean;
+	clearToken(type: AuthTokenType): void;
 }
