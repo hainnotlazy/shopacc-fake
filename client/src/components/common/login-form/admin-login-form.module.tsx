@@ -132,21 +132,21 @@ export function AdminLoginForm() {
 		  control={form.control}
 		  name="rememberMe"
 		  render={({ field }) => (
-			<FormLabel className="flex items-center">
+			<FormControl className="flex items-center">
 			  <Input
-				checked={field.value}
-				onChange={(event) => {
-				  form.setValue("rememberMe", event.target.checked);
-				}}
-				type="checkbox"
-				style={{
-				  width: "30px",
-				  height: "15px",
-				  display: "inline-block",
-				}}
+					checked={field.value}
+					onChange={(event) => {
+						form.setValue("rememberMe", event.target.checked);
+					}}
+					type="checkbox"
+					style={{
+						width: "30px",
+						height: "15px",
+						display: "inline-block",
+					}}
 			  />
 			  <label>Remember me</label>
-			</FormLabel>
+			</FormControl>
 		  )}
 		></FormField>
 		<Button type="submit">Sign in</Button>
