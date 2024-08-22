@@ -34,7 +34,7 @@ namespace server.DbContexts
 				entity.Property(col => col.Name).HasMaxLength(150).IsRequired();
 			});
 
-			//modelBuilder.SeedData();
+			modelBuilder.SeedData();
 		}
 	}
 }
