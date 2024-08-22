@@ -27,5 +27,6 @@ namespace server.Models
 		public bool IsEmailVerified { get; set; } = false;
 		public DateTime NextEmailVerificationTime { get; set; } = DateTime.Now;
 		public bool UseDarkMode { get; set; } = false;
+		public bool IsAdmin { get; set; } = false;
 	}
 }

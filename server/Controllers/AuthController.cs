@@ -40,5 +40,11 @@ namespace server.Controllers
 				return new BadRequestObjectResult(ErrorResponse.BadRequestResponse("Unknown login provider"));
 			}
 		}
+
+		[HttpPost]
+		[Route("admin-login")]
+		public async Task<ActionResult<AuthenticatedResponse>> HandleAdminLogin([FromBody] LoginUserRequestDto requestDto) {
+			return await _authService.HandleAdminLoginAsync(requestDto);
+		}
 	}
 }

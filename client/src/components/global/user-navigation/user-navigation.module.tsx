@@ -7,10 +7,13 @@ import { TbUser, TbWallet, TbHistory, TbHeadset, TbLogout2 } from "react-icons/t
 import { Link } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "@/core/store";
 import { logCurrentUserOut } from "@/core/store/slices/current-user.slice";
+import Banner from "@/components/ui/banner";
+import { useState } from "react";
 
 export function UserNavigation() {
 	const currentUser = useAppSelector(currentUserSelector);
 	const dispatch = useAppDispatch();
+	const [bannerVisible] = useState(!currentUser?.isEmailVerified);
 	const handleLogout = () => {
 		try {
 			dispatch(logCurrentUserOut());
@@ -52,6 +55,13 @@ export function UserNavigation() {
 							</p>
 						</div>
 					</SheetTitle>
+					<Banner
+						variant="warning"
+						visible={bannerVisible}
+						close={false}
+					>
+						Your email is not verified yet. Go to <Link to="/verify" className="underline">verify</Link>
+					</Banner>
 				</SheetHeader>
 				<div className="md:hidden flex flex-col gap-3 pb-4 mt-4 border-b-2">
 					<Button asChild>

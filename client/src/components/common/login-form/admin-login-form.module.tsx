@@ -1,4 +1,4 @@
-import { Button, toast } from "@/components";
+import { Button, Loader, toast } from "@/components";
 import {
 	Form,
 	FormControl,
@@ -32,39 +32,37 @@ export function AdminLoginForm() {
 	const dispatch = useAppDispatch();
 	const navigate = useNavigate();
 	const [showPassword, setShowPassword] = useState(false);
+	const { isSubmitting } = form.formState;
+
 	const onHandleAdminLogin = async () => {
-	const { username, password, rememberMe } = form.getValues();
-	try {
-		dispatch(currentUserReducer.actions.setFetchedUser(false));
+		const { username, password, rememberMe } = form.getValues();
+		try {
+			const result = await AuthService.loginAsAdmin(username, password, rememberMe);
 
-		const result = await AuthService.login(username, password);
+			dispatch(currentUserReducer.actions.setCurrentUser(result.user));
 
-		dispatch(currentUserReducer.actions.setCurrentUser(null));
+			CookiesService.setToken(AuthTokenType.ACCESS_TOKEN, result.accessToken);
+			CookiesService.setToken(AuthTokenType.REFRESH_TOKEN, result.refreshToken);
 
-		CookiesService.setToken(AuthTokenType.ACCESS_TOKEN, result.accessToken);
-		CookiesService.setToken(AuthTokenType.REFRESH_TOKEN, result.refreshToken);
+			toast({
+				title: "Welcome back 👋!",
+				description: "Login successfully",
+				duration: 4000,
+			});
 
-		toast({
-			title: "Welcome back 👋!",
-			description: "Login successfully",
-			duration: 4000,
-		});
-
-		dispatch(currentUserReducer.actions.setFetchedUser(true));
-
-		navigate("/admin/dashboard");
-	} catch(e) {
-		const { status, message: errMessage } = HttpClient.getErrorResponse(e);
-		form.setError("root", {
-			type: status.toString(),
-			message: errMessage,
-		});
-		toast({
-			variant: "destructive",
-			title: "Login failed 🥲",
-			description: errMessage,
-		});
-	}
+			navigate("/admin/dashboard");
+		} catch(e) {
+			const { status, message: errMessage } = HttpClient.getErrorResponse(e);
+			form.setError("root", {
+				type: status.toString(),
+				message: errMessage,
+			});
+			toast({
+				variant: "destructive",
+				title: "Login failed 🥲",
+				description: errMessage,
+			});
+		}
 	};
 
 	return (
@@ -80,16 +78,17 @@ export function AdminLoginForm() {
 					<FormItem>
 						<FormLabel>Username</FormLabel>
 						<FormControl>
-						<Input
-							autoFocus
-							className={clsx(
-							"focus:!ring-sky-500",
-							form.getFieldState("username").invalid &&
-								"ring-1 !ring-red-500"
-							)}
-							placeholder="Enter your username"
-							{...field}
-						/>
+							<Input
+								autoFocus
+								className={clsx(
+								"focus:!ring-sky-500",
+								form.getFieldState("username").invalid &&
+									"ring-1 !ring-red-500"
+								)}
+								placeholder="Enter your username"
+								disabled={isSubmitting}
+								{...field}
+							/>
 						</FormControl>
 						<FormMessage />
 					</FormItem>
@@ -107,22 +106,24 @@ export function AdminLoginForm() {
 							type="button"
 							tabIndex={-1}
 							onClick={() => setShowPassword(!showPassword)}
+							disabled={isSubmitting}
 						>
 							{showPassword ? <TbEyeOff size={16} /> : <TbEye size={16} />}
 							{showPassword ? "Hide" : "Show"}
 						</button>
 						</FormLabel>
 						<FormControl>
-						<Input
-							className={clsx(
-							"focus:!ring-sky-500",
-							form.getFieldState("password").invalid &&
-								"ring-1 !ring-red-500"
-							)}
-							type={showPassword ? "text" : "password"}
-							placeholder="Enter your password"
-							{...field}
-						/>
+							<Input
+								className={clsx(
+								"focus:!ring-sky-500",
+								form.getFieldState("password").invalid &&
+									"ring-1 !ring-red-500"
+								)}
+								type={showPassword ? "text" : "password"}
+								placeholder="Enter your password"
+								disabled={isSubmitting}
+								{...field}
+							/>
 						</FormControl>
 						<FormMessage />
 					</FormItem>
@@ -132,7 +133,7 @@ export function AdminLoginForm() {
 					control={form.control}
 					name="rememberMe"
 					render={({ field }) => (
-					<FormControl className="flex items-center">
+					<FormLabel className="flex items-center">
 						<Input
 							checked={field.value}
 							onChange={(event) => {
@@ -144,12 +145,19 @@ export function AdminLoginForm() {
 								height: "15px",
 								display: "inline-block",
 							}}
+							disabled={isSubmitting}
 						/>
 						<label>Remember me</label>
-					</FormControl>
+					</FormLabel>
 					)}
 				></FormField>
-				<Button type="submit">Sign in</Button>
+				<Button
+					className="hover:bg-red-500 focus-visible:ring-red-600 disabled:bg-red-400 bg-red-600 gap-2"
+					type="submit"
+				>
+					{isSubmitting && <Loader />}
+					{isSubmitting ? "Processing..." : "Sign in"}
+				</Button>
 			</form>
 		</Form>
 	);

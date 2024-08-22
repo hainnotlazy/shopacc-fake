@@ -87,8 +87,7 @@ namespace server.Services
 			await _context.SaveChangesAsync();
 
 			// Send verification code to email (async)
-#pragma warning disable CS4014
-			_mailService.SendVerificationMailAsync(registerUser.Email, registerUser.EmailVerificationCode.ToString());
+			await _mailService.SendVerificationMailAsync(registerUser.Email, registerUser.EmailVerificationCode.ToString());
 
 			// Create token payload
 			UserDto savedUser = registerUser.ToUserDto();
@@ -238,5 +237,26 @@ namespace server.Services
 
 			return await GoogleJsonWebSignature.ValidateAsync(token.IdToken, settings);
 		}
-	}
+
+		public async Task<ActionResult<AuthenticatedResponse>> HandleAdminLoginAsync(LoginUserRequestDto requestDto)
+		{
+			User currentLoginUser = requestDto.ToUserFromLoginDto();
+			var existingUser = await _usersRepository.FirstOrDefaultAsync(u => u.Username.Equals(currentLoginUser.Username) && u.IsAdmin);
+
+			if (existingUser != null && BCrypt.Net.BCrypt.Verify(requestDto.Password, existingUser.Password))
+			{
+				TokenPayload payload = new(existingUser.Id, existingUser.Username);
+
+				return new OkObjectResult(new AuthenticatedResponse(
+					GenerateToken(TokenType.AccessToken, payload),
+					GenerateToken(TokenType.RefreshToken, payload),
+					existingUser.ToUserDto()
+				));
+			}
+			else
+			{
+				return new BadRequestObjectResult(ErrorResponse.BadRequestResponse("Invalid username or password!"));
+			}
+		}
+  }
 }
