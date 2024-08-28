@@ -28,7 +28,8 @@ namespace server.DbContexts
 			modelBuilder.Entity<User>().HasIndex(u => u.Username).IsUnique();
 			modelBuilder.Entity<User>().HasIndex(u => u.Email).IsUnique();
 
-			modelBuilder.Entity<Damage>(entity => {
+			modelBuilder.Entity<Damage>(entity =>
+			{
 				entity.HasKey(col => col.Id);
 
 				entity.Property(col => col.Name).HasMaxLength(150).IsRequired();

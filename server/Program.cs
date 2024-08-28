@@ -21,12 +21,20 @@ builder.Services.AddDbContext<DefaultDbContext>(options =>
 	options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
+/** Configure Redis */
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+	options.Configuration = "redis:6379";
+});
+
 /** Configure JWT */
-var jwtSecret = builder.Configuration.GetValue<string>("JwtBearer:SecretKey") ?? "access-token-very-secret-jwt-key";
+var jwtSecret =
+	builder.Configuration.GetValue<string>("JwtBearer:SecretKey")
+	?? "access-token-very-secret-jwt-key";
 var jwtSecretBytes = System.Text.Encoding.UTF8.GetBytes(jwtSecret);
 
-builder.Services
-	.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+builder
+	.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 	.AddJwtBearer(options =>
 	{
 		options.TokenValidationParameters = new()
@@ -39,7 +47,9 @@ builder.Services
 	})
 	.AddGoogle(options =>
 	{
-		IConfigurationSection googleConfigSection = builder.Configuration.GetSection("Authentication:Google");
+		IConfigurationSection googleConfigSection = builder.Configuration.GetSection(
+			"Authentication:Google"
+		);
 		options.ClientSecret = googleConfigSection.GetValue<string>("ClientSecret")!;
 		options.ClientId = googleConfigSection.GetValue<string>("ClientId")!;
 	});

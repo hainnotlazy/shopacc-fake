@@ -23,6 +23,7 @@ class HttpClient implements IHttpClient {
 		const response = await axios.get<T>(url, options);
 		return response.data;
 	}
+
 	async post<T>(url: string, payload: unknown, options: AxiosRequestConfig = {}): Promise<T> {
 		options = {
 			...options,
@@ -33,6 +34,7 @@ class HttpClient implements IHttpClient {
 		const response = await axios.post<T>(url, payload, options);
 		return response.data;
 	}
+
 	async put<T>(url: string, payload: unknown, options: AxiosRequestConfig = {}): Promise<T> {
 		options = {
 			...options,
@@ -43,6 +45,7 @@ class HttpClient implements IHttpClient {
 		const response = await axios.put<T>(url, payload, options);
 		return response.data;
 	}
+
 	delete<T>(url: string): Promise<T> {
 		throw new Error("Method not implemented.");
 	}
