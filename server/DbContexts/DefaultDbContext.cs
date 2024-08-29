@@ -1,15 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using BCrypt.Net;
 using Microsoft.EntityFrameworkCore;
 using server.Extensions;
 using server.Models;
 
 namespace server.DbContexts
 {
-	public class DefaultDbContext(DbContextOptions<DefaultDbContext> options) : DbContext(options)
+	public class DefaultDbContext(DbContextOptions<DefaultDbContext> options, IConfiguration configuration) : DbContext(options)
 	{
 		public DbSet<User> Users { get; set; }
 		public DbSet<Damage> Damages { get; set; }
@@ -21,6 +16,7 @@ namespace server.DbContexts
 		public DbSet<Chroma> Chromas { get; set; }
 		public DbSet<Skin> Skins { get; set; }
 
+		private readonly IConfiguration _configuration = configuration;
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			base.OnModelCreating(modelBuilder);
@@ -35,7 +31,7 @@ namespace server.DbContexts
 				entity.Property(col => col.Name).HasMaxLength(150).IsRequired();
 			});
 
-			modelBuilder.SeedData();
+			modelBuilder.SeedData(_configuration);
 		}
 	}
 }

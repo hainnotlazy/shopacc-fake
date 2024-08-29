@@ -5,18 +5,17 @@ namespace server.Extensions
 {
 	public static class DefaultDbContextExtension
 	{
-		public static void SeedData(this ModelBuilder modelBuilder)
+		public static void SeedData(this ModelBuilder modelBuilder, IConfiguration configuration)
 		{
-#pragma warning disable CS8600
-			string runningMode = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
-			string envFileName =
-				runningMode == "Development" ? "appsettings.Development.json" : "appsettings.json";
+			// #pragma warning disable CS8600
+			// string runningMode = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+			// string envFileName =
+			// 	runningMode == "Development" ? "appsettings.Development.json" : "appsettings.json";
 
-			IConfigurationRoot configuration = new ConfigurationBuilder()
-				.AddJsonFile(envFileName)
-				.AddEnvironmentVariables()
-				.Build();
-
+			// IConfigurationRoot configuration = new ConfigurationBuilder()
+			// 	.AddJsonFile(envFileName)
+			// 	.AddEnvironmentVariables()
+			// 	.Build();
 			modelBuilder
 				.Entity<User>()
 				.HasData(
