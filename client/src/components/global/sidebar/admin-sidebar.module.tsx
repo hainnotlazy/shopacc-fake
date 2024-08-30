@@ -10,10 +10,10 @@ export function AdminSidebar({ children }: { children: Array<ReactElement> }) {
 	const [expanded, setExpanded] = useState(isExpanded);
 
 	return (
-		<aside className="h-screen md:block hidden" aria-label="Sidebar">
-			<nav className="h-full flex flex-col bg-white border-r shadow-sm relative">
+		<aside className="md:block hidden h-screen" aria-label="Sidebar">
+			<nav className="relative flex flex-col h-full bg-white border-r shadow-sm">
 				<div className={`p-3 pb-2 flex justify-center select-none`}>
-					<div className="flex items-center h-14">
+					<div className="h-14 flex items-center">
 						<img
 							src={logo}
 							alt="shopacc logo"
@@ -34,7 +34,7 @@ export function AdminSidebar({ children }: { children: Array<ReactElement> }) {
 						className="absolute p-2.5 rounded-full bg-zinc-100 hover:bg-zinc-200 top-1/2 -right-4 dark:text-black"
 						onClick={() => setExpanded((curr) => !curr)}
 					>
-						{!expanded ? <ChevronRightIcon/> : <ChevronLeftIcon/>}
+						{!expanded ? <ChevronRightIcon /> : <ChevronLeftIcon />}
 					</button>
 				</div>
 
@@ -43,14 +43,27 @@ export function AdminSidebar({ children }: { children: Array<ReactElement> }) {
 				</AdminSidebarExpandedContext.Provider>
 			</nav>
 		</aside>
-	)
+	);
 }
 
+<<<<<<< HEAD:client/src/components/global/sidebar/admin-sidebar.module.tsx
 export function AdminSidebarItem({icon, text, redirect, active = false}: {icon: ReactElement, text: string, redirect: string,  active?: boolean}) {
+=======
+export function AdminSidebarItem({
+	icon,
+	text,
+	active = false,
+}: {
+	icon: ReactElement;
+	text?: string;
+	active?: boolean;
+}) {
+>>>>>>> 4c1822d (enhance(backend): update user profile):client/src/components/common/sidebar/admin-sidebar.module.tsx
 	const expanded = useContext(AdminSidebarExpandedContext);
 	const navigate = useNavigate();
 
 	return (
+<<<<<<< HEAD:client/src/components/global/sidebar/admin-sidebar.module.tsx
 		<li className={`h-12 relative flex justify-center items-center py-2 px-3 my-1 rounded-md cursor-pointer transition-color group ` +
 									 `${active ? 'bg-gradient-to-tr from-indigo-200 to-indigo-100 text-indigo-800'
 														 : 'hover:bg-indigo-50 text-gray-600'}`}
@@ -62,15 +75,33 @@ export function AdminSidebarItem({icon, text, redirect, active = false}: {icon: 
         }`}
 			>
 				{ text }
+=======
+		<li
+			className={
+				`h-12 relative flex justify-center items-center py-2 px-3 my-1 rounded-md cursor-pointer transition-color group ` +
+				`${
+					active
+						? "bg-gradient-to-tr from-indigo-200 to-indigo-100 text-indigo-800"
+						: "hover:bg-indigo-50 text-gray-600"
+				}`
+			}
+		>
+			{icon}
+			<span className={`overflow-hidden transition-all ${expanded ? "w-48 ml-3" : "w-0"}`}>
+				{text}
+>>>>>>> 4c1822d (enhance(backend): update user profile):client/src/components/common/sidebar/admin-sidebar.module.tsx
 			</span>
 			{!expanded && (
-        <div className={"absolute left-full rounded-md px-2 py-1 ml-6 bg-indigo-100 text-indigo-800 " +
-												"text-base invisible opacity-20 -translate-x-3 transition-all group-hover:visible " +
-												"group-hover:opacity-100 group-hover:translate-x-0"}
-        >
-          {text}
-        </div>
+				<div
+					className={
+						"absolute left-full rounded-md px-2 py-1 ml-6 bg-indigo-100 text-indigo-800 " +
+						"text-base invisible opacity-20 -translate-x-3 transition-all group-hover:visible " +
+						"group-hover:opacity-100 group-hover:translate-x-0"
+					}
+				>
+					{text}
+				</div>
 			)}
 		</li>
-	)
+	);
 }

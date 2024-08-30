@@ -63,7 +63,7 @@ export const fetchCurrentUser = createAsyncThunk("currentUser/fetchCurrentUser",
 	return null;
 });
 
-export const logCurrentUserOut = createAsyncThunk("currentUser/logout", async() => {
+export const logCurrentUserOut = createAsyncThunk("currentUser/logout", async () => {
 	CookiesService.clearToken(AuthTokenType.ACCESS_TOKEN);
 	CookiesService.clearToken(AuthTokenType.REFRESH_TOKEN);
 

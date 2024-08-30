@@ -15,22 +15,30 @@ namespace server.Services
 {
 	public class UsersService : IUsersService
 	{
+		private readonly string IMAGES_FOLDER = "images";
+		private readonly string IMAGES_FOLDER_PATH;
+
 		private readonly DefaultDbContext _context;
 		private readonly DbSet<User> _userRepository;
 		private readonly IMailService _mailService;
+		private readonly IWebHostEnvironment _environment;
 
-		public UsersService(DefaultDbContext context, IMailService mailService)
+		public UsersService(
+			DefaultDbContext context,
+			IMailService mailService,
+			IWebHostEnvironment environment
+		)
 		{
 			_context = context ?? throw new ArgumentNullException(nameof(context));
 			_userRepository = _context.Users;
 			_mailService = mailService;
+			_environment = environment;
+			IMAGES_FOLDER_PATH = Path.Combine(_environment.WebRootPath, IMAGES_FOLDER);
 		}
 
 		public async Task<ActionResult<UserDto>> GetCurrentUser(int userId)
 		{
-			var existingUser = await _userRepository.FirstOrDefaultAsync(user =>
-				user.Id.Equals(userId)
-			);
+			var existingUser = await _userRepository.FirstOrDefaultAsync(user => user.Id.Equals(userId));
 			if (existingUser == null)
 			{
 				return new BadRequestObjectResult(ErrorResponse.NotFoundResponse("User not found!"));
@@ -39,11 +47,11 @@ namespace server.Services
 			return new OkObjectResult(existingUser.ToUserDto());
 		}
 
-		public async Task<ActionResult<ResendVerificationCodeResponse>> SendVerificationCodeEmail(int userId)
+		public async Task<ActionResult<ResendVerificationCodeResponse>> SendVerificationCodeEmail(
+			int userId
+		)
 		{
-			var existingUser = await _userRepository.FirstOrDefaultAsync(user =>
-				user.Id.Equals(userId)
-			);
+			var existingUser = await _userRepository.FirstOrDefaultAsync(user => user.Id.Equals(userId));
 
 			// Validate user
 			if (existingUser == null)
@@ -52,13 +60,15 @@ namespace server.Services
 			}
 			else if (existingUser.IsEmailVerified)
 			{
-				return new BadRequestObjectResult(ErrorResponse.BadRequestResponse("Email already verified!"));
+				return new BadRequestObjectResult(
+					ErrorResponse.BadRequestResponse("Email already verified!")
+				);
 			}
 			else if (existingUser.NextEmailVerificationTime > DateTime.Now)
 			{
-				return new BadRequestObjectResult(ErrorResponse.BadRequestResponse(
-					"Please wait until next email verification time!"
-				));
+				return new BadRequestObjectResult(
+					ErrorResponse.BadRequestResponse("Please wait until next email verification time!")
+				);
 			}
 
 			// Send verification email
@@ -68,7 +78,9 @@ namespace server.Services
 			);
 			if (!sendMailResult)
 			{
-				return new BadRequestObjectResult(ErrorResponse.BadRequestResponse("Failed to send verification email!"));
+				return new BadRequestObjectResult(
+					ErrorResponse.BadRequestResponse("Failed to send verification email!")
+				);
 			}
 
 			// Update next get verification email time
@@ -81,9 +93,7 @@ namespace server.Services
 
 		public async Task<ObjectResult> VerifyEmail(int userId, VerifyEmailRequestDto requestDto)
 		{
-			var existingUser = await _userRepository.FirstOrDefaultAsync(user =>
-				user.Id.Equals(userId)
-			);
+			var existingUser = await _userRepository.FirstOrDefaultAsync(user => user.Id.Equals(userId));
 			int code = int.Parse(requestDto.VerificationCode);
 
 			// Validate
@@ -93,11 +103,15 @@ namespace server.Services
 			}
 			else if (existingUser.IsEmailVerified)
 			{
-				return new BadRequestObjectResult(ErrorResponse.BadRequestResponse("Email already verified!"));
+				return new BadRequestObjectResult(
+					ErrorResponse.BadRequestResponse("Email already verified!")
+				);
 			}
 			else if (existingUser.EmailVerificationCode != code)
 			{
-				return new BadRequestObjectResult(ErrorResponse.BadRequestResponse("Incorrect verification code!"));
+				return new BadRequestObjectResult(
+					ErrorResponse.BadRequestResponse("Incorrect verification code!")
+				);
 			}
 
 			// Update user
@@ -111,19 +125,44 @@ namespace server.Services
 
 		public async Task<ActionResult<UserDto>> UpdateUser(int userId, UpdateUserRequestDto requestDto)
 		{
-			var existingUser = await _userRepository.FirstOrDefaultAsync(user =>
-				user.Id.Equals(userId)
-			);
+			var existingUser = await _userRepository.FirstOrDefaultAsync(user => user.Id.Equals(userId));
 			if (existingUser == null)
 			{
 				return new BadRequestObjectResult(ErrorResponse.NotFoundResponse("User not found!"));
 			}
 
-			existingUser.UseDarkMode = requestDto.UseDarkMode;
+			// Handle save avatar
+			if (requestDto.Avatar != null)
+			{
+				existingUser.Avatar = await SaveUserAvatar(requestDto.Avatar);
+			}
+
+			// Update existing user
+			existingUser.UseDarkMode = requestDto.UseDarkMode ?? existingUser.UseDarkMode;
+			existingUser.Fullname = requestDto.Fullname ?? existingUser.Fullname;
+			existingUser.Bio = requestDto.Bio ?? existingUser.Bio;
+			existingUser.UpdatedAt = DateTime.Now;
+
 			_userRepository.Update(existingUser);
 			await _context.SaveChangesAsync();
 
 			return new OkObjectResult(existingUser.ToUserDto());
+		}
+
+		private async Task<string> SaveUserAvatar(IFormFile avatar)
+		{
+			Directory.CreateDirectory(IMAGES_FOLDER_PATH);
+
+			string fileExtension = Path.GetExtension(avatar.FileName);
+			string fileName = $"{Guid.NewGuid()}{fileExtension}";
+			string filePath = Path.Combine(IMAGES_FOLDER_PATH, fileName);
+
+			using (var fileStream = new FileStream(filePath, FileMode.Create))
+			{
+				await avatar.CopyToAsync(fileStream);
+			}
+
+			return $"/{IMAGES_FOLDER}/{fileName}";
 		}
 	}
 }

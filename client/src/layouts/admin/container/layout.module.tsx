@@ -8,7 +8,7 @@ export function AdminContainer() {
 
 	return (
 		<div>
-			{!fetchedCurrentUser && <LoadingScreen/>}
+			{!fetchedCurrentUser && <LoadingScreen />}
 			<Outlet />
 			<Toaster />
 		</div>

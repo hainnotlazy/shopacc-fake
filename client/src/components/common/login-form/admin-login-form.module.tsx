@@ -51,7 +51,7 @@ export function AdminLoginForm() {
 			});
 
 			navigate("/admin/dashboard");
-		} catch(e) {
+		} catch (e) {
 			const { status, message: errMessage } = HttpClient.getErrorResponse(e);
 			form.setError("root", {
 				type: status.toString(),
@@ -75,80 +75,78 @@ export function AdminLoginForm() {
 					control={form.control}
 					name="username"
 					render={({ field }) => (
-					<FormItem>
-						<FormLabel>Username</FormLabel>
-						<FormControl>
-							<Input
-								autoFocus
-								className={clsx(
-								"focus:!ring-sky-500",
-								form.getFieldState("username").invalid &&
-									"ring-1 !ring-red-500"
-								)}
-								placeholder="Enter your username"
-								disabled={isSubmitting}
-								{...field}
-							/>
-						</FormControl>
-						<FormMessage />
-					</FormItem>
+						<FormItem>
+							<FormLabel>Username</FormLabel>
+							<FormControl>
+								<Input
+									autoFocus
+									className={clsx(
+										"focus:!ring-sky-500",
+										form.getFieldState("username").invalid && "ring-1 !ring-red-500",
+									)}
+									placeholder="Enter your username"
+									disabled={isSubmitting}
+									{...field}
+								/>
+							</FormControl>
+							<FormMessage />
+						</FormItem>
 					)}
 				></FormField>
 				<FormField
 					control={form.control}
 					name="password"
 					render={({ field }) => (
-					<FormItem>
-						<FormLabel className="flex items-center justify-between gap-4">
-						<span>Password</span>
-						<button
-							className="hover:text-blue-500 flex items-center gap-1 mr-1 text-blue-600"
-							type="button"
-							tabIndex={-1}
-							onClick={() => setShowPassword(!showPassword)}
-							disabled={isSubmitting}
-						>
-							{showPassword ? <TbEyeOff size={16} /> : <TbEye size={16} />}
-							{showPassword ? "Hide" : "Show"}
-						</button>
-						</FormLabel>
-						<FormControl>
-							<Input
-								className={clsx(
-								"focus:!ring-sky-500",
-								form.getFieldState("password").invalid &&
-									"ring-1 !ring-red-500"
-								)}
-								type={showPassword ? "text" : "password"}
-								placeholder="Enter your password"
-								disabled={isSubmitting}
-								{...field}
-							/>
-						</FormControl>
-						<FormMessage />
-					</FormItem>
+						<FormItem>
+							<FormLabel className="flex items-center justify-between gap-4">
+								<span>Password</span>
+								<button
+									className="hover:text-blue-500 flex items-center gap-1 mr-1 text-blue-600"
+									type="button"
+									tabIndex={-1}
+									onClick={() => setShowPassword(!showPassword)}
+									disabled={isSubmitting}
+								>
+									{showPassword ? <TbEyeOff size={16} /> : <TbEye size={16} />}
+									{showPassword ? "Hide" : "Show"}
+								</button>
+							</FormLabel>
+							<FormControl>
+								<Input
+									className={clsx(
+										"focus:!ring-sky-500",
+										form.getFieldState("password").invalid && "ring-1 !ring-red-500",
+									)}
+									type={showPassword ? "text" : "password"}
+									placeholder="Enter your password"
+									disabled={isSubmitting}
+									{...field}
+								/>
+							</FormControl>
+							<FormMessage />
+						</FormItem>
 					)}
 				></FormField>
 				<FormField
 					control={form.control}
 					name="rememberMe"
 					render={({ field }) => (
-					<FormLabel className="flex items-center">
-						<Input
-							checked={field.value}
-							onChange={(event) => {
-								form.setValue("rememberMe", event.target.checked);
-							}}
-							type="checkbox"
-							style={{
-								width: "30px",
-								height: "15px",
-								display: "inline-block",
-							}}
-							disabled={isSubmitting}
-						/>
-						<label>Remember me</label>
-					</FormLabel>
+						<FormLabel className="flex items-center">
+							<Input
+								checked={field.value}
+								onChange={event => {
+									form.setValue("rememberMe", event.target.checked);
+								}}
+								type="checkbox"
+								style={{
+									width: "30px",
+									height: "15px",
+									display: "inline-block",
+								}}
+								disabled={isSubmitting}
+							/>
+							<label>Remember me</label>
+						</FormLabel>
 					)}
 				></FormField>
 				<Button
@@ -163,4 +161,3 @@ export function AdminLoginForm() {
 		</Form>
 	);
 }
-
