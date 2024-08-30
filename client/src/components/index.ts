@@ -26,3 +26,5 @@ export * from "./ui/toaster";
 export * from "./ui/use-toast";
 export * from "./ui/input-otp";
 export * from "./ui/sheet";
+export * from "./ui/avatar";
+export * from "./ui/tooltip";

@@ -154,6 +154,7 @@ export function AdminLoginForm() {
 				<Button
 					className="hover:bg-red-500 focus-visible:ring-red-600 disabled:bg-red-400 bg-red-600 gap-2"
 					type="submit"
+					disabled={isSubmitting}
 				>
 					{isSubmitting && <Loader />}
 					{isSubmitting ? "Processing..." : "Sign in"}

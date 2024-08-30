@@ -4,6 +4,7 @@ import { ErrorPage, HelloPage, HomePage, NotFoundPage } from "@/pages";
 import { createBrowserRouter, Navigate, Outlet } from "react-router-dom";
 import { AuthRoute, ProtectedRoute, VerifyEmailRoute } from "./guards";
 import { AdminContainer } from "@/layouts/admin/container/layout.module";
+import { Dashboard } from "@/layouts/admin/default/dashboard.module";
 
 const router = createBrowserRouter([
 	{
@@ -62,8 +63,13 @@ const router = createBrowserRouter([
 		),
 		children: [
 			{
-				path: "dashboard",
 				element: <AdminDefaultLayout />,
+				children: [
+					{
+						path: "dashboard",
+						element: <Dashboard />
+					}
+				]
 			},
 			{
 				path: "login",
