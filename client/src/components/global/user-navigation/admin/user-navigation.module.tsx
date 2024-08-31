@@ -1,12 +1,15 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { useAppSelector } from "@/core/store";
+import { currentUserSelector } from "@/core/store/selectors";
 
 export function AdminUserNavigation() {
+	const currentUser = useAppSelector(currentUserSelector);
+
 	return (
 		<>
 			<div>
 				<Avatar>
-					<AvatarImage src="https://github.com/shadcn.png" />
-					<AvatarFallback>CN</AvatarFallback>
+					<AvatarFallback>{currentUser?.username}</AvatarFallback>
 				</Avatar>
 			</div>
 		</>

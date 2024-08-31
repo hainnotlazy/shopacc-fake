@@ -7,7 +7,7 @@ export function AdminContainer() {
 	const fetchedCurrentUser = useAppSelector(fetchedCurrentUserSelector);
 
 	return (
-		<div className="overflow-x-hidden">
+		<div className="overflow-x-hidden h-full">
 			{!fetchedCurrentUser && <LoadingScreen/>}
 			<Outlet />
 			<Toaster />

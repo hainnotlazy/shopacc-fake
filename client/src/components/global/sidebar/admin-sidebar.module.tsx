@@ -2,6 +2,7 @@ import logo from "@/assets/logo.svg";
 import logoText from "@/assets/logo-text.svg";
 import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 import { createContext, ReactElement, useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const AdminSidebarExpandedContext = createContext<boolean>(true);
 export function AdminSidebar({ children }: { children: Array<ReactElement> }) {
@@ -9,7 +10,7 @@ export function AdminSidebar({ children }: { children: Array<ReactElement> }) {
 	const [expanded, setExpanded] = useState(isExpanded);
 
 	return (
-		<aside className="h-screen md:block none" aria-label="Sidebar">
+		<aside className="h-screen md:block hidden" aria-label="Sidebar">
 			<nav className="h-full flex flex-col bg-white border-r shadow-sm relative">
 				<div className={`p-3 pb-2 flex select-none`}>
 					<div className="flex items-center h-20">
@@ -30,7 +31,7 @@ export function AdminSidebar({ children }: { children: Array<ReactElement> }) {
 						/>
 					</div>
 					<button
-						className="absolute p-2.5 rounded-lg bg-gray-50 hover:bg-gray-100 top-1/2 -right-4"
+						className="absolute p-2.5 rounded-full bg-zinc-100 hover:bg-zinc-200 top-1/2 -right-4 dark:text-black"
 						onClick={() => setExpanded((curr) => !curr)}
 					>
 						{!expanded ? <ChevronRightIcon/> : <ChevronLeftIcon/>}
@@ -45,13 +46,15 @@ export function AdminSidebar({ children }: { children: Array<ReactElement> }) {
 	)
 }
 
-export function AdminSidebarItem({icon, text, active = false}: {icon: ReactElement, text?: string, active?: boolean}) {
+export function AdminSidebarItem({icon, text, redirect, active = false}: {icon: ReactElement, text: string, redirect: string,  active?: boolean}) {
 	const expanded = useContext(AdminSidebarExpandedContext);
+	const navigate = useNavigate();
 
 	return (
 		<li className={`h-12 relative flex justify-center items-center py-2 px-3 my-1 rounded-md cursor-pointer transition-color group ` +
 									 `${active ? 'bg-gradient-to-tr from-indigo-200 to-indigo-100 text-indigo-800'
-														 : 'hover:bg-indigo-50 text-gray-600'}`}>
+														 : 'hover:bg-indigo-50 text-gray-600'}`}
+				onClick={() => navigate(redirect)}>
 			{ icon }
 			<span
 				className={`overflow-hidden transition-all ${

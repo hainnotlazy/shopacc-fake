@@ -13,7 +13,7 @@ export { OAuthSection } from "./common/oauth-section/oauth-section.module";
 export { EmailVerification } from "./common/email-verification/email-verification.module";
 export { Loader } from "./common/loader/loader.module";
 export { LoadingScreen } from "./common/loading-screen/loading-screen.module";
-export { AdminSidebar, AdminSidebarItem } from "./common/sidebar/admin-sidebar.module";
+export { AdminSidebar, AdminSidebarItem } from "./global/sidebar/admin-sidebar.module";
 
 /** Shadui components */
 export * from "./ui/button";
