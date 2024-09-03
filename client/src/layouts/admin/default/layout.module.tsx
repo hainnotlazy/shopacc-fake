@@ -14,13 +14,19 @@ export function AdminDefaultLayout() {
 	return (
 		<>
 			<div className="flex">
-				<AdminSidebar>
-					{sidebarElements}
-				</AdminSidebar>
-				<div className="w-full">
-					<AdminHeader />
-
-					<main id="content" className="p-3 bg-purple-100 dark:bg-slate-900">
+				<div className="h-screen sticky top-0">
+					<AdminSidebar>
+						{sidebarElements}
+					</AdminSidebar>
+				</div>
+				<div className="w-full flex flex-col">
+					<div className="sticky top-0">
+						<AdminHeader />
+					</div>
+					<main
+						id="content"
+						className="flex-1 p-3 bg-rose-50 dark:bg-slate-900"
+					>
 						<Outlet />
 					</main>
 				</div>

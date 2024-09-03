@@ -12,20 +12,20 @@ export function AdminSidebar({ children }: { children: Array<ReactElement> }) {
 	return (
 		<aside className="h-screen md:block hidden" aria-label="Sidebar">
 			<nav className="h-full flex flex-col bg-white border-r shadow-sm relative">
-				<div className={`p-3 pb-2 flex select-none`}>
-					<div className="flex items-center h-20">
+				<div className={`p-3 pb-2 flex justify-center select-none`}>
+					<div className="flex items-center h-14">
 						<img
 							src={logo}
 							alt="shopacc logo"
 							loading="eager"
-							className={`overflow-hidden transition-all w-20 h-full`}
+							className={`overflow-hidden transition-all w-14 h-full`}
 							draggable="false"/>
 						<img
 							src={logoText}
 							alt="ShopLOL.fake logo-text"
 							loading="eager"
 							className={`overflow-hidden transition-all ${
-								expanded ? "w-48 h-full" : "w-0"
+								expanded ? "w-40 h-full" : "w-0"
 							}`}
 							draggable="false"
 						/>
@@ -39,7 +39,7 @@ export function AdminSidebar({ children }: { children: Array<ReactElement> }) {
 				</div>
 
 				<AdminSidebarExpandedContext.Provider value={expanded}>
-					<ul className="flex-1 px-3">{children}</ul>
+					<ul className="flex-1 px-3 select-none">{children}</ul>
 				</AdminSidebarExpandedContext.Provider>
 			</nav>
 		</aside>
