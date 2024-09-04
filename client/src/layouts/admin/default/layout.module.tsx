@@ -8,7 +8,7 @@ export function AdminDefaultLayout() {
 
 	let sidebarElements = AdminModules.map(function(module) {
 		const isActive = location.pathname.startsWith(module.redirectUri);
-		return <AdminSidebarItem icon={module.icon} text={module.name} redirect={module.redirectUri} active={isActive} />;
+		return <AdminSidebarItem key={module.name} icon={module.icon} text={module.name} redirect={module.redirectUri} active={isActive} />;
 	});
 
 	return (

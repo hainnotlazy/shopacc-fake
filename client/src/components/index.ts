@@ -28,3 +28,5 @@ export * from "./ui/input-otp";
 export * from "./ui/sheet";
 export * from "./ui/avatar";
 export * from "./ui/tooltip";
+export * from "./ui/card";
+export * from "./ui/table";
