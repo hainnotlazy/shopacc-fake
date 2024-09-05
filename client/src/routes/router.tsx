@@ -1,7 +1,7 @@
 import { EmailVerification, LoginForm, RegisterForm } from "@/components";
 import { AdminAuthLayout, AdminDefaultLayout, AuthLayout, DefaultLayout } from "@/layouts";
 import { ErrorPage, HelloPage, HomePage, NotFoundPage } from "@/pages";
-import { createBrowserRouter, Navigate, Outlet } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import { AuthRoute, ProtectedRoute, VerifyEmailRoute } from "./guards";
 import { AdminContainer } from "@/layouts/admin/container/layout.module";
 import { Dashboard } from "@/layouts/admin/default/dashboard.module";
@@ -71,6 +71,10 @@ const router = createBrowserRouter([
 				element: <AdminDefaultLayout />,
 				children: [
 					{
+						path: "",
+						element: <Navigate to="/admin/dashboard" replace/>
+					},
+					{
 						path: "dashboard",
 						element: <Dashboard />,
 						index: true
@@ -94,6 +98,10 @@ const router = createBrowserRouter([
 					{
 						path: "transaction-histories",
 						element: <TransactionHistories />
+					},
+					{
+						path: "*",
+						element: <NotFoundPage />
 					}
 				]
 			},

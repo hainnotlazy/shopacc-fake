@@ -20,12 +20,12 @@ export function AdminDefaultLayout() {
 					</AdminSidebar>
 				</div>
 				<div className="w-full flex flex-col">
-					<div className="sticky top-0">
+					<div className="sticky top-0 z-[90]">
 						<AdminHeader />
 					</div>
 					<main
 						id="content"
-						className="flex-1 p-3 bg-rose-50 dark:bg-slate-900"
+						className="flex-1 bg-rose-50 dark:bg-slate-900"
 					>
 						<Outlet />
 					</main>
