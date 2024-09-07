@@ -47,7 +47,10 @@ namespace server.Services
 			}
 		}
 
-		public async Task<bool> SendVerificationMailAsync(string emailDestination, string verificationCode)
+		public async Task<bool> SendVerificationMailAsync(
+			string emailDestination,
+			string verificationCode
+		)
 		{
 			return await SendMailAsync(
 				emailDestination,

@@ -9,11 +9,13 @@ public class AESCrypto
 	public const int FixedVectorSize = 16;
 	public const int FixedBlockSize = 16;
 
-	private AESCrypto(Aes key) {
+	private AESCrypto(Aes key)
+	{
 		Key = key;
 	}
 
-	public static AESCrypto GetInstance(string secretKey) {
+	public static AESCrypto GetInstance(string secretKey)
+	{
 		using Aes aes = Aes.Create();
 
 		int keyLength = Convert.FromBase64String(secretKey).Length;
@@ -27,7 +29,8 @@ public class AESCrypto
 		return new AESCrypto(aes);
 	}
 
-	public static AESCrypto GetInstance(string secretKey, string iv) {
+	public static AESCrypto GetInstance(string secretKey, string iv)
+	{
 		using Aes aes = Aes.Create();
 
 		int keyLength = Convert.FromBase64String(secretKey).Length;
@@ -47,17 +50,22 @@ public class AESCrypto
 		return new AESCrypto(aes);
 	}
 
-	public static AESCrypto GetInstance(AESSupportedSize keySize = AESSupportedSize.AES_128) {
+	public static AESCrypto GetInstance(AESSupportedSize keySize = AESSupportedSize.AES_128)
+	{
 		using Aes aes = Aes.Create();
 
-		aes.KeySize = (int) keySize;
+		aes.KeySize = (int)keySize;
 
 		aes.GenerateKey();
 
 		return new AESCrypto(aes);
 	}
 
-	public static AESCrypto GetInstance(string iv, AESSupportedSize keySize = AESSupportedSize.AES_128) {
+	public static AESCrypto GetInstance(
+		string iv,
+		AESSupportedSize keySize = AESSupportedSize.AES_128
+	)
+	{
 		using Aes aes = Aes.Create();
 
 		byte[] ivArr = Encoding.UTF8.GetBytes(iv);
@@ -65,7 +73,7 @@ public class AESCrypto
 
 		Array.Copy(ivArr, ivArr16BytesValue, ivArr.Length);
 
-		aes.KeySize = (int) keySize;
+		aes.KeySize = (int)keySize;
 		aes.IV = ivArr16BytesValue;
 
 		aes.GenerateKey();
@@ -73,7 +81,12 @@ public class AESCrypto
 		return new AESCrypto(aes);
 	}
 
-	public string Encrypt(string plainText, CipherMode cipherMode = CipherMode.CBC, PaddingMode paddingMode = PaddingMode.PKCS7) {
+	public string Encrypt(
+		string plainText,
+		CipherMode cipherMode = CipherMode.CBC,
+		PaddingMode paddingMode = PaddingMode.PKCS7
+	)
+	{
 		Key.Mode = cipherMode;
 		Key.Padding = paddingMode;
 

@@ -1,6 +1,7 @@
 namespace server.Enums;
 
-public enum RankedAccount {
+public enum RankedAccount
+{
 	Unranked = 0,
 	Iron = 1,
 	Bronze = 2,

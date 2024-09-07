@@ -1,6 +1,3 @@
 export function Users() {
-	return (
-		<>
-		</>
-	);
+	return <></>;
 }

@@ -1,0 +1,18 @@
+{
+  "name": "shopacc-fake",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npm run dev:down && npm run dev:start",
+    "format": "npm run format:client && npm run format:server",
+    "dev:start": "docker compose -f compose.dev.yaml up --build",
+    "dev:start-silent": "docker compose -f compose.dev.yaml up --build -d",
+    "dev:down": "docker compose -f compose.dev.yaml down",
+    "dev:silent": "npm run dev:down && npm run dev:start-silent",
+    "format:client": "cd ./client && npm run format && cd ..",
+    "format:server": "cd ./server && dotnet csharpier . && cd .."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

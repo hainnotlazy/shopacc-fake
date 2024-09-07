@@ -5,7 +5,8 @@ using server.Enums;
 namespace server.Models;
 
 [Table("Orders")]
-public class Order {
+public class Order
+{
 	[Key]
 	public int Id { get; set; }
 	public required int UserId { get; set; }

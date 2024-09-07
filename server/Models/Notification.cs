@@ -4,7 +4,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace server.Models;
 
 [Table("Notifications")]
-public class Notification {
+public class Notification
+{
 	[Key]
 	public int Id { get; set; }
 	public required int UserId { get; set; }

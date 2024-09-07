@@ -17,7 +17,7 @@ public class Account
 	public required int Level { get; set; }
 	public required int RiotPoints { get; set; }
 	public required int BlueEssence { get; set; }
-	public required string IngameName { get ;set; }
+	public required string IngameName { get; set; }
 	public required RankedAccount CurrentRank { get; set; }
 	public string? PreviewImage { get; set; }
 }

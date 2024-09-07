@@ -6,34 +6,33 @@ import { IoSettings } from "react-icons/io5";
 
 export const AdminModules: Module[] = [
 	{
-		icon: <MdOutlineDashboard/>,
+		icon: <MdOutlineDashboard />,
 		name: "Dashboard",
-		redirectUri: "/admin/dashboard"
+		redirectUri: "/admin/dashboard",
 	},
 	{
-		icon: <MdManageAccounts/>,
+		icon: <MdManageAccounts />,
 		name: "Accounts",
-		redirectUri: "/admin/accounts"
+		redirectUri: "/admin/accounts",
 	},
 	{
-		icon: <GrTransaction/>,
+		icon: <GrTransaction />,
 		name: "Transaction Histories",
-		redirectUri: "/admin/transaction-histories"
+		redirectUri: "/admin/transaction-histories",
 	},
 	{
-		icon: <MdVideogameAsset/>,
+		icon: <MdVideogameAsset />,
 		name: "Game Assets",
-		redirectUri: "/admin/game-assets"
+		redirectUri: "/admin/game-assets",
 	},
 	{
-		icon: <FaUserFriends/>,
+		icon: <FaUserFriends />,
 		name: "Users",
-		redirectUri: "/admin/users"
+		redirectUri: "/admin/users",
 	},
 	{
-		icon: <IoSettings/>,
+		icon: <IoSettings />,
 		name: "Settings",
-		redirectUri: "/admin/settings"
+		redirectUri: "/admin/settings",
 	},
-
 ];

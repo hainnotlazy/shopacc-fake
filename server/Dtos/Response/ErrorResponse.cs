@@ -16,14 +16,15 @@ namespace server.Dtos.Response
 
 	public class ErrorResponse
 	{
-		private readonly Dictionary<HttpErrorStatusCode, string> ErrorTitles = new()
-		{
-			{ HttpErrorStatusCode.BadRequest, "Bad Request" },
-			{ HttpErrorStatusCode.Unauthorized, "Unauthorized" },
-			{ HttpErrorStatusCode.Forbidden, "Forbidden" },
-			{ HttpErrorStatusCode.NotFound, "Not Found" },
-			{ HttpErrorStatusCode.InternalServerError, "Internal Server Error" }
-		};
+		private readonly Dictionary<HttpErrorStatusCode, string> ErrorTitles =
+			new()
+			{
+				{ HttpErrorStatusCode.BadRequest, "Bad Request" },
+				{ HttpErrorStatusCode.Unauthorized, "Unauthorized" },
+				{ HttpErrorStatusCode.Forbidden, "Forbidden" },
+				{ HttpErrorStatusCode.NotFound, "Not Found" },
+				{ HttpErrorStatusCode.InternalServerError, "Internal Server Error" }
+			};
 
 		public HttpErrorStatusCode Status { get; set; }
 		public string Title { get; set; }

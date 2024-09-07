@@ -1,5 +1,3 @@
 namespace server.Enums;
 
-public class OrderStatus {
-
-}
+public class OrderStatus { }

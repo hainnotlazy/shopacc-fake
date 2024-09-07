@@ -72,43 +72,43 @@ const router = createBrowserRouter([
 				children: [
 					{
 						path: "",
-						element: <Navigate to="/admin/dashboard" replace/>
+						element: (
+							<Navigate
+								to="/admin/dashboard"
+								replace
+							/>
+						),
 					},
 					{
 						path: "dashboard",
 						element: <Dashboard />,
-<<<<<<< HEAD
-						index: true
+						index: true,
 					},
 					{
 						path: "game-assets",
-						element: <GameAssets />
+						element: <GameAssets />,
 					},
 					{
 						path: "accounts",
-						element: <Accounts />
+						element: <Accounts />,
 					},
 					{
 						path: "users",
-						element: <Users />
+						element: <Users />,
 					},
 					{
 						path: "settings",
-						element: <Settings />
+						element: <Settings />,
 					},
 					{
 						path: "transaction-histories",
-						element: <TransactionHistories />
+						element: <TransactionHistories />,
 					},
 					{
 						path: "*",
-						element: <NotFoundPage />
-					}
-				]
-=======
+						element: <NotFoundPage />,
 					},
 				],
->>>>>>> 4c1822d (enhance(backend): update user profile)
 			},
 			{
 				path: "login",

@@ -1,4 +1,16 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle, Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components";
+import {
+	Card,
+	CardContent,
+	CardDescription,
+	CardHeader,
+	CardTitle,
+	Table,
+	TableBody,
+	TableCell,
+	TableHead,
+	TableHeader,
+	TableRow,
+} from "@/components";
 import { FaMoneyBill, FaRegChartBar } from "react-icons/fa";
 import { TfiReload } from "react-icons/tfi";
 import { MdCheckCircle, MdError } from "react-icons/md";
@@ -6,13 +18,12 @@ import moment from "moment";
 import { useState } from "react";
 import clsx from "clsx";
 
-
 export function Dashboard() {
 	const [isReload, setIsReload] = useState(false);
 	const [lastTick, setLastTick] = useState(moment().format("DD/MM/yyyy hh:mm:ss"));
 
 	function reload() {
-		console.log("I am clicked")
+		console.log("I am clicked");
 		setIsReload(true);
 
 		setTimeout(() => {
@@ -26,17 +37,19 @@ export function Dashboard() {
 			<div className="p-3 grid grid-cols-1 gap-y-3">
 				<Card>
 					<CardHeader>
-						<CardTitle>
-							Monthly Overview
-						</CardTitle>
+						<CardTitle>Monthly Overview</CardTitle>
 					</CardHeader>
 					<CardContent>
 						<div className="flex justify-between items-center">
-							<span>Last updated time: <b>{lastTick}</b></span>
-							<TfiReload size={18} className={clsx("cursor-pointer", {
-								"animate-spin": isReload
-							})}
-							onClick={() => reload()}
+							<span>
+								Last updated time: <b>{lastTick}</b>
+							</span>
+							<TfiReload
+								size={18}
+								className={clsx("cursor-pointer", {
+									"animate-spin": isReload,
+								})}
+								onClick={() => reload()}
 							/>
 						</div>
 					</CardContent>
@@ -90,7 +103,9 @@ export function Dashboard() {
 				<Card>
 					<CardHeader>
 						<CardTitle className="text-lg">User Rankings</CardTitle>
-						<CardDescription>List of users who has the most deposit to their account</CardDescription>
+						<CardDescription>
+							List of users who has the most deposit to their account
+						</CardDescription>
 					</CardHeader>
 					<CardContent>
 						<Table>
@@ -128,8 +143,12 @@ export function Dashboard() {
 							<TableHeader className="bg-lime-500">
 								<TableRow className="group">
 									<TableHead className="text-black group-hover:text-gray-400">No.</TableHead>
-									<TableHead className="text-black group-hover:text-gray-400">Account Name</TableHead>
-									<TableHead className="text-black group-hover:text-gray-400">Account Type</TableHead>
+									<TableHead className="text-black group-hover:text-gray-400">
+										Account Name
+									</TableHead>
+									<TableHead className="text-black group-hover:text-gray-400">
+										Account Type
+									</TableHead>
 									<TableHead className="text-black group-hover:text-gray-400">Value</TableHead>
 								</TableRow>
 							</TableHeader>

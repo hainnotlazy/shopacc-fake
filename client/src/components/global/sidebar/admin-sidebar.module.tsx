@@ -10,7 +10,10 @@ export function AdminSidebar({ children }: { children: Array<ReactElement> }) {
 	const [expanded, setExpanded] = useState(isExpanded);
 
 	return (
-		<aside className="md:block hidden h-screen" aria-label="Sidebar">
+		<aside
+			className="md:block hidden h-screen"
+			aria-label="Sidebar"
+		>
 			<nav className="relative flex flex-col h-full bg-white border-r shadow-sm">
 				<div className={`p-3 pb-2 flex justify-center select-none`}>
 					<div className="h-14 flex items-center">
@@ -19,20 +22,19 @@ export function AdminSidebar({ children }: { children: Array<ReactElement> }) {
 							alt="shopacc logo"
 							loading="eager"
 							className={`overflow-hidden transition-all w-14 h-full`}
-							draggable="false"/>
+							draggable="false"
+						/>
 						<img
 							src={logoText}
 							alt="ShopLOL.fake logo-text"
 							loading="eager"
-							className={`overflow-hidden transition-all ${
-								expanded ? "w-40 h-full" : "w-0"
-							}`}
+							className={`overflow-hidden transition-all ${expanded ? "w-40 h-full" : "w-0"}`}
 							draggable="false"
 						/>
 					</div>
 					<button
 						className="absolute p-2.5 rounded-full bg-zinc-100 hover:bg-zinc-200 top-1/2 -right-4 dark:text-black"
-						onClick={() => setExpanded((curr) => !curr)}
+						onClick={() => setExpanded(curr => !curr)}
 					>
 						{!expanded ? <ChevronRightIcon /> : <ChevronLeftIcon />}
 					</button>
@@ -46,36 +48,21 @@ export function AdminSidebar({ children }: { children: Array<ReactElement> }) {
 	);
 }
 
-<<<<<<< HEAD:client/src/components/global/sidebar/admin-sidebar.module.tsx
-export function AdminSidebarItem({icon, text, redirect, active = false}: {icon: ReactElement, text: string, redirect: string,  active?: boolean}) {
-=======
 export function AdminSidebarItem({
 	icon,
 	text,
+	redirect,
 	active = false,
 }: {
 	icon: ReactElement;
-	text?: string;
+	text: string;
+	redirect: string;
 	active?: boolean;
 }) {
->>>>>>> 4c1822d (enhance(backend): update user profile):client/src/components/common/sidebar/admin-sidebar.module.tsx
 	const expanded = useContext(AdminSidebarExpandedContext);
 	const navigate = useNavigate();
 
 	return (
-<<<<<<< HEAD:client/src/components/global/sidebar/admin-sidebar.module.tsx
-		<li className={`h-12 relative flex justify-center items-center py-2 px-3 my-1 rounded-md cursor-pointer transition-color group ` +
-									 `${active ? 'bg-gradient-to-tr from-indigo-200 to-indigo-100 text-indigo-800'
-														 : 'hover:bg-indigo-50 text-gray-600'}`}
-				onClick={() => navigate(redirect)}>
-			{ icon }
-			<span
-				className={`overflow-hidden transition-all ${
-          expanded ? "w-48 ml-3" : "w-0"
-        }`}
-			>
-				{ text }
-=======
 		<li
 			className={
 				`h-12 relative flex justify-center items-center py-2 px-3 my-1 rounded-md cursor-pointer transition-color group ` +
@@ -85,11 +72,11 @@ export function AdminSidebarItem({
 						: "hover:bg-indigo-50 text-gray-600"
 				}`
 			}
+			onClick={() => navigate(redirect)}
 		>
 			{icon}
 			<span className={`overflow-hidden transition-all ${expanded ? "w-48 ml-3" : "w-0"}`}>
 				{text}
->>>>>>> 4c1822d (enhance(backend): update user profile):client/src/components/common/sidebar/admin-sidebar.module.tsx
 			</span>
 			{!expanded && (
 				<div

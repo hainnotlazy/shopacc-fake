@@ -4,7 +4,10 @@ using server.Models;
 
 namespace server.DbContexts
 {
-	public class DefaultDbContext(DbContextOptions<DefaultDbContext> options, IConfiguration configuration) : DbContext(options)
+	public class DefaultDbContext(
+		DbContextOptions<DefaultDbContext> options,
+		IConfiguration configuration
+	) : DbContext(options)
 	{
 		public DbSet<User> Users { get; set; }
 		public DbSet<Damage> Damages { get; set; }
@@ -17,6 +20,7 @@ namespace server.DbContexts
 		public DbSet<Skin> Skins { get; set; }
 
 		private readonly IConfiguration _configuration = configuration;
+
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			base.OnModelCreating(modelBuilder);
