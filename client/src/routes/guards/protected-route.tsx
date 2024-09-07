@@ -16,7 +16,9 @@ export function ProtectedRoute({
 	const accessToken = CookiesService.getToken(AuthTokenType.ACCESS_TOKEN);
 	const refreshToken = CookiesService.getToken(AuthTokenType.REFRESH_TOKEN);
 
-	const isMatch = PROTECTED_ROUTES.some((protectedRoute) => matchPath(protectedRoute, pathname) && !AUTH_ROUTES.includes(pathname));
+	const isMatch = PROTECTED_ROUTES.some(
+		protectedRoute => matchPath(protectedRoute, pathname) && !AUTH_ROUTES.includes(pathname),
+	);
 
 	if (isMatch && !accessToken && !refreshToken) {
 		return (

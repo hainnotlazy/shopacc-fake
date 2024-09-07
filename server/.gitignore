@@ -10,3 +10,6 @@ migrations/**
 # appsettings
 appsettings*.json
 !appsettings.example.json
+
+# Public static files
+wwwroot/**/*

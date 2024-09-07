@@ -38,11 +38,11 @@ export function GoogleCustomButton() {
 		onSuccess: async (codeResponse: CodeResponse) => {
 			//Toggle loading screen on
 			dispatch(currentUserReducer.actions.setFetchedUser(false));
-			
+
 			try {
-				const authorizationCode: string = codeResponse.code; //Get authorization code for custom google button after signing in Google				
+				const authorizationCode: string = codeResponse.code; //Get authorization code for custom google button after signing in Google
 				const result: AuthenticatedResponse = await AuthService.loginAsGoogle(authorizationCode);
-	
+
 				dispatch(currentUserReducer.actions.setCurrentUser(result.user));
 
 				CookiesService.setToken(AuthTokenType.ACCESS_TOKEN, result.accessToken);

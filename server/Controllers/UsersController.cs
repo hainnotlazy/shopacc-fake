@@ -60,7 +60,7 @@ namespace server.Controllers
 		[Authorize]
 		[HttpPut]
 		[Route("")]
-		public async Task<ActionResult<UserDto>> UpdateUser([FromBody] UpdateUserRequestDto requestDto)
+		public async Task<ActionResult<UserDto>> UpdateUser([FromForm] UpdateUserRequestDto requestDto)
 		{
 			if (User.Identity is not ClaimsIdentity user)
 			{

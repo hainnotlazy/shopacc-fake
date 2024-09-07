@@ -13,9 +13,7 @@ const schema = z.object({
 		})
 		.min(8, { message: "Password is invalid" })
 		.max(150, { message: "Password is invalid" }),
-    rememberMe: z.boolean({})
-                 .optional()
-                 .default(false),
+	rememberMe: z.boolean({}).optional().default(false),
 });
 
 export { schema };

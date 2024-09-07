@@ -17,10 +17,8 @@ export function UserNavigation() {
 	const handleLogout = () => {
 		try {
 			dispatch(logCurrentUserOut());
-		} catch(e) {
-
-		}
-	}
+		} catch (e) {}
+	};
 
 	return (
 		<Sheet>
@@ -60,7 +58,13 @@ export function UserNavigation() {
 						visible={bannerVisible}
 						close={false}
 					>
-						Your email is not verified yet. Go to <Link to="/verify" className="underline">verify</Link>
+						Your email is not verified yet. Go to{" "}
+						<Link
+							to="/verify"
+							className="underline"
+						>
+							verify
+						</Link>
 					</Banner>
 				</SheetHeader>
 				<div className="md:hidden flex flex-col gap-3 pb-4 mt-4 border-b-2">
@@ -138,7 +142,10 @@ export function UserNavigation() {
 						</div>
 					</Button>
 				</div>
-				<Button className="flex items-center w-full gap-2 mt-4" onClick={handleLogout}>
+				<Button
+					className="flex items-center w-full gap-2 mt-4"
+					onClick={handleLogout}
+				>
 					<TbLogout2 />
 					<span>Log out</span>
 				</Button>

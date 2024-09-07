@@ -77,6 +77,7 @@ const router = createBrowserRouter([
 					{
 						path: "dashboard",
 						element: <Dashboard />,
+<<<<<<< HEAD
 						index: true
 					},
 					{
@@ -104,6 +105,10 @@ const router = createBrowserRouter([
 						element: <NotFoundPage />
 					}
 				]
+=======
+					},
+				],
+>>>>>>> 4c1822d (enhance(backend): update user profile)
 			},
 			{
 				path: "login",
@@ -115,8 +120,8 @@ const router = createBrowserRouter([
 			},
 			{
 				path: "*",
-				element: <NotFoundPage />
-			}
+				element: <NotFoundPage />,
+			},
 		],
 	},
 	{

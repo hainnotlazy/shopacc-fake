@@ -6,7 +6,9 @@ export function Notification() {
 		<>
 			<TooltipProvider>
 				<Tooltip>
-					<TooltipTrigger><FaBell /></TooltipTrigger>
+					<TooltipTrigger>
+						<FaBell />
+					</TooltipTrigger>
 					<TooltipContent>
 						<div className="p-1">
 							<span>There are no notifications to show</span>

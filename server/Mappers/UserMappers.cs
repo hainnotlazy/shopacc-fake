@@ -13,9 +13,16 @@ namespace server.Mappers
 				Id = userModel.Id,
 				Username = userModel.Username,
 				Email = userModel.Email,
+				Fullname = userModel.Fullname,
+				Bio = userModel.Bio,
+				Balance = userModel.Balance,
+				Avatar = userModel.Avatar,
 				IsEmailVerified = userModel.IsEmailVerified,
 				NextEmailVerificationTime = userModel.NextEmailVerificationTime,
-				UseDarkMode = userModel.UseDarkMode
+				UseDarkMode = userModel.UseDarkMode,
+				IsActive = userModel.IsActive,
+				CreatedAt = userModel.CreatedAt,
+				UpdatedAt = userModel.UpdatedAt
 			};
 		}
 
@@ -39,7 +46,9 @@ namespace server.Mappers
 			};
 		}
 
-		public static ResendVerificationCodeResponse ToResendVerificationCodeResponse(this User userModel)
+		public static ResendVerificationCodeResponse ToResendVerificationCodeResponse(
+			this User userModel
+		)
 		{
 			return new ResendVerificationCodeResponse
 			{
