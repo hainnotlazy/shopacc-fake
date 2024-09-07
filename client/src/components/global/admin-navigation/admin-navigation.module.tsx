@@ -2,7 +2,7 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { useAppSelector } from "@/core/store";
 import { currentUserSelector } from "@/core/store/selectors";
 
-export function AdminUserNavigation() {
+export function AdminNavigation() {
 	const currentUser = useAppSelector(currentUserSelector);
 
 	return (

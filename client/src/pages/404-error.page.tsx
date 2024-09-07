@@ -1,7 +1,17 @@
 import { TbChevronLeft, TbGhost } from "react-icons/tb";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+
+const ADMIN_ROUTES_PREFIX = "/admin";
 
 export function NotFoundPage() {
+	const location = useLocation();
+	const { pathname } = location;
+	let homeRoute = "/";
+
+	if (pathname.startsWith(ADMIN_ROUTES_PREFIX)) {
+		homeRoute = ADMIN_ROUTES_PREFIX;
+	}
+
 	return (
 		<div className="bg-slate-200 flex flex-col items-center justify-center h-screen gap-3 select-none">
 			<TbGhost size={100} />
@@ -10,7 +20,7 @@ export function NotFoundPage() {
 				<span className="block text-3xl text-gray-600">Look like you're lost.</span>
 			</h1>
 			<Link
-				to={"/"}
+				to={homeRoute}
 				className="hover:text-blue-400 hover:underline flex items-center gap-1 text-lg text-blue-600"
 			>
 				<TbChevronLeft />

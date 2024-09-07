@@ -70,7 +70,6 @@ namespace server.Controllers
 			[FromBody] LoginUserRequestDto requestDto
 		)
 		{
-			Console.WriteLine("213213123");
 			return await _authService.HandleAdminLoginAsync(requestDto);
 		}
 	}

@@ -1,5 +1,8 @@
-import { AdminSidebar, AdminSidebarItem } from "@/components/global/sidebar/admin-sidebar.module";
-import { AdminHeader } from "@/components/global/header/admin/header.module";
+import {
+	AdminSidebar,
+	AdminSidebarItem,
+} from "@/components/global/admin-sidebar/admin-sidebar.module";
+import { AdminHeader } from "@/components";
 import { Outlet, useLocation } from "react-router-dom";
 import { AdminModules } from "@/routes/admin-modules";
 
@@ -22,16 +25,16 @@ export function AdminDefaultLayout() {
 	return (
 		<>
 			<div className="flex">
-				<div className="h-screen sticky top-0">
+				<div className="sticky top-0 h-screen">
 					<AdminSidebar>{sidebarElements}</AdminSidebar>
 				</div>
-				<div className="w-full flex flex-col">
+				<div className="flex flex-col w-full">
 					<div className="sticky top-0 z-[90]">
 						<AdminHeader />
 					</div>
 					<main
 						id="content"
-						className="flex-1 bg-rose-50 dark:bg-slate-900"
+						className="bg-rose-50 dark:bg-slate-900 flex-1"
 					>
 						<Outlet />
 					</main>

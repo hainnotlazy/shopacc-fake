@@ -1,8 +1,7 @@
 import { Notification } from "@/components/common/notification/notification.module";
-import { AdminUserNavigation } from "../../user-navigation/admin/user-navigation.module";
 import { FaSearch } from "react-icons/fa";
 import { Input } from "@/components/ui/input";
-import { DarkModeToggle } from "../../dark-mode-toggle/dark-mode-toggle.module";
+import { DarkModeToggle, AdminNavigation } from "@/components";
 
 export function AdminHeader() {
 	return (
@@ -20,7 +19,7 @@ export function AdminHeader() {
 					<div className="flex items-center gap-3">
 						<Notification />
 						<DarkModeToggle />
-						<AdminUserNavigation />
+						<AdminNavigation />
 					</div>
 				</div>
 			</nav>

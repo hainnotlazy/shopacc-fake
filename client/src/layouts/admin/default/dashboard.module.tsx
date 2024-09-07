@@ -23,7 +23,6 @@ export function Dashboard() {
 	const [lastTick, setLastTick] = useState(moment().format("DD/MM/yyyy hh:mm:ss"));
 
 	function reload() {
-		console.log("I am clicked");
 		setIsReload(true);
 
 		setTimeout(() => {
@@ -34,13 +33,13 @@ export function Dashboard() {
 
 	return (
 		<>
-			<div className="p-3 grid grid-cols-1 gap-y-3">
+			<div className="gap-y-3 grid grid-cols-1 p-3">
 				<Card>
 					<CardHeader>
 						<CardTitle>Monthly Overview</CardTitle>
 					</CardHeader>
 					<CardContent>
-						<div className="flex justify-between items-center">
+						<div className="flex items-center justify-between">
 							<span>
 								Last updated time: <b>{lastTick}</b>
 							</span>
@@ -54,13 +53,13 @@ export function Dashboard() {
 						</div>
 					</CardContent>
 				</Card>
-				<div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2">
+				<div className="lg:grid-cols-4 md:grid-cols-2 grid grid-cols-1 gap-2">
 					<Card className="border-l-8 border-indigo-500">
 						<CardHeader>
 							<CardTitle>
-								<div className="flex items-center gap-x-1">
+								<div className="gap-x-1 flex items-center">
 									<FaMoneyBill size={20} />
-									<label className="uppercase text-sm">Total revenue</label>
+									<label className="text-sm uppercase">Total revenue</label>
 								</div>
 							</CardTitle>
 						</CardHeader>
@@ -69,20 +68,20 @@ export function Dashboard() {
 					<Card className="border-l-8 border-blue-500">
 						<CardHeader>
 							<CardTitle>
-								<div className="flex items-center gap-x-1">
+								<div className="gap-x-1 flex items-center">
 									<FaRegChartBar size={20} />
-									<label className="uppercase text-sm">Number of transactions</label>
+									<label className="text-sm uppercase">Number of transactions</label>
 								</div>
 							</CardTitle>
 						</CardHeader>
 						<CardContent>0 transaction(s)</CardContent>
 					</Card>
-					<Card className="border-l-8 border-emerald-500">
+					<Card className="border-emerald-500 border-l-8">
 						<CardHeader>
 							<CardTitle>
-								<div className="flex items-center gap-x-1">
+								<div className="gap-x-1 flex items-center">
 									<MdCheckCircle size={20} />
-									<label className="uppercase text-sm">Successful transactions</label>
+									<label className="text-sm uppercase">Successful transactions</label>
 								</div>
 							</CardTitle>
 						</CardHeader>
@@ -91,9 +90,9 @@ export function Dashboard() {
 					<Card className="border-l-8 border-red-500">
 						<CardHeader>
 							<CardTitle>
-								<div className="flex items-center gap-x-1">
+								<div className="gap-x-1 flex items-center">
 									<MdError size={20} />
-									<label className="uppercase text-sm">Failed transactions</label>
+									<label className="text-sm uppercase">Failed transactions</label>
 								</div>
 							</CardTitle>
 						</CardHeader>
@@ -111,10 +110,10 @@ export function Dashboard() {
 						<Table>
 							<TableHeader className="bg-lime-500">
 								<TableRow className="group">
-									<TableHead className="text-black group-hover:text-gray-400">No.</TableHead>
-									<TableHead className="text-black group-hover:text-gray-400">User Name</TableHead>
-									<TableHead className="text-black group-hover:text-gray-400">Membership</TableHead>
-									<TableHead className="text-black group-hover:text-gray-400">Value</TableHead>
+									<TableHead className="group-hover:text-gray-400 text-black">No.</TableHead>
+									<TableHead className="group-hover:text-gray-400 text-black">User Name</TableHead>
+									<TableHead className="group-hover:text-gray-400 text-black">Membership</TableHead>
+									<TableHead className="group-hover:text-gray-400 text-black">Value</TableHead>
 								</TableRow>
 							</TableHeader>
 							<TableBody>
@@ -142,14 +141,14 @@ export function Dashboard() {
 						<Table>
 							<TableHeader className="bg-lime-500">
 								<TableRow className="group">
-									<TableHead className="text-black group-hover:text-gray-400">No.</TableHead>
-									<TableHead className="text-black group-hover:text-gray-400">
+									<TableHead className="group-hover:text-gray-400 text-black">No.</TableHead>
+									<TableHead className="group-hover:text-gray-400 text-black">
 										Account Name
 									</TableHead>
-									<TableHead className="text-black group-hover:text-gray-400">
+									<TableHead className="group-hover:text-gray-400 text-black">
 										Account Type
 									</TableHead>
-									<TableHead className="text-black group-hover:text-gray-400">Value</TableHead>
+									<TableHead className="group-hover:text-gray-400 text-black">Value</TableHead>
 								</TableRow>
 							</TableHeader>
 							<TableBody>
@@ -177,10 +176,10 @@ export function Dashboard() {
 						<Table>
 							<TableHeader className="bg-lime-500">
 								<TableRow className="group">
-									<TableHead className="text-black group-hover:text-gray-400">No.</TableHead>
-									<TableHead className="text-black group-hover:text-gray-400">User Name</TableHead>
-									<TableHead className="text-black group-hover:text-gray-400">Membership</TableHead>
-									<TableHead className="text-black group-hover:text-gray-400">Value</TableHead>
+									<TableHead className="group-hover:text-gray-400 text-black">No.</TableHead>
+									<TableHead className="group-hover:text-gray-400 text-black">User Name</TableHead>
+									<TableHead className="group-hover:text-gray-400 text-black">Membership</TableHead>
+									<TableHead className="group-hover:text-gray-400 text-black">Value</TableHead>
 								</TableRow>
 							</TableHeader>
 							<TableBody>
