@@ -2,18 +2,27 @@ import { currentUserSelector } from "@/core/store/selectors";
 import Avvvatars from "avvvatars-react";
 import styles from "./user-navigation.module.scss";
 import clsx from "clsx";
-import { Button, Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components";
+import {
+	Banner,
+	Button,
+	Sheet,
+	SheetClose,
+	SheetContent,
+	SheetHeader,
+	SheetTitle,
+	SheetTrigger,
+} from "@/components";
 import { TbUser, TbWallet, TbHistory, TbHeadset, TbLogout2 } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "@/core/store";
 import { logCurrentUserOut } from "@/core/store/slices/current-user.slice";
-import Banner from "@/components/ui/banner";
 import { useState } from "react";
 
 export function UserNavigation() {
 	const currentUser = useAppSelector(currentUserSelector);
 	const dispatch = useAppDispatch();
 	const [bannerVisible] = useState(!currentUser?.isEmailVerified);
+
 	const handleLogout = () => {
 		try {
 			dispatch(logCurrentUserOut());
@@ -67,6 +76,7 @@ export function UserNavigation() {
 						</Link>
 					</Banner>
 				</SheetHeader>
+
 				<div className="md:hidden flex flex-col gap-3 pb-4 mt-4 border-b-2">
 					<Button asChild>
 						<Link
@@ -86,21 +96,26 @@ export function UserNavigation() {
 					</Button>
 				</div>
 				<div className="flex flex-col gap-2 pb-4 mt-4 border-b-2">
-					<Button
-						autoFocus
-						variant="ghost"
-						className="h-fit hover:shadow-sm flex items-center justify-start gap-4 text-lg"
-					>
-						<div className="p-4 bg-indigo-100 rounded-lg">
-							<TbUser className="text-indigo-600" />
-						</div>
-						<div className="text-start">
-							<p>Manage Account</p>
-							<p className="text-neutral-400 text-wrap text-sm font-normal">
-								Edit user profile, change password
-							</p>
-						</div>
-					</Button>
+					<SheetClose asChild>
+						<Button
+							asChild
+							variant="ghost"
+							className="h-fit hover:shadow-sm flex items-center justify-start gap-4 text-lg"
+							type="button"
+						>
+							<Link to="/account">
+								<div className="p-4 bg-indigo-100 rounded-lg">
+									<TbUser className="text-indigo-600" />
+								</div>
+								<div className="text-start">
+									<p>Manage Account</p>
+									<p className="text-neutral-400 text-wrap text-sm font-normal">
+										Edit user profile, change password
+									</p>
+								</div>
+							</Link>
+						</Button>
+					</SheetClose>
 					<Button
 						variant="ghost"
 						className="h-fit hover:shadow-sm flex items-center justify-start gap-4 text-lg"

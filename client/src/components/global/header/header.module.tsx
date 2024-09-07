@@ -13,8 +13,9 @@ export function Header() {
 	return (
 		<header
 			className={clsx(
-				"py-2.5 fixed top-0 right-0 left-0 z-10 text-red-500 border-b border-gray-300 shadow-md bg-white flex items-center dark:bg-neutral-900",
+				"fixed top-0 right-0 left-0 z-10 text-red-500 border-b border-gray-300 shadow-md bg-white flex items-center dark:bg-neutral-900",
 				styles.header,
+				!!currentUser ? "py-1.5" : "py-2.5",
 			)}
 		>
 			<div className="md:px-8 container flex items-center justify-between px-2 mx-auto">

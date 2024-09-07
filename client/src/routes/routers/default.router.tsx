@@ -1,5 +1,5 @@
 import { DefaultLayout } from "@/layouts";
-import { HomePage, HelloPage } from "@/pages";
+import { HomePage, HelloPage, ManageAccountPage } from "@/pages";
 import { RouteObject } from "react-router-dom";
 import { ProtectedRoute } from "../guards";
 
@@ -15,6 +15,14 @@ export const defaultRouter: RouteObject = {
 			element: (
 				<ProtectedRoute>
 					<HelloPage />
+				</ProtectedRoute>
+			),
+		},
+		{
+			path: "account",
+			element: (
+				<ProtectedRoute>
+					<ManageAccountPage />
 				</ProtectedRoute>
 			),
 		},

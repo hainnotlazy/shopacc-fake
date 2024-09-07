@@ -16,6 +16,7 @@ export { OAuthSection } from "./common/oauth-section/oauth-section.module";
 export { EmailVerification } from "./common/email-verification/email-verification.module";
 export { Loader } from "./common/loader/loader.module";
 export { LoadingScreen } from "./common/loading-screen/loading-screen.module";
+export { ProfileForm } from "./common/profile-form/profile-form.module";
 
 /** Shadui components */
 export * from "./ui/button";
@@ -32,3 +33,6 @@ export * from "./ui/avatar";
 export * from "./ui/tooltip";
 export * from "./ui/card";
 export * from "./ui/table";
+export { default as Banner } from "./ui/banner";
+export * from "./ui/tabs";
+export * from "./ui/textarea";
