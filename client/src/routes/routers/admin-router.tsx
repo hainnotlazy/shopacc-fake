@@ -1,18 +1,19 @@
-import { AdminDefaultLayout, AdminAuthLayout } from "@/layouts";
-import { AdminContainer } from "@/layouts/admin/container/layout.module";
-import { Accounts } from "@/layouts/admin/default/accounts.module";
-import { Dashboard } from "@/layouts/admin/default/dashboard.module";
-import { GameAssets } from "@/layouts/admin/default/game-assets.module";
-import { Settings } from "@/layouts/admin/default/settings.module";
-import { TransactionHistories } from "@/layouts/admin/default/transaction-histories.module";
-import { Users } from "@/layouts/admin/default/users.module";
+import { AdminDefaultLayout, AdminAuthLayout, AdminContainer } from "@/layouts";
 import { Navigate, RouteObject } from "react-router-dom";
 import { ProtectedRoute, AuthRoute } from "../guards";
+import {
+	AdminAccounts,
+	AdminDashboard,
+	AdminGameAssets,
+	AdminSettings,
+	AdminTransactionHistories,
+	AdminUsers,
+} from "@/pages";
 
 export const adminRouter: RouteObject = {
 	path: "admin",
 	element: (
-		<ProtectedRoute isAdminRoute={true}>
+		<ProtectedRoute isAdminRoute>
 			<AdminContainer />
 		</ProtectedRoute>
 	),
@@ -31,35 +32,35 @@ export const adminRouter: RouteObject = {
 				},
 				{
 					path: "dashboard",
-					element: <Dashboard />,
+					element: <AdminDashboard />,
 					index: true,
 				},
 				{
 					path: "game-assets",
-					element: <GameAssets />,
+					element: <AdminGameAssets />,
 				},
 				{
 					path: "accounts",
-					element: <Accounts />,
+					element: <AdminAccounts />,
 				},
 				{
 					path: "users",
-					element: <Users />,
+					element: <AdminUsers />,
 				},
 				{
 					path: "settings",
-					element: <Settings />,
+					element: <AdminSettings />,
 				},
 				{
 					path: "transaction-histories",
-					element: <TransactionHistories />,
+					element: <AdminTransactionHistories />,
 				},
 			],
 		},
 		{
 			path: "login",
 			element: (
-				<AuthRoute isAdminRoute={true}>
+				<AuthRoute isAdminRoute>
 					<AdminAuthLayout />
 				</AuthRoute>
 			),

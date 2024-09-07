@@ -18,7 +18,7 @@ import moment from "moment";
 import { useState } from "react";
 import clsx from "clsx";
 
-export function Dashboard() {
+export function AdminDashboard() {
 	const [isReload, setIsReload] = useState(false);
 	const [lastTick, setLastTick] = useState(moment().format("DD/MM/yyyy hh:mm:ss"));
 

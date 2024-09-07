@@ -5,6 +5,7 @@ import { Outlet } from "react-router-dom";
 
 export function AdminContainer() {
 	const fetchedCurrentUser = useAppSelector(fetchedCurrentUserSelector);
+
 	return (
 		<div>
 			{!fetchedCurrentUser && <LoadingScreen />}

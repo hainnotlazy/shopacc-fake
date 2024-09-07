@@ -1,6 +1,6 @@
 import { Card, CardHeader, CardTitle } from "@/components";
 
-export function Settings() {
+export function AdminSettings() {
 	return (
 		<>
 			<div className="p-3">
