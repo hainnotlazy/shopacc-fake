@@ -21,19 +21,23 @@ namespace server.Services
 		private readonly DefaultDbContext _context;
 		private readonly DbSet<User> _userRepository;
 		private readonly IMailService _mailService;
-		private readonly IWebHostEnvironment _environment;
+		private readonly IImageFileService _imageFileService;
+		//private readonly IWebHostEnvironment _environment;
 
 		public UsersService(
 			DefaultDbContext context,
 			IMailService mailService,
+			IImageFileService imageFileService,
 			IWebHostEnvironment environment
 		)
 		{
 			_context = context ?? throw new ArgumentNullException(nameof(context));
 			_userRepository = _context.Users;
 			_mailService = mailService;
-			_environment = environment;
-			IMAGES_FOLDER_PATH = Path.Combine(_environment.WebRootPath, IMAGES_FOLDER);
+			_imageFileService = imageFileService;
+			//_environment = environment;
+			//IMAGES_FOLDER_PATH = Path.Combine(_environment.WebRootPath, IMAGES_FOLDER);
+			IMAGES_FOLDER_PATH = Path.Combine(Environment.CurrentDirectory, IMAGES_FOLDER);
 		}
 
 		public async Task<ActionResult<UserDto>> GetCurrentUser(int userId)
@@ -134,7 +138,9 @@ namespace server.Services
 			// Handle save avatar
 			if (requestDto.Avatar != null)
 			{
-				existingUser.Avatar = await SaveUserAvatar(requestDto.Avatar);
+				//existingUser.Avatar = await SaveUserAvatar(requestDto.Avatar);
+				var fileResult = await _imageFileService.SaveAsync(requestDto.Avatar, IMAGES_FOLDER_PATH);
+				existingUser.Avatar = fileResult.FileName;
 			}
 
 			// Update existing user

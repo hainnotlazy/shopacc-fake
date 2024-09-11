@@ -66,6 +66,12 @@ namespace server.Controllers
 			{
 				return new BadRequestObjectResult(ErrorResponse.NotFoundResponse("User not found!"));
 			}
+
+			string contentType = HttpContext.Request.ContentType ?? "";
+			if (!contentType.Contains("multipart/form-data")) {
+				return new BadRequestObjectResult(ErrorResponse.BadRequestResponse("Content type is invalid"));
+			}
+
 			int.TryParse(user.FindFirst("UId")?.Value, out int userId);
 
 			return await usersService.UpdateUser(userId, requestDto);

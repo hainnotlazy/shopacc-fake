@@ -1,6 +1,7 @@
 import { User } from "@/core/models";
 import { CookiesService, UsersService } from "@/services";
 import cookiesService, { AuthTokenType } from "@/services/cookies.service";
+import profileService from "@/services/profile.service";
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 const initialState: {
@@ -74,7 +75,7 @@ export const updateUseDarkMode = createAsyncThunk(
 	"currentUser/updateUseDarkMode",
 	async (useDarkMode: boolean) => {
 		if (cookiesService.hasAccessToken()) {
-			const user = await UsersService.updateCurrentUser({ useDarkMode });
+			const user = await profileService.toggleDarkMode(useDarkMode);
 			return user;
 		}
 		return null;

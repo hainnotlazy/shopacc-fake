@@ -58,6 +58,9 @@ builder
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IMailService, MailService>();
 builder.Services.AddScoped<IUsersService, UsersService>();
+builder.Services.AddScoped<IProfileService, ProfileService>();
+builder.Services.AddScoped<IFileService, FileService>();
+builder.Services.AddScoped<IImageFileService, ImageFileService>();
 
 var app = builder.Build();
 

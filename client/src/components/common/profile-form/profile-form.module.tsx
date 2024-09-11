@@ -9,38 +9,46 @@ import {
 	useToast,
 	Textarea,
 	Button,
-	Loader,
+	Loader
 } from "@/components";
 import { profileFormSchema } from "@/core/form-schemas";
-import { useAppSelector } from "@/core/store";
+import { useAppDispatch, useAppSelector } from "@/core/store";
 import { currentUserSelector } from "@/core/store/selectors";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Avvvatars from "avvvatars-react";
 import clsx from "clsx";
 import { useForm } from "react-hook-form";
-import { useDispatch } from "react-redux";
 import { z } from "zod";
 import { RiCameraFill } from "react-icons/ri";
+import profileService from "@/services/profile.service";
+import { currentUserActions } from "@/core/store/slices";
 
 export const ProfileForm = () => {
+	const dispatch = useAppDispatch();
+	const { toast } = useToast();
 	const currentUser = useAppSelector(currentUserSelector);
 	const form = useForm<z.infer<typeof profileFormSchema>>({
 		resolver: zodResolver(profileFormSchema),
 		defaultValues: {
 			fullname: currentUser?.fullname ?? "",
 			bio: currentUser?.bio ?? "",
-			avatar: "",
+			avatar: new File([], ""),
 		},
 	});
-
 	const { isSubmitting, errors } = form.formState;
 
-	const dispatch = useDispatch();
-	const { toast } = useToast();
+	async function handleProfileUpdate(formValues: any): Promise<void> {
+		var newCurrentUser = await profileService.updateProfile(formValues);
+		dispatch(currentUserActions.setCurrentUser(newCurrentUser));
+	}
 
 	return (
 		<Form {...form}>
-			<form className="drop-shadow-md p-4 space-y-3 bg-white rounded-md shadow-md">
+			<form
+				onSubmit={form.handleSubmit(handleProfileUpdate)}
+				className="drop-shadow-md p-4 space-y-3 bg-white rounded-md shadow-md"
+				encType="multipart/form-data"
+			>
 				<div>
 					<h1 className="text-2xl font-semibold text-center text-red-500">My Profile</h1>
 				</div>
@@ -54,9 +62,10 @@ export const ProfileForm = () => {
 								<FormItem className="relative">
 									<FormControl className="absolute w-full h-full opacity-0 cursor-pointer">
 										<Input
+											accept=".jpg, .jpeg, .png"
 											id="avatar"
 											type="file"
-											{...field}
+											onChange={(e) => field.onChange(e.target.files ? e.target.files[0] : null)}
 										/>
 									</FormControl>
 									<Avvvatars

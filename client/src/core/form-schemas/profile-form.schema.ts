@@ -7,7 +7,7 @@ const schema = z.object({
 		.max(80, { message: "Fullname must be less than 80 characters" })
 		.optional(),
 	bio: z.string().max(255, { message: "Bio must be less than 255 characters" }).optional(),
-	avatar: z.string().optional(),
+	avatar: z.instanceof(File).optional(),
 });
 
 export { schema };

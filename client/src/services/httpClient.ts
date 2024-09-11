@@ -38,9 +38,6 @@ class HttpClient implements IHttpClient {
 	async put<T>(url: string, payload: unknown, options: AxiosRequestConfig = {}): Promise<T> {
 		options = {
 			...options,
-			headers: {
-				Authorization: `Bearer ${this.ACCESS_TOKEN}`,
-			},
 		};
 		const response = await axios.put<T>(url, payload, options);
 		return response.data;
