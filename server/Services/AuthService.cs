@@ -208,7 +208,8 @@ namespace server.Services
 				User newUser =
 					new()
 					{
-						Username = payload.Name,
+						Username = payload.Email,
+						Fullname = payload.Name,
 						Password = BCrypt.Net.BCrypt.HashPassword(Guid.NewGuid().ToString()),
 						Email = payload.Email,
 						IsEmailVerified = payload.EmailVerified,
