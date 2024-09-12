@@ -15,31 +15,68 @@ import { profileFormSchema } from "@/core/form-schemas";
 import { useAppDispatch, useAppSelector } from "@/core/store";
 import { currentUserSelector } from "@/core/store/selectors";
 import { zodResolver } from "@hookform/resolvers/zod";
-import Avvvatars from "avvvatars-react";
 import clsx from "clsx";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { RiCameraFill } from "react-icons/ri";
 import profileService from "@/services/profile.service";
-import { currentUserActions } from "@/core/store/slices";
+import { currentUserReducer } from "@/core/store/slices";
+import { HttpClient } from "@/services";
+import { Avatar, AvatarImage } from "@radix-ui/react-avatar";
+import { useEffect, useState } from "react";
+import Avvvatars from "avvvatars-react";
 
 export const ProfileForm = () => {
 	const dispatch = useAppDispatch();
 	const { toast } = useToast();
 	const currentUser = useAppSelector(currentUserSelector);
+
+	const [previewImage, setPreviewImage] = useState("");
 	const form = useForm<z.infer<typeof profileFormSchema>>({
 		resolver: zodResolver(profileFormSchema),
 		defaultValues: {
-			fullname: currentUser?.fullname ?? "",
-			bio: currentUser?.bio ?? "",
+			fullname: currentUser?.fullname,
+			bio: currentUser?.bio,
 			avatar: new File([], ""),
 		},
 	});
-	const { isSubmitting, errors } = form.formState;
+	useEffect(() => {
+		form.reset({
+			fullname: currentUser?.fullname,
+			bio: currentUser?.bio
+		})
+	},[currentUser]);
+	const { isSubmitting } = form.formState;
 
 	async function handleProfileUpdate(formValues: any): Promise<void> {
-		var newCurrentUser = await profileService.updateProfile(formValues);
-		dispatch(currentUserActions.setCurrentUser(newCurrentUser));
+		try {
+			const newCurrentUser = await profileService.updateProfile(formValues);
+			console.log(newCurrentUser);
+			dispatch(currentUserReducer.actions.setCurrentUser(newCurrentUser));
+			toast({
+				title: "Profile Update",
+				description: "Save successfully",
+				duration: 4000
+			});
+		} catch(e) {
+			const { status, message: errMessage } = HttpClient.getErrorResponse(e);
+			form.setError("root", {
+				type: status.toString(),
+				message: errMessage,
+			});
+			toast({
+				variant: "destructive",
+				title: "Profile Update",
+				description: errMessage,
+			});
+		}
+	}
+
+	function handlePreviewImage(file?: File) {
+		if(!file) return;
+
+		const previewImageUri = URL.createObjectURL(file);
+		setPreviewImage(previewImageUri);
 	}
 
 	return (
@@ -65,16 +102,29 @@ export const ProfileForm = () => {
 											accept=".jpg, .jpeg, .png"
 											id="avatar"
 											type="file"
-											onChange={(e) => field.onChange(e.target.files ? e.target.files[0] : null)}
+											onChange={(e) => {
+												if(e.target.files) {
+													const targetFile = e.target.files[0];
+													field.onChange(targetFile);
+													handlePreviewImage(targetFile);
+												}
+											}}
 										/>
 									</FormControl>
-									<Avvvatars
+									{!previewImage && <Avvvatars
 										value={currentUser?.username ?? ""}
 										size={150}
 										border={true}
 										borderColor="#f87171"
 										borderSize={4}
-									/>
+									/>}
+									{previewImage &&
+										<div className="lg:w-[150px] lg:h-[150px] rounded-full border-4 border-[#f87171]">
+											<Avatar>
+												<AvatarImage className="rounded-full w-full h-full" src={previewImage}></AvatarImage>
+											</Avatar>
+										</div>
+									}
 									<label
 										htmlFor="avatar"
 										className="absolute bottom-0 hover:text-neutral-600 right-0 cursor-pointer p-2.5 text-xl bg-gray-300 rounded-full border-2 border-neutral-400 hover:shadow"

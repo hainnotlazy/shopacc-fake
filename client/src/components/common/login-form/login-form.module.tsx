@@ -111,7 +111,7 @@ export function LoginForm() {
 												"focus:!ring-sky-500 bg-white",
 												form.getFieldState("username").invalid && "ring-1 !ring-red-500",
 											)}
-											placeholder="Enter your username"
+											placeholder="Enter your username or email"
 											{...field}
 										/>
 									</FormControl>
