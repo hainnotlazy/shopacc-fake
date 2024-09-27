@@ -26,18 +26,18 @@ namespace server.Dtos.Payment.VnPay {
 			SortedDictionary<string, string> sortedDictionary = [];
 
 			sortedDictionary["vnp_Version"] = Version;
-      sortedDictionary["vnp_TmnCode"] = TmnCode;
-      sortedDictionary["vnp_Amount"] = Amount.ToString();
-    	sortedDictionary["vnp_Command"] = Command;
-      sortedDictionary["vnp_CreateDate"] = CreateDate.ToString();
-      sortedDictionary["vnp_CurrCode"] = CurrCode;
-      sortedDictionary["vnp_IpAddr"] = IpAddr;
-      sortedDictionary["vnp_Locale"] = Locale;
-      sortedDictionary["vnp_OrderInfo"] = OrderInfo;
-      sortedDictionary["vnp_OrderType"] = OrderType;
-      sortedDictionary["vnp_ReturnUrl"] = ReturnUrl;
-      sortedDictionary["vnp_TxnRef"] = TxnRef;
-      sortedDictionary["vnp_ExpireDate"] = ExpireDate.ToString();
+			sortedDictionary["vnp_TmnCode"] = TmnCode;
+			sortedDictionary["vnp_Amount"] = Amount.ToString();
+			sortedDictionary["vnp_Command"] = Command;
+			sortedDictionary["vnp_CreateDate"] = CreateDate.ToString();
+			sortedDictionary["vnp_CurrCode"] = CurrCode;
+			sortedDictionary["vnp_IpAddr"] = IpAddr;
+			sortedDictionary["vnp_Locale"] = Locale;
+			sortedDictionary["vnp_OrderInfo"] = OrderInfo;
+			sortedDictionary["vnp_OrderType"] = OrderType;
+			sortedDictionary["vnp_ReturnUrl"] = ReturnUrl;
+			sortedDictionary["vnp_TxnRef"] = TxnRef;
+			sortedDictionary["vnp_ExpireDate"] = ExpireDate.ToString();
 
 			if(!BankCode.IsNullOrEmpty()) {
 				sortedDictionary["vnp_BankCode"] = BankCode!;
