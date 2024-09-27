@@ -1,5 +1,8 @@
 using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Mvc;
+using server.DesignPatterns.Factories;
+using server.DesignPatterns.Factories.Abstract;
+using server.Dtos.Payment;
 using server.Dtos.Request;
 using server.Dtos.Response;
 using server.Dtos.User;
@@ -71,6 +74,14 @@ namespace server.Controllers
 		)
 		{
 			return await _authService.HandleAdminLoginAsync(requestDto);
+		}
+
+		[HttpGet]
+		[Route("test-momo")]
+		public async Task<ActionResult> TestMomo() {
+			string orderId = DateTime.Now.ToString("ddMMyyyyhhmmss");
+			InitPaymentResponse response = await new MomoOneTimePaymentFactory("momo-access-key","momo-secret-key","momo-partner-code", null, null).CreatePaymentAsync(orderId, $"Thanh toan cho don hang {orderId}", 2000);
+			return Ok(response);
 		}
 	}
 }
