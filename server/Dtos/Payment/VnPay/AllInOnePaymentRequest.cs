@@ -21,7 +21,7 @@ namespace server.Dtos.Payment.VnPay {
 		public string SecureHash { get => _SecureHash; }
 		private string _SecureHash = string.Empty;
 
-		public void CreateSignature(string secretKey, string accessKey)
+		public void CreateSignature(string secretKey)
 		{
 			SortedDictionary<string, string> sortedDictionary = [];
 
@@ -54,7 +54,7 @@ namespace server.Dtos.Payment.VnPay {
 			return WebUtility.UrlEncode(key) + WebUtility.UrlEncode(value);
 		}
 
-		public bool VerifySignature(string signature, string secretKey, string accessKey)
+		public bool VerifySignature(string signature, string secretKey)
 		{
 			throw new NotImplementedException();
 		}

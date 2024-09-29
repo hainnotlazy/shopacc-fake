@@ -14,6 +14,7 @@ namespace server.DesignPatterns.Factories {
 			using var httpClient = new HttpClient();
 
 			OneTimePaymentRequest request = new() {
+				AccessKey = accessKey,
 				PartnerCode = partnerCode,
 				StoreId = storeId,
 				StoreName = storeName,
@@ -26,8 +27,8 @@ namespace server.DesignPatterns.Factories {
 				RequestId = Guid.NewGuid().ToString(),
 				ExtraData = GetEncodedBase64ExtraData(GetDefaultExtraData())
 			};
-			request.CreateSignature(secretKey, accessKey);
-			string json = JsonConvert.SerializeObject(request, Formatting.Indented,
+			request.CreateSignature(secretKey);
+			string json = JsonConvert.SerializeObject(request, Formatting.None,
 																								new JsonSerializerSettings {
 																									DefaultValueHandling = DefaultValueHandling.Ignore,
 																									NullValueHandling = NullValueHandling.Ignore
@@ -55,7 +56,7 @@ namespace server.DesignPatterns.Factories {
 				else {
 					response.Message = $"Cannot parse json to {nameof(OneTimePaymentRequest)} class when receiving reponse from Momo API server";
 				}
-			} catch(Exception e) {
+			} catch {
 				//Catch an exception if http status code is not 2xx
 				response.Message = "An error when calling to Momo API server";
 				//Log the exception

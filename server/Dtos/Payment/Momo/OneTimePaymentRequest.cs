@@ -5,6 +5,8 @@ using server.Utils;
 
 namespace server.Dtos.Payment.Momo {
 	public class OneTimePaymentRequest: IHasSignature {
+		[JsonIgnore]
+		public required string AccessKey { get; set; }
 		[JsonProperty(PropertyName = "partnerCode")]
 		public required string PartnerCode { get; set; }
 		[JsonProperty(PropertyName = "subPartnerCode")]
@@ -51,15 +53,15 @@ namespace server.Dtos.Payment.Momo {
 		/// <summary>
 		/// This method will create signature to confirm information of this request. To see how signature is created, read this document:
 		/// <para><a>https://developers.momo.vn/v3/docs/payment/api/wallet/onetime/#initiate-payment-method</a></para>
-		/// <para>If method isn't called, an empty string will be set</para>
+		/// <para>If method isn't called for the first time, an empty string will be set</para>
 		/// </summary>
-		public void CreateSignature(string secretKey, string accessKey)
+		public void CreateSignature(string secretKey)
 		{
-			string rawSignature = $"accessKey={accessKey}&amount={Amount}&extraData={ExtraData}&ipnUrl={IpnUrl}&orderId={OrderId}&orderInfo={OrderInfo}&partnerCode={PartnerCode}&redirectUrl={RedirectUrl}&requestId={RequestId}&requestType={RequestType}";
+			string rawSignature = $"accessKey={AccessKey}&amount={Amount}&extraData={ExtraData}&ipnUrl={IpnUrl}&orderId={OrderId}&orderInfo={OrderInfo}&partnerCode={PartnerCode}&redirectUrl={RedirectUrl}&requestId={RequestId}&requestType={RequestType}";
 			_Signature = HmacSHA256Utils.HashString(rawSignature, secretKey, true);
 		}
 
-		public bool VerifySignature(string signature, string secretKey, string accessKey)
+		public bool VerifySignature(string signature, string secretKey)
 		{
 			throw new NotImplementedException();
 		}
