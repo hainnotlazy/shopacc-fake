@@ -1,7 +1,5 @@
 using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Mvc;
-using server.DesignPatterns.Factories;
-using server.DesignPatterns.Factories.Abstract;
 using server.Dtos.Payment;
 using server.Dtos.Request;
 using server.Dtos.Response;
@@ -12,9 +10,10 @@ namespace server.Controllers
 {
 	[ApiController]
 	[Route("api/auth")]
-	public class AuthController(IAuthService authService) : ControllerBase
+	public class AuthController(IAuthService authService, IPaymentService paymentService) : ControllerBase
 	{
 		private readonly IAuthService _authService = authService;
+		private readonly IPaymentService _paymentService = paymentService;
 
 		[HttpPost]
 		[Route("register")]
@@ -78,10 +77,8 @@ namespace server.Controllers
 
 		[HttpGet]
 		[Route("test-momo")]
-		public async Task<ActionResult> TestMomo() {
-			string orderId = DateTime.Now.ToString("ddMMyyyyhhmmss");
-			InitPaymentResponse response = await new MomoOneTimePaymentFactory("momo-access-key","momo-secret-key","momo-partner-code", null, null).CreatePaymentAsync(orderId, $"Thanh toan cho don hang {orderId}", 2000);
-			return Ok(response);
+		public async Task<ActionResult<InitPaymentResponse>> TestMomo() {
+			return await _paymentService.CreatePayment("Momo", 2000);
 		}
 	}
 }

@@ -56,7 +56,7 @@ namespace server.Dtos.Payment.Momo {
 		public void CreateSignature(string secretKey, string accessKey)
 		{
 			string rawSignature = $"accessKey={accessKey}&amount={Amount}&extraData={ExtraData}&ipnUrl={IpnUrl}&orderId={OrderId}&orderInfo={OrderInfo}&partnerCode={PartnerCode}&redirectUrl={RedirectUrl}&requestId={RequestId}&requestType={RequestType}";
-			_Signature = HmacSHA256Utils.HashString(rawSignature, secretKey);
+			_Signature = HmacSHA256Utils.HashString(rawSignature, secretKey, true);
 		}
 
 		public bool VerifySignature(string signature, string secretKey, string accessKey)
