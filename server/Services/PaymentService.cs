@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using server.DesignPatterns.Factories;
 using server.DesignPatterns.Factories.Abstract;
@@ -16,12 +15,13 @@ namespace server.Services {
 			string orderDescription = "pay with Momo";
 
 			if(request.Equals(nameof(PaymentGateway.Momo), StringComparison.OrdinalIgnoreCase)) {
-				string partnerCode = configuration["Payment:Momo:PartnerCode"]!;
-				string accessKey = configuration["Payment:Momo:AccessKey"]!;
-				string secretKey = configuration["Payment:Momo:SecretKey"]!;
+				string partnerCode = configuration["PaymentSetttings:Credentials:Momo:PartnerCode"] ?? string.Empty;
+				string accessKey = configuration["PaymentSettings:Credentials:Momo:AccessKey"] ?? string.Empty;
+				string secretKey = configuration["PaymentSettings:Credentials:Momo:SecretKey"] ?? string.Empty;
 
 				paymentFactory = new MomoOneTimePaymentFactory(accessKey, secretKey, partnerCode);
-				InitPaymentResponse response = await paymentFactory.CreatePaymentAsync(orderId, orderDescription, amount);
+				IPayment payment = paymentFactory.CreatePayment();
+				InitPaymentResponse response = await payment.CreateAsync(orderId, orderDescription, amount);
 
 				return new OkObjectResult(response);
 			}

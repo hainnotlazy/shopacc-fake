@@ -10,10 +10,9 @@ namespace server.Controllers
 {
 	[ApiController]
 	[Route("api/auth")]
-	public class AuthController(IAuthService authService, IPaymentService paymentService) : ControllerBase
+	public class AuthController(IAuthService authService) : ControllerBase
 	{
 		private readonly IAuthService _authService = authService;
-		private readonly IPaymentService _paymentService = paymentService;
 
 		[HttpPost]
 		[Route("register")]
@@ -73,12 +72,6 @@ namespace server.Controllers
 		)
 		{
 			return await _authService.HandleAdminLoginAsync(requestDto);
-		}
-
-		[HttpGet]
-		[Route("test-momo")]
-		public async Task<ActionResult<InitPaymentResponse>> TestMomo() {
-			return await _paymentService.CreatePayment("Momo", 2000);
 		}
 	}
 }
